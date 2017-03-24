@@ -4,10 +4,11 @@
 Gisquick
 ********
 
-Gisquick is separated project from the core `GIS.lab
-<http://web.gislab.io>`__ system with aim to produce generally usable
-QGIS web interface, usable with or without GIS.lab infrastructure. In
-other words, it is infrastructure for publishing QGIS projects in web.
+Gisquick is an open source geospatial data publishing platform
+developed for rapid sharing of QGIS projects in web. Gisquick is
+separated project from the core `GIS.lab <http://web.gislab.io>`__
+system with aim to produce generally usable QGIS web interface, usable
+with or without GIS.lab infrastructure.
 
 It provides responsive web design, legend, identification possibilities. 
 It allows creating topics from layers list, adding base and overlay layers, 
