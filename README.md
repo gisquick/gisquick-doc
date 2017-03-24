@@ -1,3 +1,3 @@
 # Official Gisquick Documentation
 
-Web: http://gislab.readthedocs.io/en/latest/
+Web: http://gisquick.readthedocs.io/en/latest/
