@@ -1,0 +1,29 @@
+div.figure {
+  text-align: center;
+  margin-bottom: .7em;
+  font-style: italic;
+}
+
+img.middle {
+  border: 0;
+  width:650px;
+}
+
+img.large {
+  border: 0;
+  width:800px;
+}
+
+img.small {
+  border: 0;
+  width:350px;
+}
+
+img.tiny {
+  border: 0;
+  width:250px;
+}
+
+.wy-table-responsive {
+  margin-bottom: 0px!important;
+}
