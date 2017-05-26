@@ -39,4 +39,5 @@ into whole mechanism.
    installation-web
    project-publishing
    environment-web
+   datasets   
    other
