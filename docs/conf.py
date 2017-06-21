@@ -40,7 +40,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Gisquick'
-copyright = u'2016-2017, GIS.lab team'
+copyright = u'2016-2017, Gisquick team'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -90,7 +90,7 @@ pygments_style = 'sphinx'
 #keep_warnings = False
 
 rst_epilog = """
-.. include:: .substitutions
+.. include:: ../.substitutions
 """
 
 # -- Options for HTML output ----------------------------------------------
@@ -197,7 +197,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
   ('index', 'Gisquick.tex', u'Gisquick Documentation',
-   u'GIS.lab team', 'manual'),
+   u'Gisquick team', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -241,7 +241,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
   ('index', 'Gisquick', u'Gisquick',
-   u'GIS.lab team', 'Gisquick', 'One line description of project.',
+   u'Gisquick team', 'Gisquick', 'One line description of project.',
    'Miscellaneous'),
 ]
 
