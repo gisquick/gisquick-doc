@@ -16,7 +16,7 @@ source code (`docker/example.docker-compose.yml
 example is shown below.
 
 .. code-block:: yaml
-   :emphasize-lines: 7
+   :emphasize-lines: 7, 17, 18, 31, 9, 33
    :linenos:
       
    version: "2"
@@ -54,8 +54,31 @@ example is shown below.
          - "433:443"
         
 It is important to set up shared directories mounted by Docker images
-as volumes. *QGIS Server* requires setting up :file:`publish` directory
-used for published Gisquick projects (see line ``7``).
+as volumes. *QGIS Server* requires setting up :file:`publish`
+directory which is used for published Gisquick projects (see line
+``7``). *Django Application* stores SQLite database in :file:`data`
+directory (line ``17``), tile cache is managed in :file:`media`
+directory (line ``18``). SSL certificates used by *Nginx Web Server*
+are stored in directory :file:`letsencrypt` (line ``31``).
+
+.. tip:: |tip| Use :file:`certbot` directory instead of
+   :file:`letsencrypt` when it is intended to use Webroot mode
+   to generate new or renew existing Certbot's SSL certificates.
+
+QGIS server is running in this case on port 90 (see line ``9``), Nginx
+web server on default port for HTTPS protocol 433 (line ``33``).
+
+Before running composed Docker images, shared directories must be
+created on host machine. In this case all directories is located in
+the same folder as :file:`docker-compose.yml` file.
+
+.. code-block:: bash
+
+   $ mkdir -p _data/publish
+   $ mkdir -p _data/media
+   $ mkdir -p _data/data
+   $ mkdir -p _data/etc/letsencrypt
+   
 
 Useful tips
 -----------

@@ -35,7 +35,9 @@ To deploy virtual server called ``gisquick`` run:
    ==> gisquick: Running provisioner: install (ansible)...
     gisquick: Running ansible-playbook...
    ...
-   
+   PLAY RECAP *********************************************************************
+   gisquick                   : ok=4    changed=0    unreachable=0    failed=0
+
 .. tip:: |tip| To speed up provisioning using *Apt proxy server*, set
    ``APT_PROXY`` variable before running above command like ``$ export
    APT_PROXY=http://192.168.99.118:3142``. Check `instructions
@@ -71,7 +73,7 @@ called from server prompt.
 .. code-block:: sh
    :emphasize-lines: 1
 
-   $ /vagrant/utils/tmux-dev.sh 
+   vagrant@gisquick:~$ /vagrant/utils/tmux-dev.sh 
    
    ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
    System    check identified no issues (0 silenced).
@@ -94,6 +96,35 @@ called from server prompt.
 
    [developme 0:servers*                                                                                         "gisquick" 20:17 01-May-16 
 
-Gisquick can be accessed on https://0.0.0.0:8000 from web browser
-started at host machine.
+Afterwards Gisquick can be accessed on https://0.0.0.0:8000.
  
+.. figure:: ../img/installation/vagrant-login.png
+
+Development services can be stopped from server terminal by ``tmux``
+command.
+
+.. code-block:: sh
+
+   vagrant@gisquick:~$ tmux kill-session 
+
+After logout, running virtual server can be shutdown by
+
+.. code-block:: sh
+
+   $ vagrant halt
+
+Halted machine can be launched again by ``vagrant up`` command.
+
+.. note:: To destroy virtual machine and delete all related files type
+
+   .. code-block:: sh
+
+      $ vagrant destroy -f
+
+Running virtual machine can be updated by
+
+.. code-block:: sh
+
+   $ vagrant provision
+
+   
