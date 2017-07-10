@@ -4,6 +4,33 @@
 Project publishing
 ==================
 
+It is assumed that Gisquick application is running on the server, see
+:doc:`../installation/vagrant` or :doc:`../installation/docker`. This
+section shows QGIS project publishing process. It is required to
+install on the client machine `QGIS Desktop
+<http://qgis.org/en/site/forusers/download.html>`__ and :doc:`Gisquick
+plugin <../installation/plugin>`.
+
+QGIS project dedicated for publishing is prepared in the standard
+way. Map layers can be combined from various data sources, like flat
+files (Esri Shapefile, GML), file-based databases (SQLite,
+SpatiaLite), server-client-based databases (PostGIS), or OGC Web
+Services (WMS, WFS, WCS).
+
+Before publishing using Gisquick plugin, the project must be saved.
+
+.. note:: When using flat files or file-based databases as data stores
+   it is recommended to save all the files (data and QGIS project) in
+   the same directory. QGIS project must be set up to use **relative**
+   paths (see *Project Properties*).
+
+   When using any kind of authentatization (databases, web services)
+   it must be ensured that server used for publishing will have access
+   to such data sources.
+
+Publishing QGIS project will be demostrated on :ref:`Prague sample
+project <dataset-prague>`.
+
 When ``Publish`` button is successfully pressed in GIS.lab QGIS plugin
 :ref:`dialog <gisquick-qgis-plugin-publish>`, 
 unique project file name with timestamp together with it's metafile are created.

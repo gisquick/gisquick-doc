@@ -51,7 +51,7 @@ example is shown below.
        volumes:
          - ./_data/etc/letsencrypt/:/etc/letsencrypt/
        ports:
-         - "433:443"
+         - "443:443"
         
 It is important to set up shared directories mounted by Docker images
 as volumes. *QGIS Server* requires setting up :file:`publish`
@@ -112,7 +112,38 @@ them. Gunicorn logs (see lines ``20`` and ``21`` in
 
       usermod -aG docker martin
 
-Gisquick platform is accessible on localhost port 443, https://localhost
+By default, Gisquick platform is accessible on localhost port 443 (see
+line ``33``), https://localhost
+
+.. note:: When using self-signed SSL certificates an exception in web
+   browser will be probably required to be added.
+
+   .. figure:: ../img/installation/ssl-exception.png
+
+.. figure:: ../img/installation/docker-login.png
+
+   Gisquick login screen.
+
+Update installation
+-------------------
+
+First, running instance should be stopped.
+
+.. code-block:: bash
+
+   $ docker-compose down
+
+Docker containers will be updated by ``pull`` request.
+
+.. code-block:: bash
+
+   $ docker-compose pull
+
+And up-to-date container can be afterwards combined as described above.
+
+.. code-block:: bash
+
+   $ docker-compose up
 
 Useful tips
 -----------

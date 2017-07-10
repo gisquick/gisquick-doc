@@ -84,6 +84,6 @@ Packaging
 License
 -------
 
-`GNU General Public License version 2
-<https://github.com/gislab-npo/gisquick/blob/master/LICENSE>`__ or
+`GNU General Public License
+<https://github.com/gislab-npo/gisquick/blob/master/LICENSE>`__ version 2 or
 later

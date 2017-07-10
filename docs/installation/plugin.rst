@@ -1,57 +1,45 @@
-Gisquick plugin
-===============
+Gisquick QGIS plugin
+====================
 
-As it was noticed in previous subsection, very important part is represented
-by :ref:`Gisquick QGIS plugin <gisquick-qgis-plugin>`.
+Very important part of Gisquick publishing platform is represented by
+**Gisquick QGIS plugin**. Gisquick plugin builds Gisquick bundle from
+any QGIS desktop project. It allows adding base layers, creating
+topics from layers list, setting access constraints or project
+expiration.
 
-This plugin is part of ``gisquick`` source code, so all necessary files
-are downloaded with cloning process. But let us stick to this order of 
-things.
+Source code of the plugin is available from GitHub
+`gisquick-qgis-plugin
+<https://github.com/gislab-npo/gisquick-qgis-plugin>`_ repository and
+licenced under `GNU General Public License
+<https://github.com/gislab-npo/gisquick-qgis-plugin/blob/master/LICENSE>`__
+version 2 or later.
 
-Gisquick plugin builds GIS.lab web bundle from any QGIS desktop project.
-It allows adding base layers, creating topics from layers list, 
-setting access constraints or project expiration.
+Plugin can be installed into QGIS in the standard way by
+:menuselection:`Plugins --> Manage and Install Plugins`.
+
+.. important:: |imp| Currently Gisquick plugin **is not** available
+   from QGIS Plugins Repository. Therefore is neccessary to register
+   new repository, see URL bellow
+
+   ::
+      
+      https://raw.githubusercontent.com/gislab-npo/gisquick-qgis-plugin/gh-pages/qgis-plugins.xml
+
+   .. figure:: ../img/installation/qgis-plugin-repo.png
+
+      Add Gisquick repository.
+
+.. figure:: ../img/installation/qgis-plugin-install.png
+
+   Install Gisquick QGIS plugin.
+               
+After successfull installation, a new icon should appear in QGIS
+plugin toolbar.
 
 .. _gisquick-qgis-plugin-logo:
 
-.. figure:: img/gisquick-qgis-plugin-logo.svg
+.. figure:: ../img/logo.png
    :align: center
-   :width: 150
+   :width: 64
 
    Gisquick QGIS plugin icon.
-
-
-All installed QGIS plugins are usually located in ``.qgis/python/plugins`` 
-directory.
-If ``gisquick`` repository is correctly cloned, for GIS.lab QGIS plugin
-installation just symbolic link is enough. Create it from ``gisquick`` 
-source code directory.
-
-.. code:: sh
-
-   ln -s $(pwd)/qgis/gisquick  ~/.qgis2/python/plugins/gisquick
-
-Let's continue in QGIS environment. Create ordinary QGIS project or use some
-existing one. 
-
-.. _qgis-project:
-
-.. figure:: img/qgis-project.png
-   :align: center
-   :width: 750
-
-   Some QGIS project.
-
-Go to :menuselection:`Plugins --> Manage and install plugins` and 
-in ``Installed`` tab of dialog window find **Gisquick plugin**.
-Activate this plugin by checking the toggle beside it, see figure
-:num:`#install-gisquick-plugin`.
-
-.. _install-gisquick-plugin:
-
-.. figure:: img/install-gisquick-plugin.png
-   :align: center
-   :width: 750
-
-   Gisquick QGIS plugin activation.
-
