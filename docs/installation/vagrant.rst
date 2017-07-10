@@ -1,5 +1,5 @@
-Deploying development/testing environment
-=========================================
+Deploying testing environment
+=============================
 
 After :ref:`downloading Gisquick source code <source-code>`, go to
 newly created :file:`gisquick` directory and deploy virtual server
@@ -65,7 +65,7 @@ via ``ssh`` vagrant command (must be called also from source code root
        http://www.ubuntu.com/business/services/cloud
    
    
-   Last login: Wed Apr 13 08:49:28 2016 from 10.0.2.2
+   Last login: Wed Apr 13 08:49:28 2016 from X.X.X.X
 
 Development services can be started using ``tmux-dev.sh`` command
 called from server prompt.
@@ -79,7 +79,7 @@ called from server prompt.
    System    check identified no issues (0 silenced).
    May 01, 2016 - 22:17:09
    Django version 1.8.9, using settings 'devproj.settings'
-   Starting development server at https://0.0.0.0:8000/
+   Starting development server at https://localhost:8000/
    Using SSL certificate: /home/vagrant/.virtualenvs/gisquick/local/lib/python2.7/site-packages/sslserver/certs/development.crt
    Using SSL key: /home/vagrant/.virtualenvs/gisquick/local/lib/python2.7/site-packages/sslserver/certs/development.key
    Quit the server with CONTROL-C.
@@ -96,7 +96,7 @@ called from server prompt.
 
    [developme 0:servers*                                                                                         "gisquick" 20:17 01-May-16 
 
-Afterwards Gisquick can be accessed on https://0.0.0.0:8000.
+Afterwards Gisquick can be accessed on https://localhost:8000.
  
 .. figure:: ../img/installation/vagrant-login.png
 
