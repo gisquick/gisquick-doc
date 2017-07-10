@@ -22,6 +22,8 @@ host machine.
    <http://gislab.readthedocs.io/en/latest/installation/configuration.html#installation-of-requirements>`__
    for installing software requirements in GIS.lab documentation.
 
+.. _vagrant-up:
+
 To deploy virtual server called ``gisquick`` run:
 
 .. code-block:: sh
@@ -46,9 +48,19 @@ To deploy virtual server called ``gisquick`` run:
    that, with next installation of server it can be faster because
    software packages will have not to be downloaded again.
 
-After succesfull deployment, created virtual machine can be accessed
-via ``ssh`` vagrant command (must be called also from source code root
-:file:`gisquick` directory).
+After succesfull deployment, new directories in source code tree are
+created:
+   
+``dev``
+  development directory
+``dev/cache`` 
+  directory for caching map tiles
+``dev/publish`` 
+  directory for QGIS projects publishing
+
+Created virtual machine can be accessed via ``ssh`` vagrant command
+(must be called also from source code root :file:`gisquick`
+directory).
 
 .. code-block:: sh
    :emphasize-lines: 1
@@ -66,6 +78,8 @@ via ``ssh`` vagrant command (must be called also from source code root
    
    
    Last login: Wed Apr 13 08:49:28 2016 from X.X.X.X
+
+.. _vagrant-dev-services:
 
 Development services can be started using ``tmux-dev.sh`` command
 called from server prompt.
@@ -121,10 +135,46 @@ Halted machine can be launched again by ``vagrant up`` command.
 
       $ vagrant destroy -f
 
-Running virtual machine can be updated by
+Update environment
+------------------
+
+Go to source code tree and update Git repository
+
+.. code-block:: sh
+
+   $ git pull
+
+Then launch virtual machine by ``vagrant up`` and perform provision
 
 .. code-block:: sh
 
    $ vagrant provision
 
+It is recommended to restart virtual machine
+
+   .. code-block:: sh
+
+      $ vagrant reload
+
+before starting :ref:`development services <vagrant-dev-services>`.
    
+.. note:: |note| When there are fundamental changes, it is better to
+   destroy virtual machine.
+
+   .. code-block:: sh
+
+      $ vagrant -f destroy
+      $ vagrant up
+
+   In this case ``vagrant provision`` command is not needed.
+          
+.. tip:: |tip| Quick update can be done with ``git pull`` command
+   followed by running ``gulp build-web`` on server.
+
+   .. code-block:: sh
+
+      $ git pull && vagrant up && vagrant ssh
+      $ /vagrant/utils/tmux-dev.sh
+      $ cd /vagrant/clients
+      $ gulp build-web
+

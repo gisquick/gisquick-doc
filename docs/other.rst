@@ -8,13 +8,13 @@ Other
 Technologies
 ------------
 
-* QGIS Desktop and Mapserver
-* OpenLayers 3
-* AngularJS, Angular UI, Angular Material
-* Onsen
-* Cordova
-* Django
-* Python
+* `QGIS Desktop <http://qgis.org/en/site/>`__ and `Mapserver
+  <http://docs.qgis.org/2.18/en/docs/user_manual/working_with_ogc/ogc_server_support.html>`__
+* `OpenLayers 3 <https://openlayers.org/>`__
+* `AngularJS <https://angularjs.org/>`__
+* `Cordova <https://cordova.apache.org/>`__
+* `Django <https://www.djangoproject.com/>`__
+* `Python <https://www.python.org/>`__
 
 .. _source-code-layout:
  
@@ -22,21 +22,29 @@ Technologies
 Source code layout
 ------------------
 
+See Gisquick `GitHub repository <https://github.com/gislab-npo/gisquick>`__.
+
 ``clients``
   web and mobile client interfaces
+``docker``
+  Docker recepies, see :doc:`./installation/docker`
+``provision``
+  development environment provisioning configuration with Vagrant/Ansible, see :doc:`./installation/vagrant`
 ``server``
   Django server
-``qgis``
-  QGIS plugin
-``provision``
-  development environment provisioning configuration with Vagrant/Ansible
-``dev``
-  development directory
-``dev/django`` 
-  directory for Django development project created during provisioning
-``dev/publish`` 
-  directory for QGIS projects publishing
+``utils``
+  Utilities
 
+See also related GitHub repositories:
+
+Gisquick QGIS plugin
+  https://github.com/gislab-npo/gisquick-qgis-plugin, see :doc:`./installation/plugin`.
+Gisquick QGIS sample projets
+  https://github.com/gislab-npo/gisquick-sample-projects,
+  see :doc:`./datasets` section.
+Gisquick documentation
+  https://github.com/gislab-npo/gisquick-doc
+  
 ------
 Mobile
 ------
@@ -48,19 +56,7 @@ built on top of the same code base as web inteface with native user interface.
 Packaging
 ---------
 
-* Gisquick QGIS plugin
-
-.. code:: sh
-
-   $ cd /vagrant/qgis/gislab_web \
-     && \
-     make clean \
-     && \
-     make compile \
-     && \
-     make zip
-
-* Gisquick
+* Gisquick application
 
 .. code:: sh
 
@@ -88,42 +84,6 @@ Packaging
 License
 -------
 
-GNU General Public License version 2 or later.
-
-.. _gisquick-upgrade:
-
-========================
-How to upgrade Gisquick?
-========================
-
-Gisquick source code update is done with ``pull`` command.
-
-.. code:: sh
-
-   $ git pull
-
-Upgrade with Vagrant:
-
-.. code:: sh
-
-   $ vagrant up
-   $ vagrant provision
-
-When there are fundamental changes, it is better to run ``vagrant destroy``
-command before ``git pull``.
-
-.. code:: sh
-
-   $ vagrant destroy -f 
-   $ git pull
-   $ vagrant up
-
-.. tip:: |tip| Quick update can be done with ``git pull`` command followed by
-   running ``$ gulp build-web`` on server.
-
-   .. code:: sh
-
-      $ git pull && vagrant up && vagrant ssh
-      $ /vagrant/utils/tmux-dev.sh
-      $ cd /vagrant/clients
-      $ gulp build-web
+`GNU General Public License version 2
+<https://github.com/gislab-npo/gisquick/blob/master/LICENSE>`__ or
+later

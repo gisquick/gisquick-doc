@@ -31,7 +31,7 @@ Natural earth
 =============
 
 Database ``natural-earth.sqlite``. Available online at
-https://github.com/gislab-npo/gisquick/tree/master/qgis/project/natural-earth.
+https://github.com/gislab-npo/gisquick-sample-projects/tree/master/natural-earth.
 
 .. rubric:: Data source
 
@@ -140,7 +140,8 @@ data and other information (urban landscape)
 Prague
 ======
 
-Database ``prague.sqlite``:
+Database ``prague.sqlite``. Available online at
+https://github.com/gislab-npo/gisquick-sample-projects/tree/master/prague.
 
 .. rubric:: Data source
 
