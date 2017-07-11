@@ -112,7 +112,7 @@ called from server prompt.
 
 Afterwards Gisquick can be accessed on https://localhost:8000.
  
-.. figure:: ../img/installation/vagrant-login.png
+.. figure:: ../img/installation/vagrant-screen.png
 
 Development services can be stopped from server terminal by ``tmux``
 command.

@@ -120,7 +120,7 @@ line ``33``), https://localhost
 
    .. figure:: ../img/installation/ssl-exception.png
 
-.. figure:: ../img/installation/docker-login.png
+.. figure:: ../img/installation/docker-screen.png
 
    Gisquick login screen.
 

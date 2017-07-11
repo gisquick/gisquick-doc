@@ -14,11 +14,17 @@ In the case of virtual server deployed using Vagrant, see
 .. code-block:: bash
 
    $ vagrant ssh
-   
+
+Afterwards on the server enter Django shell
+
+.. code-block:: bash
+
+   $ workon gisquick
+   $ python $HOME/deploy/www/manage.py shell
    
 When running Gisquick by Docker containers, see :doc:`docker`, at
-first Django app docker must be identified. The following command will
-enter Django shell.
+first Django app docker container must be identified. The following
+command will also enter Django shell.
 
 .. code-block:: bash
                 
@@ -32,8 +38,21 @@ Then you can create users programmatically
    get_user_model().objects.create_user('user1', email='user@gisquick.org',
                                         password='user1', first_name='User1')
 
-Django shell can be quited by
+To quit Django shell type
 
 .. code-block:: python
 
    exit()
+
+Then new user can log in into Gisquick application.
+
+.. figure:: ../img/installation/login-screen.png
+
+   Log in as *user1*.
+
+After log in an empty Gisquick project is loaded. 
+
+.. figure:: ../img/installation/empty-project.png
+
+   Empty Gisquick project. OpenStreetMap is used as base layer.
+
