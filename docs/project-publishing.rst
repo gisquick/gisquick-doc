@@ -1,3 +1,6 @@
+.. |plugin| image:: ./img/logo.png
+   :width: 2.5em
+
 .. _project-publishing:
  
 ==================
@@ -19,17 +22,27 @@ Services (WMS, WFS, WCS).
 
 Before publishing using Gisquick plugin, the project must be saved.
 
-.. note:: When using flat files or file-based databases as data stores
-   it is recommended to save all the files (data and QGIS project) in
-   the same directory. QGIS project must be set up to use **relative**
-   paths (see *Project Properties*).
+.. important:: |imp| When using flat files or file-based databases as
+   data stores it is recommended to save all the files (data and QGIS
+   project) in the same directory. QGIS project must be set up to use
+   **relative** paths (see *Project Properties*).
 
    When using any kind of authentatization (databases, web services)
    it must be ensured that server used for publishing will have access
    to such data sources.
 
 Publishing QGIS project will be demostrated on :ref:`Prague sample
-project <dataset-prague>`.
+project <dataset-prague>`. At first, sample :file:`prague.qgs` QGIS
+project will be open in QGIS Desktop. Before doing any changes we try
+to publish the project as it is.
+
+.. figure:: ./img/qgis-prague.png
+
+   Prague sample project loaded in QGIS.
+
+Publication process is started by Gisquick QGIS plugin
+|plugin|. Plugin is designed as simple wizard which helps simplifying
+publishing process as much as possible.
 
 When ``Publish`` button is successfully pressed in GIS.lab QGIS plugin
 :ref:`dialog <gisquick-qgis-plugin-publish>`, 

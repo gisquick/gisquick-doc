@@ -90,7 +90,8 @@ pygments_style = 'sphinx'
 #keep_warnings = False
 
 rst_epilog = """
-.. include:: ../.substitutions
+.. include:: .substitutions1
+.. include:: ../.substitutions2
 """
 
 # -- Options for HTML output ----------------------------------------------

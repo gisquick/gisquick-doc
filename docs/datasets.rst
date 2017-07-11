@@ -13,25 +13,17 @@ by GIS.lab developers and later adopted by Gisquick project.  Later,
 the second dataset :ref:`dataset-prague` was developed for specific
 needs of Gisquick publishing platform.
 
-Sample datasets are available from ``gisquick-sample-projects`` Git
-repository:
-
-.. code-block:: bash
-
-   git clone https://github.com/gislab-npo/gisquick-sample-projects
-
-.. important:: |imp| Large data files are stored `Git Large File
-   Storage <https://git-lfs.github.com/>`__. Therefore Git LFS extension
-   must be installed.
-
 .. _dataset-natural-earth:
 
 =============
 Natural earth
 =============
 
-Database ``natural-earth.sqlite``. Available online at
-https://github.com/gislab-npo/gisquick-sample-projects/tree/master/natural-earth.
+Database ``natural-earth.sqlite``. Available online from `GitHub
+repository
+<https://github.com/gislab-npo/gisquick/tree/master/qgis/project/natural-earth>`__
+or directly as `zip file
+<http://training.gismentors.eu/geodata/gisquick/natural-earth.tar.gz>`__.
 
 .. rubric:: Data source
 
@@ -140,8 +132,8 @@ data and other information (urban landscape)
 Prague
 ======
 
-Database ``prague.sqlite``. Available online at
-https://github.com/gislab-npo/gisquick-sample-projects/tree/master/prague.
+Database ``prague.sqlite``. Downloadable as `zip file
+<http://training.gismentors.eu/geodata/gisquick/prague.tar.gz>`__.
 
 .. rubric:: Data source
 
