@@ -32,7 +32,7 @@ insight into whole technology.
 
    installation/index
    project-publishing
-   environment-web
+   user-interface
    datasets   
    other
 

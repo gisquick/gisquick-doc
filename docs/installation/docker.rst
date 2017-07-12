@@ -52,7 +52,9 @@ example is shown below.
          - ./_data/etc/letsencrypt/:/etc/letsencrypt/
        ports:
          - "443:443"
-        
+
+.. _docker-publish-dir:
+           
 It is important to set up shared directories mounted by Docker images
 as volumes. *QGIS Server* requires setting up :file:`publish`
 directory which is used for published Gisquick projects (see line

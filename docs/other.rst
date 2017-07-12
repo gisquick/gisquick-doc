@@ -39,9 +39,6 @@ See also related GitHub repositories:
 
 Gisquick QGIS plugin
   https://github.com/gislab-npo/gisquick-qgis-plugin, see :doc:`./installation/plugin`.
-Gisquick QGIS sample projets
-  https://github.com/gislab-npo/gisquick-sample-projects,
-  see :doc:`./datasets` section.
 Gisquick documentation
   https://github.com/gislab-npo/gisquick-doc
   

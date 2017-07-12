@@ -21,7 +21,14 @@ Afterwards on the server enter Django shell
 
    $ workon gisquick
    $ python $HOME/deploy/www/manage.py shell
+
+.. _vagrant-user:
    
+.. note:: Virtual server provided by Vagrant comes with predefined
+   ``vagrant`` user account. This account can be used for testing
+   purposes. Password for this account is the same as the name,
+   ie. *vagrant*.
+                
 When running Gisquick by Docker containers, see :doc:`docker`, at
 first Django app docker container must be identified. The following
 command will also enter Django shell.

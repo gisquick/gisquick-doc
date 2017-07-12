@@ -48,6 +48,8 @@ To deploy virtual server called ``gisquick`` run:
    that, with next installation of server it can be faster because
    software packages will have not to be downloaded again.
 
+.. _vagrant-dev-dir:
+   
 After succesfull deployment, new directories in source code tree are
 created:
    
@@ -114,6 +116,17 @@ Afterwards Gisquick can be accessed on https://localhost:8000.
  
 .. figure:: ../img/installation/vagrant-screen.png
 
+.. tip:: |tip| Use following command to run server tests from 
+   ``/vagrant/dev/django`` directory.
+
+   .. code:: sh
+
+      $ python ./manage.py test webgis.viewer.tests
+
+.. note:: |note| QGIS Mapserver is also forwarded to host machine on
+   port ``8090``.  Its logs can be found in ``/var/log/lighttpd``
+   directory.
+            
 Development services can be stopped from server terminal by ``tmux``
 command.
 
@@ -125,6 +138,7 @@ After logout, running virtual server can be shutdown by
 
 .. code-block:: sh
 
+   vagrant@gisquick:~$ logout
    $ vagrant halt
 
 Halted machine can be launched again by ``vagrant up`` command.
@@ -177,4 +191,3 @@ before starting :ref:`development services <vagrant-dev-services>`.
       $ /vagrant/utils/tmux-dev.sh
       $ cd /vagrant/clients
       $ gulp build-web
-
