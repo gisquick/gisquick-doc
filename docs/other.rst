@@ -5,6 +5,19 @@ Other
 .. _technologies-web:
 
 ------------
+Promo videos
+------------
+
+To get the better idea what Gisquick is, see video below.
+
+.. raw:: html
+
+   <center><iframe width="560" height="315"
+   src="https://www.youtube.com/embed/7vBM1X5QuqE" frameborder="0"
+   allowfullscreen></iframe></center> <p>
+
+
+------------
 Technologies
 ------------
 

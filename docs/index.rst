@@ -14,14 +14,6 @@ and overlay layers, attribute table data filtering, measuring
 coordinates, length or area, and handy project printing from
 ready-to-use web application.
  
-To get the better idea what Gisquick is, see video below.
-
-.. raw:: html
-
-   <center><iframe width="560" height="315"
-   src="https://www.youtube.com/embed/7vBM1X5QuqE" frameborder="0"
-   allowfullscreen></iframe></center> <p>
-
 An integral part of publishing mechanism is a :ref:`Gisquick QGIS
 plugin <gisquick-qgis-plugin>`. Following subsections give a detailed
 insight into whole technology.
