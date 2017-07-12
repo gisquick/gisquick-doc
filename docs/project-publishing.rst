@@ -54,6 +54,8 @@ First page of the wizard allows defining basic settings for publishing:
 
 .. figure:: ./img/project-publishing-0.png
 
+.. _publication-base-layers:
+
 By **base layers** are meant typically WMS layers provided by QGIS
 project. ``Base layer`` subpage also allows adding base layers provided by
 external services like OpenStreetMap, MapBox or Bing.
@@ -79,6 +81,8 @@ like title, extent, min/max scales, info message, access constraints,
 etc.
             
 .. figure:: ./img/project-publishing-3.png                        
+
+.. _publication-topics:
 
 In the following page **topics** can be defined. By topic it's meant
 group of thematically-related overlay layers. Topics can be easily
