@@ -50,7 +50,7 @@ bounding box extent. Natural Earth Raster comes in TIFF format with a
 TFW world file.
 
 Natural Earth is very useful collection of data. Most of their
-attributes are equally important for mapmaking. They contain embedded
+attributes are equally important for map-making. They contain embedded
 feature names, which are ranked by relative importance. Other
 attributes facilitate faster map production, such as width attributes
 assigned to river segments for creating tapers, etc.
@@ -150,7 +150,7 @@ is from `Czech statistical office <https://www.czso.cz/csu/czso/home>`_.
 
 .. rubric:: Coordinate systems (Reference system)
 
-All data in Prague dataset use referense system S-JTSK Krovak East North (EPSG 5514). 
+All data in Prague dataset use reference system S-JTSK Krovak East North (EPSG 5514). 
 
 .. rubric:: Format and other key features
 
@@ -167,7 +167,7 @@ Windows-1252. Raster comes in TIFF format.
 Thematic layers
 ---------------
 
-**administrative districts** - administrative boudaries in Prague 
+**administrative districts** - administrative boundaries in Prague 
 
 * *Layer name:* ``districts``
 * *Storage type:* SQLite database
@@ -210,7 +210,7 @@ Thematic layers
    :widths: 10, 10
 
    "*number*", "number of basin"
-   "*area*", "area in square kilometre"
+   "*area*", "area in square kilometer"
    
 **bike routes** - cycling routes marked, registered and others
 
@@ -295,9 +295,9 @@ Thematic layers
 
    "*code*", "code of usage"
 
-**ortophoto** - colored orthophoto of Prague 1 district 
+**orthophoto** - colored orthophoto of Prague 1 district 
 
-* *Layer name:* ``ortophoto``
+* *Layer name:* ``orthophoto``
 * *Pixel resolution:* ``50 cm``
 * *Storage type:* SQLite database
 * *Last update:* 10.12.2015
@@ -320,7 +320,7 @@ Thematic layers
    :widths: 10, 10
 
    "*p_number*", "permanent parcel number"
-   "*f_number*", "fractional parcel numeber"
+   "*f_number*", "fractional parcel number"
    "*area*", "area in square meters"
 
 **pharmacy** - pharmacies

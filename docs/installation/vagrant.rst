@@ -8,7 +8,7 @@ providing Gisquick service.
 .. note:: |note| Default configuration is stored in
    :file:`provision/group_vars/all`. Custom user configuration can be
    defined in :file:`provision/host_vars/gisquick`. In this file can
-   be optionaly enabled Gisquick experimental mobile client by adding
+   be optionally enabled Gisquick experimental mobile client by adding
    configuration variable as ``GISLAB_CLIENT_MOBILE: yes``.
 
 Virtual server can be deployed using ``vagrant`` command. This
@@ -50,7 +50,7 @@ To deploy virtual server called ``gisquick`` run:
 
 .. _vagrant-dev-dir:
    
-After succesfull deployment, new directories in source code tree are
+After successful deployment, new directories in source code tree are
 created:
    
 ``dev``

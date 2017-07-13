@@ -27,11 +27,11 @@ Before publishing using Gisquick plugin, the project must be saved.
    project) in the same directory. QGIS project must be set up to use
    **relative** paths (see *Project Properties*).
 
-   When using any kind of authentatization (databases, web services)
+   When using any kind of authentication (databases, web services)
    it must be ensured that server used for publishing will have access
    to such data sources.
 
-Publishing QGIS project will be demostrated on :ref:`Prague sample
+Publishing QGIS project will be demonstrated on :ref:`Prague sample
 project <dataset-prague>` downloadable as as `zip file
 <http://training.gismentors.eu/geodata/gisquick/prague.tar.gz>`__. At
 first, sample :file:`prague.qgs` QGIS project will be open in QGIS
@@ -57,7 +57,7 @@ First page of the wizard allows defining basic settings for publishing:
 .. _publication-base-layers:
 
 By **base layers** are meant typically WMS layers provided by QGIS
-project. ``Base layer`` subpage also allows adding base layers provided by
+project. ``Base layer`` sub-page also allows adding base layers provided by
 external services like OpenStreetMap, MapBox or Bing.
 
 .. important:: |imp| External base layers are available only when QGIS
@@ -67,7 +67,7 @@ Here also default base layer can be defined, see figure below.
 
 .. figure:: ./img/project-publishing-1.png
 
-In the second ``Layers`` subpage is controlled, simply by checkboxes,
+In the second ``Layers`` sub-page is controlled, simply by check boxes,
 which map layers will be published. It's also possible to publish
 layer as hidden (ie. not shown in ``Overlay layers`` tab, see
 :doc:`user-interface`). Top-left checkbox ``Use cached`` controls
@@ -78,7 +78,7 @@ cached by QGIS server and re-used when possible.
 
 .. _publication-metadata:
 
-The last ``Project`` subpage allows defining basic project metadata
+The last ``Project`` sub-page allows defining basic project metadata
 like title, extent, min/max scales, info message, access constraints,
 etc.
             
@@ -90,23 +90,23 @@ In the following page **topics** can be defined. By topic it's meant
 group of thematically-related overlay layers. Topics can be easily
 switched in ``Topics`` tab of Gisquick UI, see :doc:`user-interface`
 section. Layers which should be part of defined topic are simply
-checked. Topics can be added or removed by buttons localed in
+checked. Topics can be added or removed by buttons located in
 bottom-left part of the dialog. Each topic has defined short
 description (abstract) which is shown by Gisquick UI.
             
 .. figure:: ./img/project-publishing-4.png
 
-Last but one page showns read-only **configuration summary**. It's last
+Last but one page shows read-only **configuration summary**. It's last
 chance to go back by ``Back`` button and change publication settings.
             
 .. figure:: ./img/project-publishing-5.png
 
-On the last page are displayed files which needs to transfered to the
+On the last page are displayed files which needs to transferred to the
 server providing Gisquick publication platform, see
-:doc:`installation/index` section. The result of publication proccess
+:doc:`installation/index` section. The result of publication process
 are two generated files: timestamped QGIS project (``.qgs``) and
 metafile (``.meta``). These files are data (see ``Data sources``) must
-be transfered to the publication server.
+be transferred to the publication server.
             
 .. figure:: ./img/project-publishing-6.png            
 
@@ -119,11 +119,11 @@ project. The destination file can be changed by ``Change`` button. In
 this case data source files are also copied to the newly defined
 directory.
 
-Transfering project to publication server
------------------------------------------
+Transferring project to publication server
+------------------------------------------
 
 In this section is described finishing publication process,
-transfering published project to the publication server. Destination
+transferring published project to the publication server. Destination
 folder on the server can be different depending on installation
 process.
 
@@ -151,7 +151,7 @@ in Gisquick source tree :file:`docker/_data/publish`.
 
    Publish directory provided by Docker containers.
 
-Projects in the *publish* directory are split into subdirectories
+Projects in the *publish* directory are split into sub-directories
 corresponding registered users, see
 :doc:`./installation/user-management` section. In the case of virtual
 server it's possible to use predefined :ref:`vagrant user

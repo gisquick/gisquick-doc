@@ -34,7 +34,7 @@ See Gisquick `GitHub repository <https://github.com/gislab-npo/gisquick>`__.
 ``clients``
   web and mobile client interfaces
 ``docker``
-  Docker recepies, see :doc:`./installation/docker`
+  Docker recipes, see :doc:`./installation/docker`
 ``provision``
   development environment provisioning configuration with Vagrant/Ansible, see :doc:`./installation/vagrant`
 ``server``
@@ -54,7 +54,7 @@ Mobile
 ------
 
 GIS.lab Mobile is represented by dedicated hybrid Android client interface 
-built on top of the same code base as web inteface with native user interface.
+built on top of the same code base as web interface with native user interface.
 
 ---------
 Packaging

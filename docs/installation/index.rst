@@ -12,7 +12,7 @@ host machine is required. Second procedure is dedicated for
 
 In both cases, for deploying virtual server or installation using
 Docker containers, Gisquick source code is required. The source code
-can be easily downloaded from GitHub reposirory using ``git`` command.
+can be easily downloaded from GitHub repository using ``git`` command.
 
 .. _source-code:
 

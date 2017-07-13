@@ -10,7 +10,7 @@ expiration.
 Source code of the plugin is available from GitHub
 `gisquick-qgis-plugin
 <https://github.com/gislab-npo/gisquick-qgis-plugin>`_ repository and
-licenced under `GNU General Public License
+licensed under `GNU General Public License
 <https://github.com/gislab-npo/gisquick-qgis-plugin/blob/master/LICENSE>`__
 version 2 or later.
 
@@ -18,7 +18,7 @@ Plugin can be installed into QGIS in the standard way by
 :menuselection:`Plugins --> Manage and Install Plugins`.
 
 .. important:: |imp| Currently Gisquick plugin **is not** available
-   from QGIS Plugins Repository. Therefore is neccessary to register
+   from QGIS Plugins Repository. Therefore is necessary to register
    new repository, see URL bellow
 
    ::
@@ -33,7 +33,7 @@ Plugin can be installed into QGIS in the standard way by
 
    Install Gisquick QGIS plugin.
                
-After successfull installation, a new icon should appear in QGIS
+After successful installation, a new icon should appear in QGIS
 plugin toolbar.
 
 .. _gisquick-qgis-plugin-logo:

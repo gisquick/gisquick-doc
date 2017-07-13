@@ -46,7 +46,7 @@ Content management
 ==================
 
 Basic project metadata - project description - is accessible by
-questionmark, see figure below.
+question-mark, see figure below.
 
 .. figure:: ./img/project-info.png
 
@@ -91,13 +91,13 @@ In ``Layers`` mode the overlay layers can be switch on/off one by one.
 .. figure:: ./img/ui-map-layers.png
    :width: 250px
            
-   Switch on/off overlayer layers.
+   Switch on/off overlay layers.
 
 .. tip:: |tip| It is also possible to switch on/off group of layers
    |group-switcher|.
          
 In this mode layer attribute data can be accessed by
-|layer-attributes|. Atrribute table is displayed in bottom part.
+|layer-attributes|. Attribute table is displayed in bottom part.
 
 .. figure:: ./img/ui-attributes.svg
 
@@ -137,7 +137,7 @@ example below.
 Zoom tools
 ==========
 
-Zoom tools enables controling map view.
+Zoom tools enables controlling map view.
 
 * Geolocation |zoom-geolocation|
 * Zoom in/out |zoom-in-out|
@@ -147,7 +147,7 @@ Zoom tools enables controling map view.
 
    Geolocation in action.
 
-.. tip:: Zooming and panning is also possible by middle mouse buttom.
+.. tip:: Zooming and panning is also possible by middle mouse button.
    
 .. _tool-menu:
 
@@ -169,7 +169,7 @@ example below in Schools and District layers).
 
    Identify schools layer.
 
-This settings can be changed in ``Identification`` combobox.
+This settings can be changed in ``Identification`` combo box.
 
 .. figure:: ./img/identification-layers.png
    :width: 250px

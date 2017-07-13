@@ -10,9 +10,9 @@ containers:
 
 These Docker images can be put together using ``docker-compose``
 command. This command reads configuration file in YAML
-language. Example of such confuguration is available in Gisquick
+language. Example of such configuration is available in Gisquick
 source code (`docker/example.docker-compose.yml
-<https://github.com/gislab-npo/gisquick/blob/master/docker/example.docker-compose.yml>`__). Simplied
+<https://github.com/gislab-npo/gisquick/blob/master/docker/example.docker-compose.yml>`__). Simplified
 example is shown below.
 
 .. code-block:: yaml
@@ -102,11 +102,11 @@ At this point ``docker-compose`` command can be run
 
    $ docker-compose up
 
-This command downloades required Docker images, run and compose
+This command downloads required Docker images, run and compose
 them. Gunicorn logs (see lines ``20`` and ``21`` in
 :file:`docker-compose.yml`) are redirected to the terminal.
 
-.. note:: |note| Docker compose command can require Admininstrator rights
+.. note:: |note| Docker compose command can require Administrator rights
    (``sudo``). To avoid that add current user to ``docker``
    user group.
 
