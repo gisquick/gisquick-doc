@@ -1,15 +1,15 @@
-Deploying testing environment
-=============================
+Deploying testing environment by Vagrant
+========================================
 
 After :ref:`downloading Gisquick source code <source-code>`, go to
 newly created :file:`gisquick` directory and deploy virtual server
 providing Gisquick service.
 
 .. note:: |note| Default configuration is stored in
-   :file:`provision/group_vars/all`. Custom user configuration can be
-   defined in :file:`provision/host_vars/gisquick`. In this file can
-   be optionally enabled Gisquick experimental mobile client by adding
-   configuration variable as ``GISLAB_CLIENT_MOBILE: yes``.
+   :file:`provision/group_vars/all` file. Custom user configuration
+   can be defined in :file:`provision/host_vars/gisquick`. In this
+   file can be optionally enabled Gisquick experimental mobile client
+   by adding configuration variable as ``GISLAB_CLIENT_MOBILE: yes``.
 
 Virtual server can be deployed using ``vagrant`` command. This
 operation requires to install `Vagrant
@@ -18,13 +18,13 @@ operation requires to install `Vagrant
 host machine.
 
 .. note:: |note| Minimum version of Ansible is 2.0 and higher, see
-   `instructions
-   <http://gislab.readthedocs.io/en/latest/installation/configuration.html#installation-of-requirements>`__
-   for installing software requirements in GIS.lab documentation.
+   instructions for installing software requirements in `GIS.lab
+   documentation
+   <http://gislab.readthedocs.io/en/latest/installation/configuration.html#installation-of-requirements>`__.
 
 .. _vagrant-up:
 
-To deploy virtual server called ``gisquick`` run:
+To deploy virtual server run
 
 .. code-block:: sh
    :emphasize-lines: 1
@@ -42,11 +42,12 @@ To deploy virtual server called ``gisquick`` run:
 
 .. tip:: |tip| To speed up provisioning using *Apt proxy server*, set
    ``APT_PROXY`` variable before running above command like ``$ export
-   APT_PROXY=http://192.168.99.118:3142``. Check `instructions
+   APT_PROXY=http://192.168.99.118:3142``. Check instructions how to
+   `set up Apt proxy server
    <http://gislab.readthedocs.io/en/latest/general/tips.html#apt-cacher-service>`__
-   how to set up Apt proxy server in GIS.lab documentation. Thanks to
-   that, with next installation of server it can be faster because
-   software packages will have not to be downloaded again.
+   in GIS.lab documentation. Due to Apt proxy server repeated
+   deployment of virtual server will be faster since software packages
+   will retrieved from cache.
 
 .. _vagrant-dev-dir:
    
@@ -58,7 +59,7 @@ created:
 ``dev/cache`` 
   directory for caching map tiles
 ``dev/publish`` 
-  directory for QGIS projects publishing
+  directory for QGIS projects publishing (this directory is crucial for :doc:`../project-publishing`)
 
 Created virtual machine can be accessed via ``ssh`` vagrant command
 (must be called also from source code root :file:`gisquick`
@@ -121,7 +122,7 @@ Afterwards Gisquick can be accessed on https://localhost:8000.
 
    .. code:: sh
 
-      $ python ./manage.py test webgis.viewer.tests
+      vagrant@gisquick:~$ python ./manage.py test webgis.viewer.tests
 
 .. note:: |note| QGIS Mapserver is also forwarded to host machine on
    port ``8090``.  Its logs can be found in ``/var/log/lighttpd``
@@ -173,7 +174,7 @@ It is recommended to restart virtual machine
 before starting :ref:`development services <vagrant-dev-services>`.
    
 .. note:: |note| When there are fundamental changes, it is better to
-   destroy virtual machine.
+   create virtual machine from scratch.
 
    .. code-block:: sh
 

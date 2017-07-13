@@ -1,5 +1,5 @@
-Gisquick QGIS plugin
-====================
+QGIS plugin
+===========
 
 Very important part of Gisquick publishing platform is represented by
 **Gisquick QGIS plugin**. Gisquick plugin builds Gisquick bundle from
@@ -14,8 +14,8 @@ licensed under `GNU General Public License
 <https://github.com/gislab-npo/gisquick-qgis-plugin/blob/master/LICENSE>`__
 version 2 or later.
 
-Plugin can be installed into QGIS in the standard way by
-:menuselection:`Plugins --> Manage and Install Plugins`.
+Plugin can be installed in QGIS Desktop from :menuselection:`Plugins
+--> Manage and Install Plugins` as other QGIS plugins.
 
 .. important:: |imp| Currently Gisquick plugin **is not** available
    from QGIS Plugins Repository. Therefore is necessary to register

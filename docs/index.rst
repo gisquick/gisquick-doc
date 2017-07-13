@@ -4,19 +4,28 @@
  Gisquick
 =========
 
-Gisquick (http://gisquick.org) is an open source **geospatial data
-publishing platform** developed for rapid sharing `QGIS
-<http://qgis.org>`__ projects on the web.
+Gisquick (http://gisquick.org) is designed as an **open source
+platform for publishing geospatial data** in the sense of rapid
+sharing `QGIS <http://qgis.org>`__ projects on the web. The platform
+consists of QGIS plugin, Django-based server application, QGIS server,
+and web/mobile clients. The clients are designed with a goal to put
+together minimal set of functions for useful generic responsive web
+and mobile friendly mapping application.
 
-Gisquick provides responsive web design, legend, or identification
-possibilities. It allows creating topics from layers list, adding base
-and overlay layers, attribute table data filtering, measuring
-coordinates, length or area, and handy project printing from
-ready-to-use web application.
- 
-An integral part of publishing mechanism is a *Gisquick QGIS
-plugin*. Following subsections give a detailed insight into whole
-technology.
+The process of data publishing with Gisquick is quite easy. For
+client-server communication Gisquick uses open OGC standards, namely
+WMS, WMTS and WFS services. Server components can be easily deployed
+in Docker containers serving your GIS projects from the cloud or from
+your own hardware. Project creators only needs QGIS desktop software
+with Gisquick plugin installed.
+
+The platform is designed to be applicable in everyday practice and/or
+for further custom development. More relevant information about
+Gisquick’s development, including source code, deployment and support
+for users is published on `GitHub
+<https://github.com/gislab-npo/gisquick>`__.
+
+Following subsections give a detailed insight into whole technology.
 
 .. toctree::
    :maxdepth: 2

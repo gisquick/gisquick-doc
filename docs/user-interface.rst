@@ -23,18 +23,19 @@
  User Interface
 ================
 
-The Gisquick clients User Interface (UI) are designed with a goal to
-put together minimal set of functions for useful generic responsive
-web and mobile friendly mapping application.
+The Gisquick clients are designed with a goal to put together minimal
+set of functions for useful generic responsive web and mobile friendly
+mapping application.
 
-The major part of the UI is occupied by *map canvas* (``1``). On the
-left side is located :ref:`content management tools <content-menu>`
-(``2``) which is possible to hide by button on its right side
-(``3``). Corners of map canvas are filled by (from left-bottom corner,
-clockwise) by *map scale* (``4``), :ref:`tools <tool-menu>` (``5``),
-:ref:`user menu <user-menu>` (``6``) and :ref:`zoom tools <zoom-menu>`
-(``7``). In the bottom part is located statusbar showing current
-scale, projection and map coordinates of the cursor (``8``).
+The major part of the clients User Interface (UI) is occupied by *map
+canvas* (``1``). On the left side is located :ref:`content management
+tools <content-menu>` (``2``) which is possible to hide by button on
+its right side (``3``). Corners of map canvas are filled by (from
+left-bottom corner, clockwise) by *map scale* (``4``), :ref:`tools
+<tool-menu>` (``5``), :ref:`user menu <user-menu>` (``6``) and
+:ref:`zoom tools <zoom-menu>` (``7``). In the bottom part is located
+statusbar showing current scale, projection and map coordinates of the
+cursor (``8``).
 
 .. figure:: ./img/gisquick-ui.svg
 
@@ -42,21 +43,21 @@ scale, projection and map coordinates of the cursor (``8``).
 
 .. _content-menu:
 
-Content management
-==================
+Content management tools
+========================
 
 Basic project metadata - project description - is accessible by
 question-mark, see figure below.
 
-.. figure:: ./img/project-info.png
+.. figure:: ./img/project-info.svg
 
    Project description.
 
 Content management widget is split into three major tabs:
 
-* Base Layers
-* Overlay Layers
-* Legend
+* **Base Layers**
+* **Overlay Layers**
+* **Legend**
 
 .. figure:: ./img/content-tabs.png
    :width: 250px
@@ -79,7 +80,7 @@ controlling overlay layers one by one.
 .. figure:: ./img/ui-overlay-layers.png
    :width: 250px
            
-   Topics or map layers switcher.
+   Topics and layers switcher.
 
 .. figure:: ./img/ui-topics.png
    :width: 250px
@@ -95,9 +96,15 @@ In ``Layers`` mode the overlay layers can be switch on/off one by one.
 
 .. tip:: |tip| It is also possible to switch on/off group of layers
    |group-switcher|.
-         
-In this mode layer attribute data can be accessed by
-|layer-attributes|. Attribute table is displayed in bottom part.
+
+.. todo:: Explain legend.
+
+Attribute data
+--------------
+
+In ``Layers`` mode attribute data can be accessed by
+|layer-attributes|. Attribute table is displayed in bottom part, see
+figure below.
 
 .. figure:: ./img/ui-attributes.svg
 
@@ -115,20 +122,21 @@ figures below.
 
    Define filter and ``refresh`` attribute table view.
 
-.. tip:: |tip| By default, attribute table shows only few records. The
-   number of displayed records can be controlled in status bar by
-   ``Rows by page``. Attributes can be also filter by map canvas
-   ``Filter to visible area``.
+.. tip:: |tip| By default, attribute table shows only few rows. The
+   number of displayed rows can be controlled in status bar by ``Rows
+   by page``. Attributes can be also filter by map canvas ``Filter to
+   visible area``.
 
-Every record in attribute table has *Zoom to* button |zoom-to| which
+Every row in attribute table has *Zoom to* button |zoom-to| which
 enables zooming and centering related features in map canvas, see
-example below.
+figure below.
 
 .. figure:: ./img/ui-zoom-to-feature.svg
 
    Zoom into selected feature.
 
-.. note:: Filter can be disabled by |clear-filter|. Table view must be refreshed.
+.. note:: Attribute filter can be disabled by |clear-filter|. Table
+          view must be refreshed.
 
 .. todo:: Explain info panel.
           
@@ -167,7 +175,7 @@ example below in Schools and District layers).
 
 .. figure:: ./img/identify.svg
 
-   Identify schools layer.
+   Identify schools and district layer.
 
 This settings can be changed in ``Identification`` combo box.
 
@@ -261,6 +269,8 @@ look like.  To get the better idea, see video below.
    :ref:`Guest session <guest-session>`, only log in users can use
    this tool.
 
+.. _user-menu:
+   
 User menu
 =========
          

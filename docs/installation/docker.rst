@@ -1,5 +1,5 @@
-Installation using Docker containers
-====================================
+Deploying in Docker containers
+==============================
 
 Gisquick application is split into 3 services running in Docker
 containers:
@@ -8,17 +8,17 @@ containers:
 #. **Django Application served with Gunicorn** (``gisquick/django`` image)
 #. **Nginx Server** (``gisquick/nginx`` image)
 
-These Docker images can be put together using ``docker-compose``
-command. This command reads configuration file in YAML
+Docker images can be put together using ``docker-compose``
+command. The command reads configuration file in YAML
 language. Example of such configuration is available in Gisquick
 source code (`docker/example.docker-compose.yml
 <https://github.com/gislab-npo/gisquick/blob/master/docker/example.docker-compose.yml>`__). Simplified
 example is shown below.
 
 .. code-block:: yaml
-   :emphasize-lines: 7, 17, 18, 31, 9, 33, 20, 21
+   :emphasize-lines: 7,9,17,18,31,33
    :linenos:
-      
+   
    version: "2"
    services:
      qgisserver:
@@ -53,9 +53,11 @@ example is shown below.
        ports:
          - "443:443"
 
+.. todo:: Fix line numbers...
+          
 .. _docker-publish-dir:
            
-It is important to set up shared directories mounted by Docker images
+It is important to set up shared directories mounted by Docker containers
 as volumes. *QGIS Server* requires setting up :file:`publish`
 directory which is used for published Gisquick projects (see line
 ``7``). *Django Application* stores SQLite database in :file:`data`
@@ -80,8 +82,8 @@ folder as :file:`docker-compose.yml` file.
 
 .. important:: |imp| Current Gisquick docker images suppose that SSL
    certificates are located in :file:`live/projects.gisquick.org`
-   directory. Example bellow shows how to create self-signed
-   certificate. 
+   directory. In the example below is shown creation of self-signed
+   certificate.
 
    .. code-block:: bash
                 
@@ -129,13 +131,13 @@ line ``33``), https://localhost
 Update installation
 -------------------
 
-First, running instance should be stopped.
+At first, running instance should be stopped.
 
 .. code-block:: bash
 
    $ docker-compose down
 
-Docker containers will be updated by ``pull`` request.
+Docker images will be updated by ``pull`` request.
 
 .. code-block:: bash
 

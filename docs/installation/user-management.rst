@@ -5,8 +5,8 @@ Currently it is not possible to manage user accounts from web
 interface. The only way is to use terminal on the server and manage
 accounts manually.
 
-At first, someone needs to log in to the server where is running
-Gisquick Django application.
+At first, log in to the server with running Gisquick Django
+application.
 
 In the case of virtual server deployed using Vagrant, see
 :doc:`vagrant`, log in by
@@ -29,7 +29,7 @@ Afterwards on the server enter Django shell
    purposes. Password for this account is the same as the name,
    ie. *vagrant*.
                 
-When running Gisquick by Docker containers, see :doc:`docker`, at
+When running Gisquick in Docker containers, see :doc:`docker`, at
 first Django app docker container must be identified. The following
 command will also enter Django shell.
 
@@ -37,7 +37,7 @@ command will also enter Django shell.
                 
    $ docker exec -it `docker ps -qf "ancestor=gisquick/django"` django-admin shell
 
-Then you can create users programmatically
+Then new users can be created programmatically
 
 .. code-block:: python
                 
@@ -61,5 +61,5 @@ After log in an empty Gisquick project is loaded.
 
 .. figure:: ../img/installation/empty-project.png
 
-   Empty Gisquick project. OpenStreetMap is used as base layer.
+   Empty Gisquick project. OpenStreetMap is used as a base layer.
 
