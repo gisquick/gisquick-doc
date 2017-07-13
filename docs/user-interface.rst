@@ -12,21 +12,29 @@
    :width: 2.5em
 .. |zoom-extent| image:: ./img/ui-zoom-tools-extent.png
    :width: 2.5em
+.. |identify| image:: ./img/ui-identify.png
+   :width: 2.5em
+.. |measure| image:: ./img/ui-measure.png
+   :width: 2.5em
+.. |print| image:: ./img/ui-print.png
+   :width: 2.5em
  
 ==============
 User Interface
 ==============
 
-Gisquick User Interface (UI) is designed to be simple,
-self-explanatory, and responsive. The major part is occupied of *map
-canvas* (``1``). On the left is located :ref:`content menu
-<content-menu>` (``2``) which is possible to hide by button on its
-right side (``3``). Corners of map canvas are filled by (from
-left-bottom corner, clockwise) by *map scale* (``4``), :ref:`tools
-menu <tool-menu>` (``5``), :ref:`user menu <user-menu>` (``6``) and
-:ref:`zoom menu <zoom-menu>` (``7``). In the bottom part is located
-statusbar showing current scale, projection and map coordinates of the
-cursor (``8``).
+The Gisquick clients User Interface (UI) are designed with a goal to
+put together minimal set of functions for useful generic responsive
+web and mobile friendly mapping application.
+
+The major part of the UI is occupied by *map canvas* (``1``). On the
+left side is located :ref:`content management tools <content-menu>`
+(``2``) which is possible to hide by button on its right side
+(``3``). Corners of map canvas are filled by (from left-bottom corner,
+clockwise) by *map scale* (``4``), :ref:`tools <tool-menu>` (``5``),
+:ref:`user menu <user-menu>` (``6``) and :ref:`zoom tools <zoom-menu>`
+(``7``). In the bottom part is located statusbar showing current
+scale, projection and map coordinates of the cursor (``8``).
 
 .. figure:: ./img/gisquick-ui.svg
 
@@ -52,7 +60,8 @@ Content management widget is split into three major tabs:
 * Legend
 
 .. figure:: ./img/content-tabs.png
-
+   :width: 200px
+           
    Content tabs.
 
 ``Base Layers`` tab allows switching base layers in map canvas. The
@@ -60,7 +69,8 @@ list of base layers is defined by publication process as described in
 :ref:`Project publishing <publication-base-layers>` section.
 
 .. figure:: ./img/ui-base-layers.png
-
+   :width: 200px
+           
    Switching between base layers.
      
 ``Overlay Layers`` tab allows switching between topics (layer groups),
@@ -68,17 +78,20 @@ see :ref:`Project publishing <publication-topics>` section, or
 controlling overlay layers one by one.
 
 .. figure:: ./img/ui-overlay-layers.png
-
+   :width: 200px
+           
    Topics or map layers switcher.
 
 .. figure:: ./img/ui-topics.png
-
+   :width: 200px
+           
    Switching between topics.
 
 In ``Layers`` mode the overlay layers can be switch on/off one by one.
 
 .. figure:: ./img/ui-map-layers.png
-
+   :width: 200px
+           
    Switch on/off overlayer layers.
 
 .. tip:: |tip| It is also possible to switch on/off group of layers
@@ -132,11 +145,44 @@ Zoom tools enables controling map view.
 * Zoom in/out |zoom-in-out|
 * Zoom to extent |zoom-extent|
 
+.. figure:: ./img/geolocation.svg
+
+   Geolocation in action.
+
+.. tip:: Zooming and panning is also possible by middle mouse buttom.
+   
 .. _tool-menu:
 
 -----
 Tools
 -----
+
+Two basic tools are available:
+
+* Identify |identify|, and
+* Measurement |measure|
+
+~~~~~~~~
+Identify
+~~~~~~~~
+
+By default, features are identified in all visible layers (in the
+example below in Schools and District layers).
+
+.. figure:: ./img/identify.svg
+
+   Identify schools layer.
+
+This settings can be changed in ``Identification`` combobox.
+
+.. figure:: ./img/identification-layers.png
+   :width: 200px
+      
+   Change layer priority for identification.
+
+~~~~~~~~~~~~
+Measurements
+~~~~~~~~~~~~
 
 .. _print-tool:
 
@@ -144,11 +190,12 @@ Tools
 Print tool
 ~~~~~~~~~~
 
-The main idea is, that once print is activated in Gisquick, it will
-download raw print output from QGIS Server using GetPrint request and
-will allow interactive visualization of map content directly in this
-template.  One can zoom, pan and rotate map and see exactly how the
-result will look like.  To get the better idea, see video below.
+|print| The main idea is, that once print is activated in Gisquick,
+it will download raw print output from QGIS Server using GetPrint
+request and will allow interactive visualization of map content
+directly in this template.  One can zoom, pan and rotate map and see
+exactly how the result will look like.  To get the better idea, see
+video below.
 
 .. raw:: html
 
