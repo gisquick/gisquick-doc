@@ -76,6 +76,8 @@ cached by QGIS server and re-used when possible.
             
 .. figure:: ./img/project-publishing-2.png
 
+.. _publication-metadata:
+
 The last ``Project`` subpage allows defining basic project metadata
 like title, extent, min/max scales, info message, access constraints,
 etc.
@@ -190,6 +192,8 @@ project directory and QGIS project file name, see URL below.
 As the final step, open web browser and launch published project in
 Gisquick interface by entering URL, in our case
 eg. https://localhost:8000?PROJECT=vagrant/prague/prague.qgs.
+
+.. _guest-session:
 
 You will see welcome screen with possibility to enter credential
 (*vagrant/vagrant* or other used user account) but for now, you can

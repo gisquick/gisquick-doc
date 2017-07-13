@@ -14,8 +14,8 @@ and overlay layers, attribute table data filtering, measuring
 coordinates, length or area, and handy project printing from
 ready-to-use web application.
  
-An integral part of publishing mechanism is a **Gisquick QGIS
-plugin**. Following subsections give a detailed insight into whole
+An integral part of publishing mechanism is a *Gisquick QGIS
+plugin*. Following subsections give a detailed insight into whole
 technology.
 
 .. toctree::
