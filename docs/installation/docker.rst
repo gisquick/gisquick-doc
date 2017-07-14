@@ -53,8 +53,6 @@ example is shown below.
        ports:
          - "443:443"
 
-.. todo:: Fix line numbers...
-          
 .. _docker-publish-dir:
            
 It is important to set up shared directories mounted by Docker containers
