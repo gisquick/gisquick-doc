@@ -4,12 +4,20 @@ Other
 
 .. _technologies-web:
 
-------------
+---------------
 Video tutorials
-------------
+---------------
 
 Gisquick video tutorials are available from `Youtube channel
 <https://www.youtube.com/channel/UCHXyhq_wrEBnGYTRJovxrCg/videos>`__.
+
+-----
+Flyer
+-----
+
+Available from `GitHub repository
+<https://github.com/gislab-npo/gisquick-doc/tree/master/flyer>`__ in
+SVG a PDF format.
 
 ------------
 Technologies
