@@ -68,7 +68,7 @@ are stored in directory :file:`letsencrypt` (line ``31``).
    to generate new or renew existing Certbot's SSL certificates.
 
 QGIS server is running in this case on port 90 (see line ``9``), Nginx
-web server on default port for HTTPS protocol 433 (line ``33``).
+web server on default port for HTTPS protocol 443 (line ``33``).
 
 Before composing Docker images, shared directories must be created on
 host machine. In shown example all directories are located in the same
