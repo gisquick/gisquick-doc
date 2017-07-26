@@ -1,5 +1,5 @@
-Deploying testing environment by Vagrant
-========================================
+Deploying development environment by Vagrant
+============================================
 
 After :ref:`downloading Gisquick source code <source-code>`, go to
 newly created :file:`gisquick` directory and deploy virtual server
