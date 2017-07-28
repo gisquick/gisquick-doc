@@ -1,12 +1,15 @@
 User management
 ===============
 
-Currently it is not possible to manage user accounts from web
-interface. The only way is to use terminal on the server and manage
-accounts manually.
+Currently user accounts can be managed only manually from Django
+shell.
 
-At first, log in to the server with running Gisquick Django
-application.
+At first, log in to Gisquick Django application server. The procedure
+can vary when running virtual server by Vagrant or in Docker
+containers.
+
+Vagrant
+-------
 
 In the case of virtual server deployed using Vagrant, see
 :doc:`vagrant`, log in by
@@ -24,11 +27,14 @@ Afterwards on the server enter Django shell
 
 .. _vagrant-user:
    
-.. note:: Virtual server provided by Vagrant comes with predefined
+.. tip:: Virtual server provided by Vagrant comes with predefined
    ``vagrant`` user account. This account can be used for testing
    purposes. Password for this account is the same as the name,
    ie. *vagrant*.
-                
+
+Docker
+------
+
 When running Gisquick in Docker containers, see :doc:`docker`, at
 first Django app docker container must be identified. The following
 command will also enter Django shell.
@@ -37,7 +43,12 @@ command will also enter Django shell.
                 
    $ docker exec -it `docker ps -qf "ancestor=gisquick/django"` django-admin shell
 
-Then new users can be created programmatically
+Create new user account
+-----------------------
+
+After entering Django shell, a new user account can be created
+programmatically (in example below a new account ``user1`` with
+password ``user1`` will be created)
 
 .. code-block:: python
                 
@@ -51,7 +62,7 @@ To quit Django shell type
 
    exit()
 
-Then new user can log in into Gisquick application.
+Then the new user can log in into Gisquick application.
 
 .. figure:: ../img/installation/login-screen.png
 
