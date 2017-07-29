@@ -37,6 +37,7 @@ example is shown below.
        volumes:
          - ./_data/media:/var/www/gisquick/media/
          - ./_data/data:/var/www/gisquick/data/
+         - ./_data/publish:/publish/
        environment:
          - GUNICORN_ERRORLOG=-
          - GUNICORN_ACCESSLOG=-
