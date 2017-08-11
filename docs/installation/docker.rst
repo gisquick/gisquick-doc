@@ -53,6 +53,8 @@ example is shown below.
          - ./_data/etc/letsencrypt/:/etc/letsencrypt/
        ports:
          - "443:443"
+       environment:
+         - NGINX_HOST=server.org
 
 .. _docker-publish-dir:
            
@@ -77,25 +79,45 @@ folder as :file:`docker-compose.yml` file.
 
 .. code-block:: bash
 
-   $ mkdir -p _data/publish _data/media _data/data _data/etc/letsencrypt
+   $ mkdir -p _data/publish _data/media _data/data _data/etc/letsencrypt/live
 
-.. important:: |imp| Current Gisquick docker images suppose that SSL
-   certificates are located in :file:`live/projects.gisquick.org`
-   directory. In the example below is shown creation of self-signed
-   certificate.
+Directory for SSL certificates is defined by :envvar:`NGINX_HOST`
+environmental variable (see line ``35``) located in :file:`live`
+directory. For sample configuration, the SSL certificates will be
+located in :file:`./_data/etc/letsencrypt/live/server.org`
+directory. See example of creating self-signed certificate below.
 
    .. code-block:: bash
                 
-      $ mkdir -p _data/etc/letsencrypt/live/projects.gisquick.org
+      $ mkdir -p _data/etc/letsencrypt/live/server.org
       $ openssl req -x509 -nodes -days 3650 -newkey rsa:2048 \
-       -keyout _data/etc/letsencrypt/live/projects.gisquick.org/privkey.pem \
-       -out _data/etc/letsencrypt/live/projects.gisquick.org/fullchain.pem \
-       -subj "/C=CZ/ST=Prague/L=Prague/O=Gisquick/OU=IT Department/CN=projects.gisquick.org"
+       -keyout _data/etc/letsencrypt/live/server.org/privkey.pem \
+       -out _data/etc/letsencrypt/live/server.org/fullchain.pem \
+       -subj "/C=CZ/ST=Prague/L=Prague/O=Gisquick/OU=IT Department/CN=server.org"
 
-   For production usage self-signed certificates will be
-   not enough. In this case can be recommended Certbot (LetsEncrypt)
+.. note::
+   
+   For production self-signed SSL certificates will be not enough. In
+   this case can be recommended Certbot (LetsEncrypt)
    certificates. See additional information on `GitHub
    <https://github.com/gislab-npo/gisquick/blob/master/docker/README.md>`__.
+
+There are more environmental variables which can be defined. Django
+container allows to set up:
+
+* :envvar:`DJANGO_GISQUICK_UPLOAD_MAX_SIZE` - max. size of uploaded projects (string)
+* :envvar:`DJANGO_DEBUG` - ``True`` or ``False`` (bool) to enable/disable debug messages
+* :envvar:`DJANGO_ACCOUNT_ACTIVATION_DAYS` - number of days (int) for activation of user account
+
+Example of additional configuration:
+
+.. code-block:: yaml
+   
+     django:
+       environment:
+         - DJANGO_GISQUICK_UPLOAD_MAX_SIZE='10M'
+         - DJANGO_DEBUG=True
+         - DJANGO_ACCOUNT_ACTIVATION_DAYS=3
 
 At this point ``docker-compose`` command can be run
 
@@ -113,7 +135,7 @@ them. Gunicorn logs (see lines ``20`` and ``21`` in
 
    .. code-block:: bash
 
-      usermod -aG docker martin
+      usermod -aG docker <my-user-name>
 
 By default, Gisquick platform is accessible on localhost port 443 (see
 line ``33``), https://localhost
