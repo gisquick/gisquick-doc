@@ -11,7 +11,7 @@ containers:
 .. note::
    
    Official Gisquick Docker containers are available from `Docker Hub
-   <https://hub.docker.com/search/?isAutomated=0&isOfficial=0&page=1&pullCount=0&q=gisquick&starCount=0>`__.
+   <https://hub.docker.com/u/gisquick/>`__.
 
 Docker images can be put together using ``docker-compose``
 command. The command reads configuration file in YAML
