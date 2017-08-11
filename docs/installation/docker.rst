@@ -8,10 +8,8 @@ containers:
 #. **Django Application served with Gunicorn** (``gisquick/django`` image)
 #. **Nginx Server** (``gisquick/nginx`` image)
 
-.. note::
-   
-   Official Gisquick Docker containers are available from `Docker Hub
-   <https://hub.docker.com/u/gisquick/>`__.
+.. note:: |note| Official Gisquick Docker containers are available
+   from `Docker Hub <https://hub.docker.com/u/gisquick/>`__.
 
 Docker images can be put together using ``docker-compose``
 command. The command reads configuration file in YAML
@@ -100,10 +98,8 @@ directory. See example of creating self-signed certificate below.
        -out _data/etc/letsencrypt/live/server.org/fullchain.pem \
        -subj "/C=CZ/ST=Prague/L=Prague/O=Gisquick/OU=IT Department/CN=server.org"
 
-.. note::
-   
-   For production self-signed SSL certificates will be not enough. In
-   this case can be recommended Certbot (LetsEncrypt)
+.. note:: |note| For production self-signed SSL certificates will be
+   not enough. In this case can be recommended Certbot (LetsEncrypt)
    certificates. See additional information on `GitHub
    <https://github.com/gislab-npo/gisquick/blob/master/docker/README.md>`__.
 
@@ -134,7 +130,7 @@ This command downloads required Docker images, run and compose
 them. Gunicorn logs (see lines ``20`` and ``21`` in
 :file:`docker-compose.yml`) are redirected to the terminal.
 
-.. note:: |note| Docker compose command can require Administrator rights
+.. tip:: |tip| Docker compose command can require Administrator rights
    (``sudo``). To avoid that add current user to ``docker``
    user group.
 
@@ -145,7 +141,7 @@ them. Gunicorn logs (see lines ``20`` and ``21`` in
 By default, Gisquick platform is accessible on localhost port 443 (see
 line ``33``), https://localhost
 
-.. note:: When using self-signed SSL certificates an exception in web
+.. note:: |note| When using self-signed SSL certificates an exception in web
    browser will be probably required to be added.
 
    .. figure:: ../img/installation/ssl-exception.png
