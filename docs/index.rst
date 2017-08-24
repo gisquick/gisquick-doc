@@ -38,8 +38,8 @@ Following subsections give a detailed insight into whole technology.
    other
 
 .. note:: Gisquick has been originally developed for `GIS.lab
-   <http://web.gislab.io>`__ system with aim to produce generally
-   usable web client interface. Later it was separated into a new
-   independent project usable with or without GIS.lab
+   <http://gislab-npo.github.io/gislab/>`__ system with aim to produce
+   generally usable web client interface. Later it was separated into
+   a new independent project usable with or without GIS.lab
    infrastructure.
 
