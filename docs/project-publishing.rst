@@ -214,3 +214,13 @@ And now there are no obstacles to enjoy your published project.
    :width: 750
 
    QGIS project published with Gisquick.
+
+Advanced topics
+---------------
+
+.. _table-templates:
+
+Table templates
+^^^^^^^^^^^^^^^
+
+.. todo:: To be added.

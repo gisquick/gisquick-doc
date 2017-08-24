@@ -277,6 +277,7 @@ User menu
 User menu allows to:
 
 * Log out current user
+* Open user profile page
 * Enter/Leave Full Screen mode
 * Display attributions
 * Show Help (this document)
@@ -292,4 +293,51 @@ User menu allows to:
    
    About window showing information about Project and Gisquick itself.
 
-.. todo:: Explain User Profile.
+User profile page
+-----------------
+
+User page (:menuselection:`My profile` in User menu) allows managing
+published projects, and uploading new projects.
+
+.. figure:: ./img/ui-user-menu.png
+   :width: 250px
+   
+   User profile menu.
+
+In ``My Projects`` tab user can browse published projects including
+basic metadata. Project can open by clicking on its name. 
+
+.. figure:: ./img/user-page-projects.png
+
+   List of published projects.
+   
+.. tip:: Project data are available also via WMS service, see ``WMS
+   service link``.
+
+``Action`` allows deleting project or updating table templates (see
+:ref:`table-templates` section for details).
+
+.. figure:: ./img/user-page-projects-action.png
+
+   Project actions menu.
+
+In ``Upload Project`` tab new projects can be uploaded. Note that
+existing project will be automatically overriden. Projects can be
+uploaded in ``zip`` or ``tag.gz`` formats.
+
+.. note:: |note| See project size limits in :ref:`Configuration
+   <docker-configuration>` section.
+
+.. figure:: ./img/user-page-upload.png
+
+   Upload project tab.
+
+``My account`` tab shows information about user account, see
+:doc:`../installation/user-management` section.
+
+.. figure:: ./img/user-page-account.png
+
+   Account information.
+   
+Another two menu items allows showing help page (this documenation)
+and log out the user.

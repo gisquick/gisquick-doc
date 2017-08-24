@@ -103,6 +103,8 @@ directory. See example of creating self-signed certificate below.
    certificates. See additional information on `GitHub
    <https://github.com/gislab-npo/gisquick/blob/master/docker/README.md>`__.
 
+.. _docker-configuration:
+
 There are more environmental variables which can be defined. Django
 container allows to set up:
 
