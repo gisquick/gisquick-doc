@@ -12,6 +12,10 @@ and web/mobile clients. The clients are designed with a goal to put
 together minimal set of functions for useful generic responsive web
 and mobile friendly mapping application.
 
+.. figure:: ./img/example.svg
+
+   Gisquick in action.
+
 The process of data publishing with Gisquick is quite easy. For
 client-server communication Gisquick uses open OGC standards, namely
 WMS, WMTS and WFS services. Server components can be easily deployed
