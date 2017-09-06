@@ -12,24 +12,14 @@ Source code of the plugin is available from GitHub
 <https://github.com/gislab-npo/gisquick-qgis-plugin>`_ repository and
 licensed under `GNU General Public License
 <https://github.com/gislab-npo/gisquick-qgis-plugin/blob/master/LICENSE>`__
-version 2 or later.
+version 3.
 
 Plugin can be installed in QGIS Desktop from :menuselection:`Plugins
---> Manage and Install Plugins` as other QGIS plugins.
+--> Manage and Install Plugins` as other QGIS plugins (see `QGIS
+Python Plugins Repository
+<http://plugins.qgis.org/plugins/gisquick-qgis-plugin>`__).
 
-.. important:: |imp| Currently Gisquick plugin **is not** available
-   from QGIS Plugins Repository. Therefore is necessary to register
-   new repository, see URL bellow
-
-   ::
-      
-      https://raw.githubusercontent.com/gislab-npo/gisquick-qgis-plugin/gh-pages/qgis-plugins.xml
-
-   .. figure:: ../img/installation/qgis-plugin-repo.png
-
-      Add Gisquick repository.
-
-.. figure:: ../img/installation/qgis-plugin-install.png
+.. figure:: ../img/installation/qgis-plugin-install.svg
 
    Install Gisquick QGIS plugin.
                
