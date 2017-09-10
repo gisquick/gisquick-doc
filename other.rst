@@ -64,6 +64,12 @@ Mobile
 GIS.lab Mobile is represented by dedicated hybrid Android client interface 
 built on top of the same code base as web interface with native user interface.
 
+-----------
+Development
+-----------
+
+.. include:: installation/vagrant.rst
+	     
 ---------
 Packaging
 ---------

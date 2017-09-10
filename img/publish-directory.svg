@@ -16,7 +16,7 @@
    font-size="12px"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
    sodipodi:docname="publish-directory.svg"
    style="font-style:normal;font-weight:normal;font-size:12px;font-family:Dialog;color-interpolation:auto;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto">
   <metadata
@@ -27,7 +27,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -40,12 +40,12 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1680"
-     inkscape:window-height="997"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
      id="namedview381"
      showgrid="false"
      inkscape:zoom="2.0665907"
-     inkscape:cx="229.65768"
+     inkscape:cx="130.94437"
      inkscape:cy="174.15734"
      inkscape:window-x="0"
      inkscape:window-y="27"
@@ -947,7 +947,7 @@
      transform="translate(-13,-139)"
      font-size="11px">
     <text
-       style="stroke:none"
+       style="line-height:0%;stroke:none"
        id="text151"
        clip-path="url(#clipPath2)"
        y="171.3156"
@@ -995,15 +995,15 @@
      style="font-size:11px;font-family:sans-serif;stroke-linecap:butt;stroke-miterlimit:1.45000005;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
      id="g201"
      stroke-miterlimit="1.45"
-     transform="translate(-13,-127)"
+     transform="translate(-7,-127)"
      font-size="11px">
     <text
-       style="stroke:none"
+       style="line-height:0%;stroke:none"
        id="text203"
        clip-path="url(#clipPath2)"
        y="219.53909"
        xml:space="preserve"
-       x="234.1982">vagrant</text>
+       x="234.1982">user1</text>
   </g>
   <g
      style="fill:url(#linearGradient3761);stroke:url(#linearGradient3763);shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
@@ -1035,7 +1035,7 @@
      transform="translate(-13,-127)"
      font-size="11px">
     <text
-       style="stroke:none"
+       style="line-height:0%;stroke:none"
        id="text215"
        clip-path="url(#clipPath2)"
        y="276.05991"
@@ -1072,7 +1072,7 @@
      transform="translate(-13,-127)"
      font-size="11px">
     <text
-       style="stroke:none"
+       style="line-height:0%;stroke:none"
        id="text227"
        clip-path="url(#clipPath2)"
        y="276.05991"
@@ -1109,7 +1109,7 @@
      transform="translate(-13,-127)"
      font-size="11px">
     <text
-       style="stroke:none"
+       style="line-height:0%;stroke:none"
        id="text239"
        clip-path="url(#clipPath2)"
        y="276.05991"
@@ -1146,7 +1146,7 @@
      transform="translate(-13,-127)"
      font-size="11px">
     <text
-       style="stroke:none"
+       style="line-height:0%;stroke:none"
        id="text251"
        clip-path="url(#clipPath2)"
        y="276.05991"
@@ -1184,7 +1184,7 @@
      transform="translate(-13,-127)"
      font-size="10px">
     <text
-       style="stroke:none"
+       style="line-height:0%;stroke:none"
        id="text263"
        clip-path="url(#clipPath2)"
        y="317.6366"
@@ -1221,7 +1221,7 @@
      transform="translate(-13,-127)"
      font-size="11px">
     <text
-       style="stroke:none"
+       style="line-height:0%;stroke:none"
        id="text275"
        clip-path="url(#clipPath2)"
        y="317.98279"
@@ -1259,7 +1259,7 @@
      transform="translate(29,-127)"
      font-size="11px">
     <text
-       style="stroke:none"
+       style="line-height:0%;stroke:none"
        id="text299"
        clip-path="url(#clipPath2)"
        y="317.98279"
@@ -1297,7 +1297,7 @@
      transform="translate(-13,-127)"
      font-size="10px">
     <text
-       style="stroke:none"
+       style="line-height:0%;stroke:none"
        id="text311"
        clip-path="url(#clipPath2)"
        y="317.6366"
@@ -1468,7 +1468,7 @@
      transform="translate(64.682676,-127.14547)"
      font-size="10px">
     <text
-       style="stroke:none"
+       style="line-height:0%;stroke:none"
        id="text311-0"
        clip-path="url(#clipPath2-3)"
        y="317.6366"
@@ -1512,13 +1512,13 @@
      transform="translate(100.26076,-127.63874)"
      font-size="11px">
     <text
-       style="stroke:none"
+       style="line-height:0%;stroke:none"
        id="text203-5"
        clip-path="url(#clipPath2-0)"
        y="219.53909"
        xml:space="preserve"
        x="234.1982"
-       transform="translate(8,0)">user2</text>
+       transform="translate(8)">user1</text>
   </g>
   <g
      style="font-style:normal;font-weight:normal;font-size:12px;font-family:Dialog;color-interpolation:auto;fill:url(#linearGradient3755-6-9);fill-opacity:1;stroke:url(#linearGradient3755-6-9);stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
@@ -1550,13 +1550,13 @@
      transform="translate(-125.73924,-127.63874)"
      font-size="11px">
     <text
-       style="stroke:none"
+       style="line-height:0%;stroke:none"
        id="text203-5-3"
        clip-path="url(#clipPath2-0-9)"
        y="219.53909"
        xml:space="preserve"
        x="234.1982"
-       transform="translate(8,0)">user1</text>
+       transform="translate(8)">user0</text>
   </g>
   <path
      style="fill:none;fill-rule:evenodd;stroke:#999999;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"

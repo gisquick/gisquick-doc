@@ -123,28 +123,11 @@ defined directory.
 Transferring project to publication server
 ------------------------------------------
 
-In this part is described finishing publication process,
-transferring published project to the publication server. Destination
-folder on the server can be different depending on installation
-process.
-
-When Gisquick is provided by **virtual server** controlled by Vagrant,
-see :doc:`installation/vagrant`, the publication directory
-:file:`dev/publish` is located in Gisquick source code tree from which
-virtual machine has been provisioned, see :ref:`directory layout
-<vagrant-dev-dir>`.
-
-.. figure:: img/vagrant-directory.svg
-   :align: center
-   :width: 450
-
-   Publish directory for virtual server controlled by Vagrant.
-
-In the case of **Docker-based** deployment, see
-:doc:`installation/docker`, the publication directory is defined by
-:file:`docker-compose.yml` configuration file. In the presented
-:ref:`example <docker-publish-dir>` publication directory is located
-in Gisquick source tree :file:`docker/_data/publish`.
+In this part is described finishing publication process, transferring
+published project to the publication server. Publication directory is
+defined by :file:`docker-compose.yml` configuration file. In the
+presented :ref:`example <docker-publish-dir>` publication directory is
+located in Gisquick source tree :file:`docker/_data/publish`.
 
 .. figure:: img/docker-directory.svg
    :align: center
@@ -154,9 +137,7 @@ in Gisquick source tree :file:`docker/_data/publish`.
 
 Projects in the :file:`publish` directory are split into
 sub-directories corresponding registered users, see
-:doc:`./installation/user-management` section. In the case of virtual
-server it's possible to use predefined :ref:`vagrant user
-<vagrant-user>`.
+:doc:`./installation/user-management` section.
 
 .. figure:: img/publish-directory.svg
    :align: center
@@ -169,10 +150,9 @@ server it's possible to use predefined :ref:`vagrant user
 
 Then published QGIS project (including timestamped files) with all
 associated data can be **copied** into user publish directory,
-eg. :file:`dev/publish/vagrant` or :file:`docker/_data/publish/user1`
-directory located on the publication server. In our example, the
-project will be copied into :file:`dev/publish/vagrant/prague`
-directory.
+eg. :file:`docker/_data/publish/user1` directory located on the
+publication server. In our example, the project will be copied into
+:file:`docker/_data/publish/user1/prague` directory.
 
 .. tip:: |tip| Instead of copying project files it is also possible to
    define this output directory directly by :ref:`Gisquick plugin
@@ -199,7 +179,7 @@ just ``Continue as guest``.
 
 .. _gisquick-welcome:
 
-.. figure:: img/gisquick-welcome.png
+.. figure:: img/gisquick-welcome.svg
    :align: center
    :width: 750
 

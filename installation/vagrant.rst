@@ -115,7 +115,7 @@ called from server prompt.
 
 Afterwards Gisquick can be accessed on https://localhost:8000.
  
-.. figure:: ../img/installation/vagrant-screen.png
+.. figure:: ./img/installation/vagrant-screen.png
 
 .. tip:: |tip| Use following command to run server tests from 
    ``/vagrant/dev/django`` directory.
@@ -192,3 +192,44 @@ before starting :ref:`development services <vagrant-dev-services>`.
       $ /vagrant/utils/tmux-dev.sh
       $ cd /vagrant/clients
       $ gulp build-web
+
+User management
+---------------
+
+Log in to a virtual server by
+
+.. code-block:: bash
+
+   $ vagrant ssh
+
+Afterwards on the server enter Django shell
+
+.. code-block:: bash
+
+   $ workon gisquick
+   $ python $HOME/deploy/www/manage.py shell
+
+For creating a new user account, see :ref:`User management
+<create-account>` section.
+
+.. _vagrant-user:
+   
+.. tip:: Virtual server provided by Vagrant comes with predefined
+   ``vagrant`` user account. This account can be used for testing
+   purposes. Password for this account is the same as the name,
+   ie. *vagrant*.
+
+Transferring project to publication server
+------------------------------------------
+
+Publication directory :file:`dev/publish` is located in Gisquick
+source code tree from which virtual machine has been provisioned, see
+:ref:`directory layout <vagrant-dev-dir>`.
+
+.. figure:: img/vagrant-directory.svg
+   :align: center
+   :width: 450
+
+   Publish directory for virtual server controlled by Vagrant.
+
+   

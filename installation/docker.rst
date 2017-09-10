@@ -1,5 +1,5 @@
-Deployment in Docker containers
-===============================
+Deployment of server application in Docker containers
+=====================================================
 
 Gisquick application is split into 3 services running in Docker
 containers:
