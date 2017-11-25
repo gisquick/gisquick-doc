@@ -13,51 +13,16 @@ containers:
 
 Docker images can be put together using ``docker-compose``
 command. The command reads configuration file in YAML
-language. Example of such configuration is available in Gisquick
-source code (`docker/example.docker-compose.yml
-<https://github.com/gislab-npo/gisquick/blob/master/docker/example.docker-compose.yml>`__). Simplified
-example is shown below.
+language. Sample configuration of Gisquick services is shown below.
 
-.. code-block:: yaml
+.. literalinclude:: ../_static/docker/example.docker-compose.yml
+   :language: python
    :emphasize-lines: 7,9,17,18,31,33
    :linenos:
-   
-   version: "2"
-   services:
-     qgisserver:
-       restart: always
-       image: gisquick/qgis-server
-       volumes:
-         - ./_data/publish:/publish/:ro
-       ports:
-         - "9000:90"
 
-     django:
-       restart: always
-       image: gisquick/django
-       links:
-         - qgisserver
-       volumes:
-         - ./_data/media:/var/www/gisquick/media/
-         - ./_data/data:/var/www/gisquick/data/
-         - ./_data/publish:/publish/
-       environment:
-         - GUNICORN_ERRORLOG=-
-         - GUNICORN_ACCESSLOG=-
-
-     nginx:
-       restart: unless-stopped
-       image: gisquick/nginx
-       links:
-         - django
-       volumes_from:
-         - django:ro
-       volumes:
-         - ./_data/etc/letsencrypt/:/etc/letsencrypt/
-       ports:
-         - "443:443"
-       environment:
-         - NGINX_HOST=server.org
+.. note:: |note| Sample configuration is also available from
+	  Gisquick source code: `docker/example.docker-compose.yml
+	  <https://github.com/gislab-npo/gisquick/blob/master/docker/example.docker-compose.yml>`__.
 
 .. _docker-publish-dir:
            
@@ -67,14 +32,14 @@ directory which is used for published Gisquick projects (see line
 ``7``). *Django Application* stores SQLite database in :file:`data`
 directory (line ``17``), tile cache is managed in :file:`media`
 directory (line ``18``). SSL certificates used by *Nginx Web Server*
-are stored in directory :file:`letsencrypt` (line ``31``).
+are stored in directory :file:`letsencrypt` (line ``38``).
 
 .. tip:: |tip| Use :file:`certbot` directory instead of
    :file:`letsencrypt` when it is intended to use Webroot mode
    to generate new or renew existing Certbot's SSL certificates.
 
 QGIS server is running in this case on port 90 (see line ``9``), Nginx
-web server on default port for HTTPS protocol 443 (line ``33``).
+web server on default port for HTTPS protocol 443 (line ``41``).
 
 Before composing Docker images, shared directories must be created on
 host machine. In shown example all directories are located in the same
@@ -85,18 +50,18 @@ folder as :file:`docker-compose.yml` file.
    $ mkdir -p _data/publish _data/media _data/data _data/etc/letsencrypt/live
 
 Directory for SSL certificates is defined by :envvar:`NGINX_HOST`
-environmental variable (see line ``35``) located in :file:`live`
+environmental variable (see line ``43``) located in :file:`live`
 directory. For sample configuration, the SSL certificates will be
-located in :file:`./_data/etc/letsencrypt/live/server.org`
+located in :file:`./_data/etc/letsencrypt/live/server`
 directory. See example of creating self-signed certificate below.
 
    .. code-block:: bash
                 
-      $ mkdir -p _data/etc/letsencrypt/live/server.org
+      $ mkdir -p _data/etc/letsencrypt/live/server
       $ openssl req -x509 -nodes -days 3650 -newkey rsa:2048 \
-       -keyout _data/etc/letsencrypt/live/server.org/privkey.pem \
-       -out _data/etc/letsencrypt/live/server.org/fullchain.pem \
-       -subj "/C=CZ/ST=Prague/L=Prague/O=Gisquick/OU=IT Department/CN=server.org"
+       -keyout _data/etc/letsencrypt/live/server/privkey.pem \
+       -out _data/etc/letsencrypt/live/server/fullchain.pem \
+       -subj "/C=CZ/ST=Prague/L=Prague/O=Gisquick/OU=IT Department/CN=server"
 
 .. note:: |note| For production self-signed SSL certificates will be
    not enough. In this case can be recommended Certbot (LetsEncrypt)
@@ -124,12 +89,24 @@ Example of additional configuration:
 
 At this point ``docker-compose`` command can be run
 
+.. note:: |note| Notes about installing Docker in Debian Stretch:
+
+   .. code-block:: bash
+
+      $ sudo apt update
+      $ sudo apt install -y apt-transport-https ca-certificates wget software-properties-common
+      $ wget https://download.docker.com/linux/debian/gpg
+      $ sudo apt-key add gpg
+      $ echo "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable" | sudo tee -a /etc/apt/sources.list.d/docker.list
+      $ sudo apt update
+      $ sudo apt install -y docker-ce docker-compose
+      
 .. code-block:: bash
 
    $ docker-compose up
 
 This command downloads required Docker images, run and compose
-them. Gunicorn logs (see lines ``20`` and ``21`` in
+them. Gunicorn logs (see lines ``22`` and ``23`` in
 :file:`docker-compose.yml`) are redirected to the terminal.
 
 .. tip:: |tip| Docker compose command can require Administrator rights
