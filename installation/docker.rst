@@ -153,9 +153,34 @@ And up-to-date container can be afterwards combined as described above.
 Useful tips
 -----------
 
+Access running Docker containers
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 Example of accessing Bash on ``gisquick/django`` container:
 
 .. code-block:: bash
                 
    export DJANGO_CONTAINER_ID=`docker ps -qf "ancestor=gisquick/django"`
    docker exec -it $DJANGO_CONTAINER_ID bash
+
+Run Gisquick over HTTP
+^^^^^^^^^^^^^^^^^^^^^^
+
+Download `gisquick.template <../_static/docker/gisquick.template>`_
+into directory where :file:`docker-compose.yml` lives. Change NGINX service
+configuration in order to:
+
+* mount volume with custom Gisquick template (line ``37``)
+
+.. code-block:: yaml
+
+     - ./gisquick.template:/etc/nginx/conf.d/gisquick.template
+
+* change port forwaring (line ``41``) to
+
+.. code-block:: yaml
+
+     - "8000:80"
+
+After restarting Gisquick instance, the application will be accessible
+on http://localhost:8000.
