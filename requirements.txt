@@ -1,1 +1,1 @@
-sphinx_rtd_theme==0.2.5b1
+-r requirements/rtd.txt
