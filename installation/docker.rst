@@ -17,7 +17,7 @@ language. Sample configuration of Gisquick services is shown below.
 
 .. literalinclude:: ../_static/docker/example.docker-compose.yml
    :language: python
-   :emphasize-lines: 7,9,17,18,31,33
+   :emphasize-lines: 7,9,17,18,22,23,37,38,41,43
    :linenos:
 
 .. note:: |note| Sample configuration is also available from
@@ -118,7 +118,7 @@ them. Gunicorn logs (see lines ``22`` and ``23`` in
       usermod -aG docker <my-user-name>
 
 By default, Gisquick platform is accessible on localhost port 443 (see
-line ``33``), https://localhost
+line ``41``), https://localhost
 
 .. note:: |note| When using self-signed SSL certificates an exception in web
    browser will be probably required to be added.
