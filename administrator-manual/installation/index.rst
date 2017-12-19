@@ -17,13 +17,13 @@ can be easily downloaded from GitHub repository using ``git`` command.
 
    $ git clone https://github.com/gislab-npo/gisquick.git
 
-.. seealso:: |see| See also :doc:`deployment of virtual server by
-   Vagrant <vagrant>` section especially in the case of development
-   purposes.
-
 .. toctree::
    :maxdepth: 1
 
    docker
-   user-management
    plugin
+
+.. seealso:: |see| See also :doc:`deployment of virtual server by
+   Vagrant <vagrant>` section especially in the case of development
+   purposes.
+   

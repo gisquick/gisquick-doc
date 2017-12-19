@@ -15,7 +15,7 @@ Docker images can be put together using ``docker-compose``
 command. The command reads configuration file in YAML
 language. Sample configuration of Gisquick services is shown below.
 
-.. literalinclude:: ../_static/docker/example.docker-compose.yml
+.. literalinclude:: ../../_static/docker/example.docker-compose.yml
    :language: python
    :emphasize-lines: 7,9,17,18,22,23,37,38,41,43
    :linenos:
@@ -123,9 +123,9 @@ line ``41``), https://localhost
 .. note:: |note| When using self-signed SSL certificates an exception in web
    browser will be probably required to be added.
 
-   .. figure:: ../img/installation/ssl-exception.png
+   .. figure:: ../../img/installation/ssl-exception.png
 
-.. figure:: ../img/installation/docker-screen.png
+.. figure:: ../../img/installation/docker-screen.png
 
    Gisquick login screen.
 

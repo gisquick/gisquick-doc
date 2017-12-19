@@ -42,9 +42,9 @@ See Gisquick `GitHub repository <https://github.com/gislab-npo/gisquick>`__.
 ``clients``
   web and mobile client interfaces
 ``docker``
-  Docker recipes, see :doc:`./installation/docker`
+  Docker recipes, see :doc:`./administrator-manual/installation/docker`
 ``provision``
-  development environment provisioning configuration with Vagrant/Ansible, see :doc:`./installation/vagrant`
+  development environment provisioning configuration with Vagrant/Ansible, see :doc:`./administrator-manual/installation/vagrant`
 ``server``
   Django server
 ``utils``
@@ -53,9 +53,9 @@ See Gisquick `GitHub repository <https://github.com/gislab-npo/gisquick>`__.
 See also related GitHub repositories:
 
 Gisquick QGIS plugin
-  https://github.com/gislab-npo/gisquick-qgis-plugin, see :doc:`./installation/plugin`.
-Gisquick documentation
-  https://github.com/gislab-npo/gisquick-doc
+https://github.com/gislab-npo/gisquick-qgis-plugin, see
+:doc:`./administrator-manual/installation/plugin`.  Gisquick
+documentation https://github.com/gislab-npo/gisquick-doc
   
 ------
 Mobile

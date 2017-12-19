@@ -1,22 +1,22 @@
-.. |group-switcher| image:: ./img/ui-layer-group-switcher.png
+.. |group-switcher| image:: ../img/ui-layer-group-switcher.png
    :width: 2.5em
-.. |layer-attributes| image:: ./img/ui-layer-attributes.png
+.. |layer-attributes| image:: ../img/ui-layer-attributes.png
    :width: 2.5em
-.. |zoom-to| image:: ./img/ui-zoom-to.png
+.. |zoom-to| image:: ../img/ui-zoom-to.png
    :width: 2.5em
-.. |clear-filter| image:: ./img/ui-clear-filter.png
+.. |clear-filter| image:: ../img/ui-clear-filter.png
    :width: 2.5em
-.. |zoom-geolocation| image:: ./img/ui-zoom-tools-geolocation.png
+.. |zoom-geolocation| image:: ../img/ui-zoom-tools-geolocation.png
    :width: 2.5em
-.. |zoom-in-out| image:: ./img/ui-zoom-tools-in-out.png
+.. |zoom-in-out| image:: ../img/ui-zoom-tools-in-out.png
    :width: 2.5em
-.. |zoom-extent| image:: ./img/ui-zoom-tools-extent.png
+.. |zoom-extent| image:: ../img/ui-zoom-tools-extent.png
    :width: 2.5em
-.. |identify| image:: ./img/ui-identify.png
+.. |identify| image:: ../img/ui-identify.png
    :width: 2.2em
-.. |measure| image:: ./img/ui-measure.png
+.. |measure| image:: ../img/ui-measure.png
    :width: 2.2em
-.. |print| image:: ./img/ui-print.png
+.. |print| image:: ../img/ui-print.png
    :width: 2.2em
  
 ================
@@ -37,7 +37,7 @@ left-bottom corner, clockwise) by *map scale* (``4``), :ref:`tools
 statusbar showing current scale, projection and map coordinates of the
 cursor (``8``).
 
-.. figure:: ./img/gisquick-ui.svg
+.. figure:: ../img/gisquick-ui.svg
 
    Gisquick user interface description.
 
@@ -49,7 +49,7 @@ Content management tools
 Basic project metadata - project description - is accessible by
 question-mark, see figure below.
 
-.. figure:: ./img/project-info.svg
+.. figure:: ../img/project-info.svg
 
    Project description.
 
@@ -59,7 +59,7 @@ Content management widget is split into three major tabs:
 * **Overlay Layers**
 * **Legend**
 
-.. figure:: ./img/content-tabs.png
+.. figure:: ../img/content-tabs.png
    :width: 250px
            
    Content tabs.
@@ -68,7 +68,7 @@ Content management widget is split into three major tabs:
 list of base layers is defined by publication process as described in
 :ref:`Project publishing <publication-base-layers>` section.
 
-.. figure:: ./img/ui-base-layers.png
+.. figure:: ../img/ui-base-layers.png
    :width: 250px
            
    Switching between base layers.
@@ -77,19 +77,19 @@ list of base layers is defined by publication process as described in
 see :ref:`Project publishing <publication-topics>` section, or
 controlling overlay layers one by one.
 
-.. figure:: ./img/ui-overlay-layers.png
+.. figure:: ../img/ui-overlay-layers.png
    :width: 250px
            
    Topics and layers switcher.
 
-.. figure:: ./img/ui-topics.png
+.. figure:: ../img/ui-topics.png
    :width: 250px
            
    Switching between topics.
 
 In ``Layers`` mode the overlay layers can be switch on/off one by one.
 
-.. figure:: ./img/ui-map-layers.png
+.. figure:: ../img/ui-map-layers.png
    :width: 250px
            
    Switch on/off overlay layers.
@@ -106,19 +106,19 @@ In ``Layers`` mode attribute data can be accessed by
 |layer-attributes|. Attribute table is displayed in bottom part, see
 figure below.
 
-.. figure:: ./img/ui-attributes.svg
+.. figure:: ../img/ui-attributes.svg
 
    Layer attribute table.
 
 Attribute table allows filtering data based on simple queries, see
 figures below.
 
-.. figure:: ./img/ui-attribute-filter-0.png
+.. figure:: ../img/ui-attribute-filter-0.png
    :width: 100px
            
    Choose operator for attribute filter.
 
-.. figure:: ./img/ui-attribute-filter-1.svg
+.. figure:: ../img/ui-attribute-filter-1.svg
 
    Define filter and ``refresh`` attribute table view.
 
@@ -131,7 +131,7 @@ Every row in attribute table has *Zoom to* button |zoom-to| which
 enables zooming and centering related features in map canvas, see
 figure below.
 
-.. figure:: ./img/ui-zoom-to-feature.svg
+.. figure:: ../img/ui-zoom-to-feature.svg
 
    Zoom into selected feature.
 
@@ -151,7 +151,7 @@ Zoom tools enables controlling map view.
 * Zoom in/out |zoom-in-out|
 * Zoom to extent |zoom-extent|
 
-.. figure:: ./img/geolocation.svg
+.. figure:: ../img/geolocation.svg
 
    Geolocation in action.
 
@@ -173,13 +173,13 @@ Identify
 By default, features are identified in all visible layers (in the
 example below in Schools and District layers).
 
-.. figure:: ./img/identify.svg
+.. figure:: ../img/identify.svg
 
    Identify schools and district layer.
 
 This settings can be changed in ``Identification`` combo box.
 
-.. figure:: ./img/identification-layers.png
+.. figure:: ../img/identification-layers.png
    :width: 250px
       
    Change layer priority for identification.
@@ -193,12 +193,12 @@ Three measurement modes are available:
 * Distance
 * Area
 
-.. figure:: ./img/ui-measure-tools.png
+.. figure:: ../img/ui-measure-tools.png
    :width: 250px
    
    Measurement tools.
 
-.. figure:: ./img/measure-location.svg
+.. figure:: ../img/measure-location.svg
 
    Location measurement example. Menu highlighted in red box.
 
@@ -209,12 +209,12 @@ Location menu allows:
   supported: QGIS project system and WGS-84 (EPSG:4326) known as "GPS
   coordinates".
 
-.. figure:: ./img/ui-location-menu.png
+.. figure:: ../img/ui-location-menu.png
    :width: 250px
            
    Location menu.
 
-.. figure:: ./img/measure-distance.svg
+.. figure:: ../img/measure-distance.svg
 
    Distance measurement example. Menu highlighted in red box.
 
@@ -224,12 +224,12 @@ Distance menu allows:
 * Change units. Currently two systems are supported: international
   (EU) and imperial (UK, US)
 
-.. figure:: ./img/ui-distance-menu.png
+.. figure:: ../img/ui-distance-menu.png
    :width: 250px
            
    Distance menu.
 
-.. figure:: ./img/measure-area.svg
+.. figure:: ../img/measure-area.svg
 
    Area measurement example. Menu highlighted in red box.
 
@@ -239,7 +239,7 @@ Area menu allows:
 * Change units. Currently two systems are supported: international
   (EU) and imperial (UK, US)
 
-.. figure:: ./img/ui-area-menu.png
+.. figure:: ../img/ui-area-menu.png
    :width: 250px
            
    Area menu.
@@ -284,11 +284,11 @@ User menu allows to:
 * Show Project About (see :ref:`Project publishing
   <publication-metadata>` section)
 
-.. figure:: ./img/map-attribution.svg
+.. figure:: ../img/map-attribution.svg
 
    Map attributions displayed.
    
-.. figure:: ./img/about-window.png
+.. figure:: ../img/about-window.png
    :width: 300px
    
    About window showing information about Project and Gisquick itself.
@@ -299,7 +299,7 @@ User profile page
 User page (:menuselection:`My profile` in User menu) allows managing
 published projects, and uploading new projects.
 
-.. figure:: ./img/ui-user-menu.png
+.. figure:: ../img/ui-user-menu.png
    :width: 250px
    
    User profile menu.
@@ -307,7 +307,7 @@ published projects, and uploading new projects.
 In ``My Projects`` tab user can browse published projects including
 basic metadata. Project can open by clicking on its name. 
 
-.. figure:: ./img/user-page-projects.png
+.. figure:: ../img/user-page-projects.png
 
    List of published projects.
    
@@ -317,7 +317,7 @@ basic metadata. Project can open by clicking on its name.
 ``Action`` allows deleting project or updating table templates (see
 :ref:`table-templates` section for details).
 
-.. figure:: ./img/user-page-projects-action.png
+.. figure:: ../img/user-page-projects-action.png
 
    Project actions menu.
 
@@ -328,14 +328,14 @@ uploaded in ``zip`` or ``tag.gz`` formats.
 .. note:: |note| See project size limits in :ref:`Configuration
    <docker-configuration>` section.
 
-.. figure:: ./img/user-page-upload.png
+.. figure:: ../img/user-page-upload.png
 
    Upload project tab.
 
 ``My account`` tab shows information about user account, see
-:doc:`../installation/user-management` section.
+:doc:`../administrator-manual/user-management` section.
 
-.. figure:: ./img/user-page-account.png
+.. figure:: ../img/user-page-account.png
 
    Account information.
    

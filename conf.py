@@ -92,6 +92,7 @@ pygments_style = 'sphinx'
 rst_epilog = """
 .. include:: .substitutions1
 .. include:: ../.substitutions2
+.. include:: ../../.substitutions3
 """
 
 # -- Options for HTML output ----------------------------------------------

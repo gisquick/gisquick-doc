@@ -19,7 +19,7 @@ Plugin can be installed in QGIS Desktop from :menuselection:`Plugins
 Python Plugins Repository
 <http://plugins.qgis.org/plugins/gisquick-qgis-plugin>`__).
 
-.. figure:: ../img/installation/qgis-plugin-install.svg
+.. figure:: ../../img/installation/qgis-plugin-install.svg
 
    Install Gisquick QGIS plugin.
                
@@ -28,7 +28,7 @@ plugin toolbar.
 
 .. _gisquick-qgis-plugin-logo:
 
-.. figure:: ../img/logo.png
+.. figure:: ../../img/logo.png
    :align: center
    :width: 64
 

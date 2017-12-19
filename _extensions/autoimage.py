@@ -8,8 +8,13 @@ from docutils.parsers.rst.directives.images import Figure
 
 
 def find_image(path, filename):
-    dirs = [os.path.join(path,o) for o in os.listdir(path) if os.path.isdir(os.path.join(path,o))]
-    dirs.insert(0, '.')
+    dirs = ['.']
+    for root, rdirs, rfiles in os.walk(path):
+        if '.git' in root or '_build' in root or '_static' in root:
+            continue
+        if rdirs:
+            dirs += [(os.path.join(root, d)) for d in rdirs]
+
     for path in dirs:
         fname = os.path.join(path, filename)
         if os.path.exists(fname + '.pdf'):

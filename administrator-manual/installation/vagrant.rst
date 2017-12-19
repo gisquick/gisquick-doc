@@ -59,7 +59,7 @@ created:
 ``dev/cache`` 
   directory for caching map tiles
 ``dev/publish`` 
-  directory for QGIS projects publishing (this directory is crucial for :doc:`../project-publishing`)
+  directory for QGIS projects publishing (this directory is crucial for :doc:`../../user-manual/project-publishing`)
 
 Created virtual machine can be accessed via ``ssh`` vagrant command
 (must be called also from source code root :file:`gisquick`
@@ -115,7 +115,7 @@ called from server prompt.
 
 Afterwards Gisquick can be accessed on https://localhost:8000.
  
-.. figure:: ../img/installation/vagrant-screen.png
+.. figure:: ../../img/installation/vagrant-screen.png
 
 .. tip:: |tip| Use following command to run server tests from 
    ``/vagrant/dev/django`` directory.
@@ -226,7 +226,7 @@ Publication directory :file:`dev/publish` is located in Gisquick
 source code tree from which virtual machine has been provisioned, see
 :ref:`directory layout <vagrant-dev-dir>`.
 
-.. figure:: ../img/vagrant-directory.svg
+.. figure:: ../../img/vagrant-directory.svg
    :align: center
    :width: 450
 

@@ -31,14 +31,34 @@ for users is published on `GitHub
 
 Following subsections give a detailed insight into whole technology.
 
+-----------
+User manual
+-----------
+
 .. toctree::
    :maxdepth: 2
-   :numbered:
 
-   installation/index
-   project-publishing
-   user-interface
-   datasets   
+   user-manual/project-publishing
+   user-manual/user-interface
+   user-manual/datasets
+
+--------------------
+Administrator manual
+--------------------
+
+.. toctree::
+   :maxdepth: 2
+
+   administrator-manual/installation/index
+   administrator-manual/user-management
+
+--------
+See also
+--------
+
+.. toctree::
+   :maxdepth: 2
+
    other
 
 .. note:: Gisquick has been originally developed for `GIS.lab
