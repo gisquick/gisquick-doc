@@ -293,6 +293,8 @@ User menu allows to:
    
    About window showing information about Project and Gisquick itself.
 
+.. _user-profile-page:
+
 User profile page
 -----------------
 

@@ -136,13 +136,77 @@ archive, which can be easily uploaded to the publication server, see
 Transferring project to publication server
 ------------------------------------------
 
-Publication process is finished by transferring published project to
-the publication server. The procedure will be explain on **demo
+Publication process is finished by transferring project to the
+publication server. The procedure will be explained on **demo
 publication server** (https://projects.gisquick.org).
 
-.. note:: |note| The procedure can differ when running own Gisquick
-   instance.
+.. note:: |note| The publication procedure can differ when running own
+   Gisquick instance.
 
+First of all a new user account must be created on publication
+server. This can be done easily by filling registration form available
+at https://projects.gisquick.org/accounts/register/.
+
+.. figure:: ../img/gisquick-new-account-0.svg
+
+   Registration form for creating a new user account.
+
+After pressing ``CREATE ACCOUNT`` button an confirmation mail should
+be send to given e-mail address.
+
+.. figure:: ../img/gisquick-new-account-1.svg
+   :width: 75%
+
+   Completation of registration process will be done by pressing
+   ``ACTIVATE ACCOUNT`` button.
+
+Afterwards a new user is notified about successfull singing-in.
+
+.. figure:: ../img/gisquick-new-account-2.svg
+
+   A new user account has been successfully created.
+
+After clicking on ``CONTINUE`` button a new user will be redicted to
+the publication server welcome screen.
+
+.. figure:: ../img/gisquick-new-account-3.svg
+
+   Gisquick demo welcome screen.
+
+The user can log-in using credentials (user name and password). After
+log-in Gisquick loads an empty project.
+
+.. figure:: ../img/gisquick-new-account-4.png
+
+   Empty Gisquick project loaded by default.
+
+In the next step the user can upload prepared project zip file created
+by Gisquick plugin as described in section above. In the user menu go
+to ``My profile`` (see :ref:`User profile page <user-profile-page>`
+for details). Go to ``Upload project``, enter project zip file and
+upload the file using ``Upload`` button.
+
+.. figure:: ../img/user-page-upload.png
+
+   Upload project zip file.
+
+After successfull upload go to ``My Projects`` and find your first
+published project.
+
+.. figure:: ../img/user-page-projects.png
+
+   List of user published projects.
+
+
+Click on it's name and enjoy Gisquick!
+
+.. _gisquick-we-published:
+
+.. figure:: ../img/gisquick-published.png
+   :align: center
+   :width: 750
+
+   QGIS project published with Gisquick.
 
 Notes for advanced users running testing environment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -202,16 +266,6 @@ for now, you can just ``Continue as guest``.
    :width: 750
 
    Gisquick welcome screen.
-
-And now there are no obstacles to enjoy your published project.
-
-.. _gisquick-we-published:
-
-.. figure:: ../img/gisquick-published.png
-   :align: center
-   :width: 750
-
-   QGIS project published with Gisquick.
 
 Advanced topics
 ---------------
