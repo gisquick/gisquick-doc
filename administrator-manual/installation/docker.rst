@@ -166,7 +166,7 @@ Example of accessing Bash on ``gisquick/django`` container:
 Run Gisquick over HTTP
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Download `gisquick.template <../_static/docker/gisquick.template>`_
+Download `gisquick.template <../../_static/docker/gisquick.template>`_
 into directory where :file:`docker-compose.yml` lives. Change NGINX service
 configuration in order to:
 
