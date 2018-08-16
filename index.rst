@@ -29,6 +29,8 @@ Gisquick’s development, including source code, deployment and support
 for users is published on `GitHub
 <https://github.com/gislab-npo/gisquick>`__.
 
+.. warning:: Gisquick plugin is currently available only for **QGIS 2.x**!
+
 Following subsections give a detailed insight into whole technology.
 
 -----------
