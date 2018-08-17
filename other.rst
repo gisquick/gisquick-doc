@@ -56,47 +56,6 @@ Gisquick QGIS plugin
 https://github.com/gislab-npo/gisquick-qgis-plugin, see
 :doc:`./administrator-manual/installation/plugin`.  Gisquick
 documentation https://github.com/gislab-npo/gisquick-doc
-  
-------
-Mobile
-------
-
-GIS.lab Mobile is represented by dedicated hybrid Android client interface 
-built on top of the same code base as web interface with native user interface.
-
------------
-Development
------------
-
-.. include:: installation/vagrant.rst
-	     
----------
-Packaging
----------
-
-* Gisquick application
-
-.. code:: sh
-
-   $ cd /vagrant/server \
-     && \
-     python ./setup.py sdist
-
-* GIS.lab Mobile
-
-.. code:: sh
-
-   $ nvm use stable
-   
-   $ export ANDROID_HOME=/home/vagrant/dev/apps/android-sdk-linux \
-            PATH=$PATH:/home/vagrant/dev/apps/android-sdk-linux/tools:/home/vagrant/dev/apps/android-sdk-linux/platform-tools \
-            ANDROID_BUILD=ant \
-     && \
-     cd /vagrant/clients/mobile/cordova-app \
-     && \
-     cordova build android
-
-.. todo:: |todo| Add instructions how to clean environment before build.
 
 -------
 License
@@ -105,3 +64,11 @@ License
 `GNU General Public License
 <https://github.com/gislab-npo/gisquick/blob/master/LICENSE>`__ version 2 or
 later
+
+------------------------------------------
+Alternative deploying method using Vagrant
+------------------------------------------
+
+See :ref:`docker` for recommended deployment procedure.
+
+.. include:: administrator-manual/installation/vagrant.rst

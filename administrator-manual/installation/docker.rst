@@ -1,3 +1,5 @@
+.. _docker:
+
 Deployment of server application in Docker containers
 =====================================================
 
