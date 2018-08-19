@@ -43,7 +43,8 @@ See Gisquick `GitHub repository <https://github.com/gislab-npo/gisquick>`__.
   web and mobile client interfaces
 ``docker``
   Docker recipes, see :doc:`./administrator-manual/installation/docker`
-``provision``
+..
+  ``provision``
   development environment provisioning configuration with Vagrant/Ansible, see :doc:`./administrator-manual/installation/vagrant`
 ``server``
   Django server
@@ -65,10 +66,11 @@ License
 <https://github.com/gislab-npo/gisquick/blob/master/LICENSE>`__ version 2 or
 later
 
-------------------------------------------
-Alternative deploying method using Vagrant
-------------------------------------------
-
-See :ref:`docker` for recommended deployment procedure.
-
-.. include:: administrator-manual/installation/vagrant.rst
+..
+   ------------------------------------------
+   Alternative deploying method using Vagrant
+   ------------------------------------------
+   
+   See :ref:`docker` for recommended deployment procedure.
+   
+   .. include:: administrator-manual/installation/vagrant.rst
