@@ -51,12 +51,17 @@ See Gisquick `GitHub repository <https://github.com/gislab-npo/gisquick>`__.
 ``utils``
   Utilities
 
-See also related GitHub repositories:
+See also other Gisquick GitHub repositories:
 
-Gisquick QGIS plugin
-https://github.com/gislab-npo/gisquick-qgis-plugin, see
-:doc:`./administrator-manual/installation/plugin`.  Gisquick
-documentation https://github.com/gislab-npo/gisquick-doc
+* `Gisquick QGIS plugin <https://github.com/gislab-npo/gisquick-qgis-plugin>`__
+* `Gisquick documentation <https://github.com/gislab-npo/gisquick-doc>`__
+
+--------
+Releases
+--------
+
+* `Gisquick <https://github.com/gislab-npo/gisquick/releases>`__
+* `Gisquick QGIS plugin <https://github.com/gislab-npo/gisquick-qgis-plugin/releases>`__
 
 -------
 License
