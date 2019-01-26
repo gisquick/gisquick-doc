@@ -9,7 +9,7 @@ command will identify Django container and enter Django shell.
 
 .. code-block:: bash
                 
-   $ docker exec -it `docker ps -qf "ancestor=gisquick/django"` django-admin shell
+   $ docker exec -it `docker ps -qf "ancestor=gisquick/django:1.0.0"` django-admin shell
 
 .. _create-account:
 
