@@ -59,11 +59,11 @@ directory. See example of creating self-signed certificate below.
 
    .. code-block:: bash
                 
-      $ mkdir -p _data/etc/letsencrypt/live/server
+      $ mkdir -p _data/etc/letsencrypt/live/localhost
       $ openssl req -x509 -nodes -days 3650 -newkey rsa:2048 \
-       -keyout _data/etc/letsencrypt/live/server/privkey.pem \
-       -out _data/etc/letsencrypt/live/server/fullchain.pem \
-       -subj "/C=CZ/ST=Prague/L=Prague/O=Gisquick/OU=IT Department/CN=server"
+       -keyout _data/etc/letsencrypt/live/localhost/privkey.pem \
+       -out _data/etc/letsencrypt/live/localhost/fullchain.pem \
+       -subj "/C=CZ/ST=Prague/L=Prague/O=Gisquick/OU=IT Department/CN=localhost"
 
 .. note:: |note| For production self-signed SSL certificates will be
    not enough. In this case can be recommended Certbot (LetsEncrypt)
