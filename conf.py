@@ -19,7 +19,7 @@ import sphinx_rtd_theme
 sys.path.append(os.path.abspath('_extensions'))
 
 extensions = ['sphinx.ext.autodoc', 'sphinx.ext.doctest', 'sphinx.ext.todo',
-              'sphinx.ext.coverage', 'sphinx.ext.pngmath', 'sphinx.ext.ifconfig',
+              'sphinx.ext.coverage', 'sphinx.ext.imgmath', 'sphinx.ext.ifconfig',
 	      'sphinx.ext.autosummary', 'sphinx.ext.graphviz',
     	      'sphinx.ext.intersphinx', 'sphinx.ext.todo', 'autoimage','numfig']
 
@@ -40,7 +40,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Gisquick'
-copyright = u'2016-2018, Gisquick team'
+copyright = u'2016-2019, Gisquick team'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
