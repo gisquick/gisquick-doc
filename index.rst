@@ -1,8 +1,8 @@
 .. _gisquick:
  
-=========
- Gisquick
-=========
+========
+Gisquick
+========
 
 Gisquick (http://gisquick.org) is designed as an **open source
 platform for publishing geospatial data** in the sense of rapid
@@ -66,4 +66,3 @@ See also
    generally usable web client interface. Later it was separated into
    a new independent project usable with or without GIS.lab
    infrastructure.
-
