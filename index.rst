@@ -8,7 +8,7 @@ Gisquick (http://gisquick.org) is designed as an **open source
 platform for publishing geospatial data** in the sense of rapid
 sharing `QGIS <http://qgis.org>`__ projects on the web. The platform
 consists of QGIS plugin, Django-based server application, QGIS server,
-and web/mobile clients. The clients are designed with a goal to put
+and web client. The clients are designed with a goal to put
 together minimal set of functions for useful generic responsive web
 and mobile friendly mapping application.
 
