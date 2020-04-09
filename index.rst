@@ -1,5 +1,5 @@
 .. _gisquick:
- 
+
 ========
 Gisquick
 ========
