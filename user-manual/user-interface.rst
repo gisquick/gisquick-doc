@@ -18,20 +18,20 @@
    :width: 2.2em
 .. |print| image:: ../img/ui-print.png
    :width: 2.2em
- 
+
 ================
- User Interface
+User Interface
 ================
 
 The Gisquick clients are designed with a goal to put together minimal
 set of functions for useful generic responsive web and mobile friendly
 mapping application.
 
-The major part of the clients User Interface (UI) is occupied by *map
+The major part of the client's User Interface (UI) are occupied by *map
 canvas* (``1``). On the left side is located :ref:`content management
-tools <content-menu>` (``2``) which is possible to hide by button on
-its right side (``3``). Corners of map canvas are filled by (from
-left-bottom corner, clockwise) by *map scale* (``4``), :ref:`tools
+tools <content-menu>` (``2``) which can be hidden using button on
+its right side (``3``). Corners of map canvas are filled up (clockwise from
+bottom left corner) with *map scale* (``4``), :ref:`tools
 <tool-menu>` (``5``), :ref:`user menu <user-menu>` (``6``) and
 :ref:`zoom tools <zoom-menu>` (``7``). In the bottom part is located
 statusbar showing current scale, projection and map coordinates of the
@@ -46,8 +46,8 @@ cursor (``8``).
 Content management tools
 ========================
 
-Basic project metadata - project description - is accessible by
-question-mark, see figure below.
+Basic project metadata - project description - are accessible by
+question mark, see figure below.
 
 .. figure:: ../img/project-info.svg
 
@@ -97,7 +97,12 @@ In ``Layers`` mode the overlay layers can be switch on/off one by one.
 .. tip:: |tip| It is also possible to switch on/off group of layers
    |group-switcher|.
 
-.. todo:: Explain legend.
+``Legend`` tab depicts currently selected layers and topics from previous tab.
+
+.. figure:: ../img/ui-legend.png
+   :width: 250px
+           
+   Legend.
 
 Attribute data
 --------------
@@ -124,7 +129,7 @@ figures below.
 
 .. tip:: |tip| By default, attribute table shows only few rows. The
    number of displayed rows can be controlled in status bar by ``Rows
-   by page``. Attributes can be also filter by map canvas ``Filter to
+   by page``. Attributes can be also filtered by map canvas ``Filter to
    visible area``.
 
 Every row in attribute table has *Zoom to* button |zoom-to| which
@@ -145,7 +150,7 @@ figure below.
 Zoom tools
 ==========
 
-Zoom tools enables controlling map view.
+Zoom tools enable controlling map view.
 
 * Geolocation |zoom-geolocation|
 * Zoom in/out |zoom-in-out|
@@ -164,7 +169,7 @@ Tools
 
 Two basic tools are available:
 
-* Identify |identify|, and
+* Identify |identify| and
 * Measurement |measure|
 
 Identify
@@ -204,9 +209,9 @@ Three measurement modes are available:
 
 Location menu allows:
 
-* Zoom to location
+* Zoom to location.
 * Change spatial reference system. By default two system are
-  supported: QGIS project system and WGS-84 (EPSG:4326) known as "GPS
+  supported: QGIS project system and WGS-84 (EPSG: 4326) known as "GPS
   coordinates".
 
 .. figure:: ../img/ui-location-menu.png
@@ -220,8 +225,8 @@ Location menu allows:
 
 Distance menu allows:
 
-* Zoom to distance
-* Change units. Currently two systems are supported: international
+* Zoom to distance.
+* Change units. Currently, two systems are supported: international
   (EU) and imperial (UK, US)
 
 .. figure:: ../img/ui-distance-menu.png
@@ -235,7 +240,7 @@ Distance menu allows:
 
 Area menu allows:
 
-* Zoom to distance
+* Zoom to distance.
 * Change units. Currently two systems are supported: international
   (EU) and imperial (UK, US)
 
@@ -244,7 +249,7 @@ Area menu allows:
            
    Area menu.
 
-.. note:: Currently **no snapping** to features is supported by
+.. note:: Currently, **no snapping** to features is supported by
           measurement tools.
 
 .. _print-tool:
@@ -252,13 +257,12 @@ Area menu allows:
 Print tool
 ----------
 
-|print| The main idea is, that once print is activated in Gisquick, it
-means that before :doc:`project publication <project-publishing>` is
-defined map composer in QGIS Desktop, it will download raw print
-output from QGIS Server using GetPrint request and will allow
+|print| Before :doc:`project publication <project-publishing>`, the
+print tool can be actvivated in Gisquick, which enables one to
+download raw output from QGIS server GetPrint request and allows
 interactive visualization of map content directly in this template.
 One can zoom, pan and rotate map and see exactly how the result will
-look like.  To get the better idea, see video below.
+look like. To get a better idea, see video below.
 
 .. raw:: html
 
@@ -291,7 +295,7 @@ User menu allows to:
 .. figure:: ../img/about-window.png
    :width: 300px
    
-   About window showing information about Project and Gisquick itself.
+   About window showing information concerning Project and Gisquick itself.
 
 .. _user-profile-page:
 
@@ -299,7 +303,7 @@ User profile page
 -----------------
 
 User page (:menuselection:`My profile` in User menu) allows managing
-published projects, and uploading new projects.
+published projects and uploading new ones.
 
 .. figure:: ../img/ui-user-menu.png
    :width: 250px
@@ -307,7 +311,7 @@ published projects, and uploading new projects.
    User profile menu.
 
 In ``My Projects`` tab user can browse published projects including
-basic metadata. Project can open by clicking on its name. 
+basic metadata. Project can be opened by clicking on its name. 
 
 .. figure:: ../img/user-page-projects.png
 
@@ -324,7 +328,7 @@ basic metadata. Project can open by clicking on its name.
    Project actions menu.
 
 In ``Upload Project`` tab new projects can be uploaded. Note that
-existing project will be automatically overriden. Projects can be
+existing project will be automatically overridden. Projects can be
 uploaded in ``zip`` or ``tag.gz`` formats.
 
 .. note:: |note| See project size limits in :ref:`Configuration
@@ -341,5 +345,5 @@ uploaded in ``zip`` or ``tag.gz`` formats.
 
    Account information.
    
-Another two menu items allows showing help page (this documenation)
+Another two menu items allow showing help page (this documenation)
 and log out the user.
