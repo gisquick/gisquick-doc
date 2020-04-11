@@ -150,7 +150,7 @@ figure below.
 Zoom tools
 ==========
 
-Zoom tools enable controlling map view.
+Zoom tools enable controlling map view. Three basic zoom tools are available:
 
 * Geolocation |zoom-geolocation|
 * Zoom in/out |zoom-in-out|
