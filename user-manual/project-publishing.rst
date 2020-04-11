@@ -123,7 +123,7 @@ sources``) must be transferred to the publication server.
 .. _plugin-publish-directory:
    
 When ``Publish`` button is pressed, the unique project file name with
-timestamp together with it's metafile is created. By default,
+timestamp together with its metafile is created. By default,
 timestamped files are created in the same directory as the original QGIS
 project. Optionally the destination directory can be changed by the
 ``Change`` button. In this case, data source files are also copied to
