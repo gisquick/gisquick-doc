@@ -2,12 +2,12 @@
    :width: 2.5em
 
 .. _project-publishing:
- 
+
 ==================
 Project publishing
 ==================
 
-This section explains process of publishing QGIS map project. It is
+This section explains the process of publishing QGIS map project. It is
 assumed that `QGIS Desktop
 <http://qgis.org/en/site/forusers/download.html>`__ together with
 :doc:`Gisquick plugin <../administrator-manual/installation/plugin>`
@@ -24,9 +24,9 @@ details.
    experiments and testing.
    
 QGIS project dedicated for publishing is prepared in the standard
-way. Map layers can be combined from various data sources as flat
+way. Map layers can be combined from various data sources like flat
 files (Esri Shapefile, GML), file-based databases (SQLite,
-SpatiaLite), server-client databases (PostGIS), or OGC Web Services
+SpatiaLite), server-client databases (PostGIS) or OGC Web Services
 (WMS, WFS, WCS).
 
 Before publishing project using Gisquick plugin, the project must be
@@ -41,8 +41,8 @@ saved.
    must be ensured that server used for publishing will have access
    rights to such data sources.
 
-Publishing QGIS project will be demonstrated on :ref:`Prague sample
-project <dataset-prague>` downloadable as `zip file
+Publishing QGIS project will be demonstrated on the :ref:`Prague sample
+project <dataset-prague>` downloadable as a `zip file
 <http://training.gismentors.eu/geodata/gisquick/prague.tar.gz>`__. At
 first, sample :file:`prague.qgs` QGIS project is open in QGIS
 Desktop. Before doing any changes the project will be published as it
@@ -52,22 +52,22 @@ is.
 
    Prague sample project loaded in QGIS.
 
-Publication process is started by Gisquick QGIS plugin
-|plugin|. Plugin is designed as a wizard to simplify publishing
+The publication process is started by Gisquick QGIS plugin
+|plugin|. The plugin is designed as a wizard to simplify publishing
 process as much as possible.
 
 First page of the wizard allows defining basic settings for publishing:
 
 * **base layers**,
-* **overlay layers**, and
-* basic **project metadata**
+* **overlay layers** and
+* basic **project metadata**.
 
 .. figure:: ../img/project-publishing-0.png
 
 .. _publication-base-layers:
 
 By **base layers** are meant typically WMS layers provided by QGIS
-project. ``Base layer`` sub-page also allows adding base layers provided by
+project. The ``Base layer`` sub-page also allows adding base layers provided by
 external services like OpenStreetMap, MapBox or Bing.
 
 .. important:: |imp| External base layers are available only when QGIS
@@ -77,8 +77,8 @@ Here also default base layer can be defined, see figure below.
 
 .. figure:: ../img/project-publishing-1.png
 
-In the second ``Layers`` sub-page is controlled, simply by check
-boxes, which map layers will be published. It's also possible to
+In the second ``Layers`` sub-page is controlled, simply by
+checkboxes, which map layers will be published. It's also possible to
 publish layer as hidden (ie. not shown in ``Overlay layers`` tab, see
 :doc:`./user-interface` section). Top-left checkbox ``Use cache``
 controls usage of QGIS Server map cache. By default, map tiles are
@@ -97,23 +97,23 @@ etc.
 .. _publication-topics:
 
 In the following page **topics** can be defined. By topic it's meant
-group of thematically-related overlay layers. Topics can be easily
+a group of thematically-related overlay layers. Topics can be easily
 switched in ``Topics`` tab of Gisquick UI, see
 :doc:`./user-interface` section. Layers which
-should be part of defined topic are simply checked. Topics can be
-added or removed by buttons located in bottom-left part of the
-dialog. Each topic has defined short description (abstract) which is
+should be part of a defined topic are simply checked. Topics can be
+added or removed by buttons located in the bottom-left part of the
+dialog. Each topic has defined a short description (abstract) which is
 shown by Gisquick UI.
             
 .. figure:: ../img/project-publishing-4.png
 
-Last but one page shows read-only **configuration summary**. It's last
+Last but one page shows a read-only **configuration summary**. It's the last
 chance to go back by ``Back`` button and change publication settings.
             
 .. figure:: ../img/project-publishing-5.png
 
-On the last page are displayed files which needs to transferred to the
-Gisquick publication server. The result of publication process are two
+On the last page are displayed files that need to transfer to the
+Gisquick publication server. The result of publication process is two
 generated files: timestamped QGIS project (``.qgs``) and metafile
 (``.meta``). These files together with project data (see ``Data
 sources``) must be transferred to the publication server.
@@ -122,51 +122,51 @@ sources``) must be transferred to the publication server.
 
 .. _plugin-publish-directory:
    
-When ``Publish`` button is pressed, unique project file name with
-timestamp together with its metafile are created. By default,
-timestamped files are created in the same directory as original QGIS
-project. Optionally the destination directory can be changed by
-``Change`` button. In this case data source files are also copied to
+When ``Publish`` button is pressed, the unique project file name with
+timestamp together with it's metafile is created. By default,
+timestamped files are created in the same directory as the original QGIS
+project. Optionally the destination directory can be changed by the
+``Change`` button. In this case, data source files are also copied to
 the newly defined directory.
 
-The published project together with data can be optionally zipped into
+The published project together with data can be optionally zipped into an
 archive, which can be easily uploaded to the publication server, see
 ``Create project zip file for upload`` option.
 
 Transferring project to publication server
 ------------------------------------------
 
-Publication process is finished by transferring project to the
-publication server. The procedure will be explained on **demo
+The publication process is finished by transferring a project to the
+publication server. The procedure will be explained on the **demo
 publication server** (https://projects.gisquick.org).
 
 .. note:: |note| The publication procedure can differ when running own
    Gisquick instance.
 
-First of all a new user account must be created on publication
-server. This can be done easily by filling registration form available
+First of all, a new user account must be created on a publication
+server. This can be done easily by filling the registration form available
 at https://projects.gisquick.org/accounts/register/.
 
 .. figure:: ../img/gisquick-new-account-0.svg
 
    Registration form for creating a new user account.
 
-After pressing ``CREATE ACCOUNT`` button an confirmation mail should
-be send to given e-mail address.
+After pressing ``CREATE ACCOUNT`` button a confirmation mail should
+be send to a given e-mail address.
 
 .. figure:: ../img/gisquick-new-account-1.svg
    :width: 75%
 
-   Completation of registration process will be done by pressing
+   Completion of registration process will be done by pressing
    ``ACTIVATE ACCOUNT`` button.
 
-Afterwards a new user is notified about successfull singing-in.
+Afterwards, a new user is notified about successfull singing-in.
 
 .. figure:: ../img/gisquick-new-account-2.svg
 
    A new user account has been successfully created.
 
-After clicking on ``CONTINUE`` button a new user will be redicted to
+After clicking on ``CONTINUE`` button a new user will be redirected to
 the publication server welcome screen.
 
 .. figure:: ../img/gisquick-new-account-3.svg
@@ -180,17 +180,17 @@ log-in Gisquick loads an empty project.
 
    Empty Gisquick project loaded by default.
 
-In the next step the user can upload prepared project zip file created
-by Gisquick plugin as described in section above. In the user menu go
+In the next step, the user can upload a prepared project zip file created
+by Gisquick plugin as described in the section above. In the user menu go
 to ``My profile`` (see :ref:`User profile page <user-profile-page>`
-for details). Go to ``Upload project``, enter project zip file and
-upload the file using ``Upload`` button.
+for details). Go to ``Upload project``, enter the project zip file and
+upload the file using the ``Upload`` button.
 
 .. figure:: ../img/user-page-upload.png
 
    Upload project zip file.
 
-After successfull upload go to ``My Projects`` and find your first
+After successful upload go to ``My Projects`` and find your first
 published project.
 
 .. figure:: ../img/user-page-projects.png
@@ -208,11 +208,11 @@ Click on it's name and enjoy Gisquick!
 
    QGIS project published with Gisquick.
 
-Notes for advanced users running testing environment
+Notes for advanced users running a testing environment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Uploading step can be skipped when running publication server in
-testing enviromment. Publication directory is defined by
+the testing enviromment. The publication directory is defined by
 :file:`docker-compose.yml` configuration file. In the presented
 :ref:`example <docker-publish-dir>` publication directory is located
 in Gisquick source tree :file:`docker/_data/publish`.
@@ -233,8 +233,8 @@ sub-directories corresponding registered users, see
 
    Published project separated into user directories.
 
-.. important:: |imp| When user directory is not available in
-   :file:`publish` directory it's necessary to create it.
+.. important:: |imp| When the user directory is not available in
+   the :file:`publish` directory it's necessary to create it.
 
 Then published QGIS project (including timestamped files) with all
 associated data can be **copied** into user publish directory,
