@@ -80,7 +80,7 @@ Here also default base layer can be defined, see figure below.
 In the second ``Layers`` sub-page is controlled, simply by
 checkboxes, which map layers will be published. It's also possible to
 publish layer as hidden (ie. not shown in ``Overlay layers`` tab, see
-:doc:`./user-interface` section). Top-left checkbox ``Use cache``
+:doc:`./user-interface` section). Top left checkbox ``Use cache``
 controls usage of QGIS Server map cache. By default, map tiles are
 cached by QGIS server and re-used when possible.
             
@@ -101,7 +101,7 @@ a group of thematically-related overlay layers. Topics can be easily
 switched in ``Topics`` tab of Gisquick UI, see
 :doc:`./user-interface` section. Layers which
 should be part of a defined topic are simply checked. Topics can be
-added or removed by buttons located in the bottom-left part of the
+added or removed by buttons located in the bottom left part of the
 dialog. Each topic has defined a short description (abstract) which is
 shown by Gisquick UI.
             
@@ -112,7 +112,7 @@ chance to go back by ``Back`` button and change publication settings.
             
 .. figure:: ../img/project-publishing-5.png
 
-On the last page are displayed files that need to transfer to the
+On the last page are displayed files need to be transferred to the
 Gisquick publication server. The result of publication process is two
 generated files: timestamped QGIS project (``.qgs``) and metafile
 (``.meta``). These files together with project data (see ``Data
