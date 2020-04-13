@@ -211,7 +211,7 @@ Location menu allows:
 
 * Zoom to location.
 * Change spatial reference system. By default two system are
-  supported: QGIS project system and WGS-84 (EPSG: 4326) known as "GPS
+  supported: QGIS project system and WGS-84 (EPSG:4326) known as "GPS
   coordinates".
 
 .. figure:: ../img/ui-location-menu.png
