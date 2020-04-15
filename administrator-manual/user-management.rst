@@ -1,7 +1,7 @@
 User management
 ===============
 
-Currently user accounts can be managed only manually from Django
+Currently, user accounts can be managed only manually from Django
 shell.
 
 At first, log in to Gisquick Django application server. The following
@@ -32,7 +32,7 @@ To quit Django shell type
 
    exit()
 
-Then the new user can log in into Gisquick application.
+Then the new user can log in to Gisquick application.
 
 .. figure:: ../img/installation/login-screen.png
 
