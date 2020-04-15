@@ -1,20 +1,20 @@
 QGIS plugin
 ===========
 
-Very important part of Gisquick publishing platform is represented by
+A very important part of Gisquick publishing platform is represented by
 **Gisquick QGIS plugin**. Gisquick plugin builds Gisquick bundle from
 any QGIS desktop project. It allows adding base layers, creating
 topics from layers list, setting access constraints or project
 expiration.
 
-Source code of the plugin is available from GitHub
+The source code of the plugin is available from GitHub
 `gisquick-qgis-plugin
 <https://github.com/gislab-npo/gisquick-qgis-plugin>`_ repository and
 licensed under `GNU General Public License
 <https://github.com/gislab-npo/gisquick-qgis-plugin/blob/master/LICENSE>`__
 version 3.
 
-Plugin can be installed in QGIS Desktop from :menuselection:`Plugins
+The plugin can be installed in QGIS Desktop from :menuselection:`Plugins
 --> Manage and Install Plugins` as other QGIS plugins (see `QGIS
 Python Plugins Repository
 <http://plugins.qgis.org/plugins/gisquick-qgis-plugin>`__).
@@ -22,7 +22,7 @@ Python Plugins Repository
 .. figure:: ../../img/installation/qgis-plugin-install.svg
 
    Install Gisquick QGIS plugin.
-               
+
 After successful installation, a new icon should appear in QGIS
 plugin toolbar.
 
