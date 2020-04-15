@@ -8,7 +8,7 @@ Other
 Video tutorials
 ---------------
 
-Gisquick video tutorials are available from `Youtube channel
+Gisquick video tutorials are available from `YouTube channel
 <https://www.youtube.com/channel/UCHXyhq_wrEBnGYTRJovxrCg/videos>`__.
 
 -----
@@ -40,7 +40,7 @@ Source code layout
 See Gisquick `GitHub repository <https://github.com/gislab-npo/gisquick>`__.
 
 ``clients``
-  web and mobile client interfaces
+  Web and mobile client interfaces
 ``docker``
   Docker recipes, see :doc:`./administrator-manual/installation/docker`
 ..
