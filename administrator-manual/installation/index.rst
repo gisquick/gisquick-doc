@@ -6,10 +6,10 @@ Gisquick publishing platform consists of two major components:
 * Django-based **server application** and
 * QGIS **client plugin**.
 
-Server application can be easily deployed using *Docker*.
+A server application can be easily deployed using *Docker*.
 
-Deployment of server application requires Gisquick source code, which
-can be easily downloaded from GitHub repository using ``git`` command.
+Deployment of a server application requires Gisquick source code, which
+can be easily downloaded from the GitHub repository using ``git`` command.
 
 .. _source-code:
 
