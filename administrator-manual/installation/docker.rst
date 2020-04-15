@@ -1,6 +1,6 @@
 .. _docker:
 
-Deployment of server application in Docker containers
+Deployment of a server application in Docker containers
 =====================================================
 
 Gisquick application is split into 3 services running in Docker
@@ -13,16 +13,16 @@ containers:
 .. note:: |note| Official Gisquick Docker containers are available
    from `Docker Hub <https://hub.docker.com/u/gisquick/>`__.
 
-Docker images can be put together using ``docker-compose``
-command. The command reads configuration file in YAML
-language. Sample configuration of Gisquick services is shown below.
+Docker images can be put together using the ``docker-compose``
+command. The command reads configuration file in the YAML
+language. The sample configuration of Gisquick services is shown below.
 
 .. literalinclude:: ../../_static/docker/example.docker-compose.yml
    :language: python
    :emphasize-lines: 7,9,17,18,22,23,37,38,41,43
    :linenos:
 
-.. note:: |note| Sample configuration is also available from
+.. note:: |note| The sample configuration is also available from
 	  Gisquick source code: `docker/example.docker-compose.yml
 	  <https://github.com/gislab-npo/gisquick/blob/master/docker/example.docker-compose.yml>`__.
 
@@ -44,8 +44,8 @@ QGIS server is running in this case on port 90 (see line ``9``), Nginx
 web server on default port for HTTPS protocol 443 (line ``41``).
 
 Before composing Docker images, shared directories must be created on
-host machine. In shown example all directories are located in the same
-folder as :file:`docker-compose.yml` file.
+host machine. As shown in the example, all directories are located in the same
+folder as a :file:`docker-compose.yml` file.
 
 .. code-block:: bash
 
@@ -55,7 +55,7 @@ Directory for SSL certificates is defined by :envvar:`NGINX_HOST`
 environmental variable (see line ``43``) located in :file:`live`
 directory. For sample configuration, the SSL certificates will be
 located in :file:`./_data/etc/letsencrypt/live/server`
-directory. See example of creating self-signed certificate below.
+directory. See example of creating a self-signed certificate below.
 
    .. code-block:: bash
                 
@@ -66,13 +66,13 @@ directory. See example of creating self-signed certificate below.
        -subj "/C=CZ/ST=Prague/L=Prague/O=Gisquick/OU=IT Department/CN=localhost"
 
 .. note:: |note| For production self-signed SSL certificates will be
-   not enough. In this case can be recommended Certbot (LetsEncrypt)
+   not enough. In this case, can be recommended Certbot (LetsEncrypt)
    certificates. See additional information on `GitHub
    <https://github.com/gislab-npo/gisquick/blob/master/docker/README.md>`__.
 
 .. _docker-configuration:
 
-There are more environmental variables which can be defined. Django
+There are more environmental variables that can be defined. Django
 container allows to set up:
 
 * :envvar:`DJANGO_GISQUICK_UPLOAD_MAX_SIZE` - max. size of uploaded projects (string)
@@ -89,7 +89,7 @@ Example of additional configuration:
          - DJANGO_DEBUG=True
          - DJANGO_ACCOUNT_ACTIVATION_DAYS=3
 
-At this point ``docker-compose`` command can be run
+At this point ``docker-compose`` command can be run.
 
 .. note:: |note| Notes about installing Docker in Debian Stretch:
 
@@ -107,7 +107,7 @@ At this point ``docker-compose`` command can be run
 
    $ docker-compose up
 
-This command downloads required Docker images, run and compose
+This command downloads required Docker images, runs and composes
 them. Gunicorn logs (see lines ``22`` and ``23`` in
 :file:`docker-compose.yml`) are redirected to the terminal.
 
@@ -120,9 +120,9 @@ them. Gunicorn logs (see lines ``22`` and ``23`` in
       usermod -aG docker <my-user-name>
 
 By default, Gisquick platform is accessible on localhost port 443 (see
-line ``41``), https://localhost
+line ``41``), https://localhost.
 
-.. note:: |note| When using self-signed SSL certificates an exception in web
+.. note:: |note| When using self-signed SSL certificates an exception in a web
    browser will be probably required to be added.
 
    .. figure:: ../../img/installation/ssl-exception.png
@@ -134,7 +134,7 @@ line ``41``), https://localhost
 Update installation
 -------------------
 
-At first, running instance should be stopped.
+At first, the running instance should be stopped.
 
 .. code-block:: bash
 
@@ -169,7 +169,7 @@ Run Gisquick over HTTP
 ^^^^^^^^^^^^^^^^^^^^^^
 
 Download `gisquick.template <../../_static/docker/gisquick.template>`_
-into directory where :file:`docker-compose.yml` lives. Change NGINX service
+into the directory where :file:`docker-compose.yml` lives. Change NGINX service
 configuration in order to:
 
 * mount volume with custom Gisquick template (line ``37``)
