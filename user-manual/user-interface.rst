@@ -105,7 +105,7 @@ In ``Layers`` mode the overlay layers can be switch on/off one by one.
 .. tip:: |tip| It is also possible to switch on/off group of layers
    |group-switcher|.
 
-``Legend`` tab depicts currently selected layers and topics from previous tab.
+``Legend`` tab depicts currently selected layers in ``Layers`` tab.
 
 .. figure:: ../img/ui-legend.png
    :width: 250px
