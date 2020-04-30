@@ -6,8 +6,6 @@
    :width: 2.5em
 .. |clear-filter| image:: ../img/ui-clear-filter.png
    :width: 2.5em
-.. |zoom-geolocation| image:: ../img/ui-zoom-tools-geolocation.png
-   :width: 2.5em
 .. |zoom-in-out| image:: ../img/ui-zoom-tools-in-out.png
    :width: 2.5em
 .. |zoom-extent| image:: ../img/ui-zoom-tools-extent.png
@@ -18,7 +16,12 @@
    :width: 2.2em
 .. |print| image:: ../img/ui-print.png
    :width: 2.2em
-
+.. |scroll| image:: ../img/ui-scroll.png
+   :width: 9.8em
+.. |wms| image:: ../img/ui-wms.png
+   :width: 2.5em
+.. |map| image:: ../img/ui-map.png
+   :width: 2.5em
 ================
 User Interface
 ================
@@ -37,7 +40,7 @@ bottom left corner) with *map scale* (``4``), :ref:`tools
 statusbar showing current scale, projection and map coordinates of the
 cursor (``8``).
 
-.. figure:: ../img/gisquick-ui.svg
+.. figure:: ../img/gisquick-ui.png
 
    Gisquick user interface description.
 
@@ -45,13 +48,6 @@ cursor (``8``).
 
 Content management tools
 ========================
-
-Basic project metadata - project description - are accessible by
-question mark, see figure below.
-
-.. figure:: ../img/project-info.svg
-
-   Project description.
 
 Content management widget is split into three major tabs:
 
@@ -66,16 +62,23 @@ Content management widget is split into three major tabs:
 
 ``Base Layers`` tab allows switching base layers in map canvas. The
 list of base layers is defined by publication process as described in
-:ref:`Project publishing <publication-base-layers>` section.
+:ref:`Project publishing <publication-base-layers>` section. Tab also
+allows to set opacity of the base layer.
 
 .. figure:: ../img/ui-base-layers.png
    :width: 250px
            
    Switching between base layers.
      
+.. figure:: ../img/ui-opacity.png
+   :width: 250px
+           
+   Setting opacity of the base layer.
+     
 ``Overlay Layers`` tab allows switching between topics (layer groups),
 see :ref:`Project publishing <publication-topics>` section, or
-controlling overlay layers one by one.
+controlling overlay layers one by one.  Tab also allows to set opacity
+of the overlay layers.
 
 .. figure:: ../img/ui-overlay-layers.png
    :width: 250px
@@ -86,6 +89,11 @@ controlling overlay layers one by one.
    :width: 250px
            
    Switching between topics.
+
+.. figure:: ../img/ui-opacity.png
+   :width: 250px
+           
+   Setting opacity of the overlay layers.
 
 In ``Layers`` mode the overlay layers can be switch on/off one by one.
 
@@ -111,8 +119,9 @@ In ``Layers`` mode attribute data can be accessed by
 |layer-attributes|. Attribute table is displayed in bottom part, see
 figure below.
 
-.. figure:: ../img/ui-attributes.svg
-
+.. figure:: ../img/ui-attributes.png
+   :width: 1000px
+          
    Layer attribute table.
 
 Attribute table allows filtering data based on simple queries, see
@@ -123,20 +132,19 @@ figures below.
            
    Choose operator for attribute filter.
 
-.. figure:: ../img/ui-attribute-filter-1.svg
+.. figure:: ../img/ui-attribute-filter-1.png
 
    Define filter and ``refresh`` attribute table view.
 
-.. tip:: |tip| By default, attribute table shows only few rows. The
-   number of displayed rows can be controlled in status bar by ``Rows
-   by page``. Attributes can be also filtered by map canvas ``Filter to
-   visible area``.
+.. tip:: |tip| Attribute table shows only few rows. Use the arrows |scroll|
+   to scroll through the rows. Attributes can be also 
+   filtered by map canvas ``Filter to visible area``.
 
 Every row in attribute table has *Zoom to* button |zoom-to| which
 enables zooming and centering related features in map canvas, see
 figure below.
 
-.. figure:: ../img/ui-zoom-to-feature.svg
+.. figure:: ../img/ui-zoom-to-feature.png
 
    Zoom into selected feature.
 
@@ -150,15 +158,10 @@ figure below.
 Zoom tools
 ==========
 
-Zoom tools enable controlling map view. Three basic zoom tools are available:
+Zoom tools enable controlling map view. Two basic zoom tools are available:
 
-* Geolocation |zoom-geolocation|
 * Zoom in/out |zoom-in-out|
 * Zoom to extent |zoom-extent|
-
-.. figure:: ../img/geolocation.svg
-
-   Geolocation in action.
 
 .. tip:: Zooming and panning is also possible by middle mouse button.
    
@@ -178,7 +181,7 @@ Identify
 By default, features are identified in all visible layers (in the
 example below in Schools and District layers).
 
-.. figure:: ../img/identify.svg
+.. figure:: ../img/identify.png
 
    Identify schools and district layer.
 
@@ -203,9 +206,9 @@ Three measurement modes are available:
    
    Measurement tools.
 
-.. figure:: ../img/measure-location.svg
+.. figure:: ../img/measure-location.png
 
-   Location measurement example. Menu highlighted in red box.
+   Location measurement example. Menu highlighted in red ring.
 
 Location menu allows:
 
@@ -219,9 +222,9 @@ Location menu allows:
            
    Location menu.
 
-.. figure:: ../img/measure-distance.svg
+.. figure:: ../img/measure-distance.png
 
-   Distance measurement example. Menu highlighted in red box.
+   Distance measurement example. Menu highlighted in red ring.
 
 Distance menu allows:
 
@@ -234,9 +237,9 @@ Distance menu allows:
            
    Distance menu.
 
-.. figure:: ../img/measure-area.svg
+.. figure:: ../img/measure-area.png
 
-   Area measurement example. Menu highlighted in red box.
+   Area measurement example. Menu highlighted in red ring.
 
 Area menu allows:
 
@@ -285,17 +288,10 @@ User menu allows to:
 * Enter/Leave Full Screen mode
 * Display attributions
 * Show Help (this document)
-* Show Project About (see :ref:`Project publishing
-  <publication-metadata>` section)
 
-.. figure:: ../img/map-attribution.svg
+.. figure:: ../img/map-attribution.png
 
    Map attributions displayed.
-   
-.. figure:: ../img/about-window.png
-   :width: 300px
-   
-   About window showing information concerning Project and Gisquick itself.
 
 .. _user-profile-page:
 
@@ -303,47 +299,26 @@ User profile page
 -----------------
 
 User page (:menuselection:`My profile` in User menu) allows managing
-published projects and uploading new ones.
+published projects and uploading new ones. In ``Projects`` tab user 
+can browse published projects including basic metadata. Project can 
+be opened by clicking on its name.
 
 .. figure:: ../img/ui-user-menu.png
-   :width: 250px
    
-   User profile menu.
-
-In ``My Projects`` tab user can browse published projects including
-basic metadata. Project can be opened by clicking on its name. 
-
-.. figure:: ../img/user-page-projects.png
-
-   List of published projects.
+   User page contains list of published projects.
+   (Projecs button highlighted in red square)
    
-.. tip:: Project data are available also via WMS service, see ``WMS
-   service link``.
+.. tip:: Project data are available also via WMS service, click WMS link button |wms|. To open project in map canvas click |map|.
 
-``Action`` allows deleting project or updating table templates (see
-:ref:`table-templates` section for details).
-
-.. figure:: ../img/user-page-projects-action.png
-
-   Project actions menu.
-
-In ``Upload Project`` tab new projects can be uploaded. Note that
+New projects can be uploaded by click an upload button. Note that
 existing project will be automatically overridden. Projects can be
 uploaded in ``zip`` or ``tag.gz`` formats.
 
 .. note:: |note| See project size limits in :ref:`Configuration
    <docker-configuration>` section.
 
-.. figure:: ../img/user-page-upload.png
+.. figure:: ../img/ui-user-page-upload.png
 
-   Upload project tab.
-
-``My account`` tab shows information about user account, see
-:doc:`../administrator-manual/user-management` section.
-
-.. figure:: ../img/user-page-account.png
-
-   Account information.
+   Upload project button highlighted in red square.
    
-Another two menu items allow showing help page (this documenation)
-and log out the user.
+.. todo:: Explain publish button.

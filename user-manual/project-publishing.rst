@@ -118,7 +118,7 @@ generated files: timestamped QGIS project (``.qgs``) and metafile
 (``.meta``). These files together with project data (see ``Data
 sources``) must be transferred to the publication server.
             
-.. figure:: ../img/project-publishing-6.svg            
+.. figure:: ../img/project-publishing-6.png
 
 .. _plugin-publish-directory:
    
@@ -145,16 +145,17 @@ publication server** (https://projects.gisquick.org).
 
 First of all, a new user account must be created on a publication
 server. This can be done easily by filling the registration form available
-at https://projects.gisquick.org/accounts/register/.
+at https://projects.gisquick.org/accounts/signup/.
 
-.. figure:: ../img/gisquick-new-account-0.svg
+.. figure:: ../img/gisquick-new-account-0.png
+   :width: 60%
 
    Registration form for creating a new user account.
 
 After pressing ``CREATE ACCOUNT`` button a confirmation mail should
 be send to a given e-mail address.
 
-.. figure:: ../img/gisquick-new-account-1.svg
+.. figure:: ../img/gisquick-new-account-1.png
    :width: 75%
 
    Completion of registration process will be done by pressing
@@ -162,23 +163,27 @@ be send to a given e-mail address.
 
 Afterwards, a new user is notified about successfull singing-in.
 
-.. figure:: ../img/gisquick-new-account-2.svg
+.. figure:: ../img/gisquick-new-account-2.png
 
    A new user account has been successfully created.
 
 After clicking on ``CONTINUE`` button a new user will be redirected to
 the publication server welcome screen.
 
-.. figure:: ../img/gisquick-new-account-3.svg
+.. figure:: ../img/gisquick-new-account-3.png
+   :width: 50%
 
-   Gisquick demo welcome screen.
+   Gisquick login screen.
 
-The user can log-in using credentials (user name and password). After
-log-in Gisquick loads an empty project.
+The user can login using credentials (user name and password). After
+login Gisquick loads user's welcome page which includes list of already
+published projects. After the very first login or in case that user hasn't
+published any project yet, only the message appears stating how to proceed.
 
 .. figure:: ../img/gisquick-new-account-4.png
+   :width: 75%
 
-   Empty Gisquick project loaded by default.
+   User's welcome page after first login.
 
 In the next step, the user can upload a prepared project zip file created
 by Gisquick plugin as described in the section above. In the user menu go
@@ -195,10 +200,10 @@ published project.
 
 .. figure:: ../img/user-page-projects.png
 
-   List of user published projects.
+   List of user's published projects.
 
 
-Click on it's name and enjoy Gisquick!
+Click on the blue map icon in the second column and enjoy Gisquick!
 
 .. _gisquick-we-published:
 
@@ -207,6 +212,7 @@ Click on it's name and enjoy Gisquick!
    :width: 750
 
    QGIS project published with Gisquick.
+
 
 Notes for advanced users running a testing environment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
