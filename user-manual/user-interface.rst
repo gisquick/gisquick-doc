@@ -22,6 +22,8 @@
    :width: 2.5em
 .. |map| image:: ../img/ui-map.png
    :width: 2.5em
+.. |info| image:: ../img/ui-info.png
+   :width: 2.5em
 ================
 User Interface
 ================
@@ -151,8 +153,12 @@ figure below.
 .. note:: Attribute filter can be disabled by |clear-filter|. Table
           view must be refreshed.
 
-.. todo:: Explain info panel.
-          
+Also, every row has an *Information* button |info| which displays the
+information panel with relevant data.
+
+.. figure:: ../img/ui-info-feature.png
+
+           
 .. _zoom-menu:
 
 Zoom tools
