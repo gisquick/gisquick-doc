@@ -158,7 +158,8 @@ information panel with relevant data.
 
 .. figure:: ../img/ui-info-feature.png
 
-           
+   Vizualization selected data.
+
 .. _zoom-menu:
 
 Zoom tools
