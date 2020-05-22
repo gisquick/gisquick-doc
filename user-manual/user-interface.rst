@@ -324,8 +324,54 @@ uploaded in ``zip`` or ``tag.gz`` formats.
 .. note:: |note| See project size limits in :ref:`Configuration
    <docker-configuration>` section.
 
+Another option is 'Experimental publishing'. There is publishing 
+button for this option.
+   
 .. figure:: ../img/ui-user-page-upload.png
 
    Upload project button highlighted in red square.
+   Project publishing button highlighted in green square.
+
+Project settings is opened by clicking the project name. There are few
+options in the settings window. It is possible to load map canvas using
+map button (1). Use delete button (2) in case of removing whole project.
+you delete your map. For logging out find the top right button (3).
+Furthermore, it is possible to change the project title (4), set the
+rate of autenthication (5) or edit map extent setting (6). There are few
+possibilities how to edit map extent (7). First of all is to fill in the
+desired coordinates into the frames. Secondly, map extent can be edited
+manually by drawing a delimiting rectangle area in map. Last option is to
+use extent of one imported layer or extent of all of them.
+Setting map scales is possible in the left box (8). Executed changes are
+reflected in map preview (9).
+
+.. figure:: ../img/ui-project-setting.png
+
+   Project setting.
+ 
+.. figure:: ../img/ui-extent-setting.png
+
+   Couple of ways how to set map extent.
+
+Check the section Layers for advanced adjustment of layers. The base layer
+can be chosen in the left box (a blank base map is default). Within the right
+box it is possible to specify which layers will be published or hidden (or both
+which means that the layer will be published but turned off when the project is opened). 
+
+.. figure:: ../img/ui-layers-setting.png
+
+   Layers setting.
+ 
+At least you can switch to topics setting. There you can create new topic or
+remove topic. In the left you see topics and after chosen some of them you see
+in the right features contained in it. There is possible to change contained features.
+ 
+.. figure:: ../img/ui-topics-setting.png
+
+   Topics setting. Add and remove button highlighted in red square.
    
-.. todo:: Explain publish button.
+For save changes you have to click on update button.
+
+.. figure:: ../img/ui-update.png
+
+   Update button highlighted in red square.
