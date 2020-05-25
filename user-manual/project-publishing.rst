@@ -287,7 +287,7 @@ intended server folder appears in the right one. Click on ``UPLOAD FILES`` butto
 
    Upload section displays local files and intended server folder.
 
-Third section is called ``SETTING``. There are few
+Third section is called ``SETTINGS``. There are few
 options in the settings window. It is possible to load map canvas using
 map button (1). Use delete button (2) in case of removing whole project.
 you delete your map. For logging out find the top right button (3).

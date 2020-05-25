@@ -25,7 +25,7 @@
 .. |info| image:: ../img/ui-info.png
    :width: 2.5em
 ================
-User Interface
+User interface
 ================
 
 The Gisquick clients are designed with a goal to put together minimal
