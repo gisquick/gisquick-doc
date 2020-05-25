@@ -313,7 +313,7 @@ be opened by clicking on its name.
 .. figure:: ../img/ui-user-menu.png
    
    User page contains list of published projects.
-   (Projecs button highlighted in red square)
+   (Projects button is highlighted in red square)
    
 .. tip:: Project data are available also via WMS service, click WMS link button |wms|. To open project in map canvas click |map|.
 
@@ -329,10 +329,10 @@ button for this option.
    
 .. figure:: ../img/ui-user-page-upload.png
 
-   Upload project button highlighted in red square.
-   Project publishing button highlighted in green square.
+   Upload project button is highlighted in red square.
+   Project publishing button is highlighted in green square.
 
-Project settings is opened by clicking the project name. There are few
+Project setting is opened by clicking the project name. There are few
 options in the settings window. It is possible to load map canvas using
 map button (1). Use delete button (2) in case of removing whole project.
 you delete your map. For logging out find the top right button (3).
@@ -353,7 +353,7 @@ reflected in map preview (9).
 
    Couple of ways how to set map extent.
 
-Check the section Layers for advanced adjustment of layers. The base layer
+Check the subsection Layers for advanced adjustment of layers. The base layer
 can be chosen in the left box (a blank base map is default). Within the right
 box it is possible to specify which layers will be published or hidden (or both
 which means that the layer will be published but turned off when the project is opened). 
@@ -361,17 +361,16 @@ which means that the layer will be published but turned off when the project is 
 .. figure:: ../img/ui-layers-setting.png
 
    Layers setting.
- 
-At least you can switch to topics setting. There you can create new topic or
-remove topic. In the left you see topics and after chosen some of them you see
-in the right features contained in it. There is possible to change contained features.
- 
+
+Last subsection is dedicated to topics. Creating or removing topic is enabled.
+Select a topic to see involved features which can be subsequently modified.
+
 .. figure:: ../img/ui-topics-setting.png
 
-   Topics setting. Add and remove button highlighted in red square.
-   
-For save changes you have to click on update button.
+   Subsection Topics. Add and remove button are highlighted in red square.
+
+In the very last step, hit the update button to save all realized changes and finish the experimental publishing process.
 
 .. figure:: ../img/ui-update.png
 
-   Update button highlighted in red square.
+   Update button is highlighted in red square.

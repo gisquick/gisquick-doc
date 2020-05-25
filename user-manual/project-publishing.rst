@@ -269,7 +269,7 @@ connection with the server.
 
    Successful check-in to the Gisquick server and loaded sample project.
 
-First section called  ``CHECK-IN`` consists of two tabs and represents
+First section called ``CHECK-IN`` consists of two tabs and represents
 an overview which is designed to easy check on loaded layers. It is not
 possible to make any changes within these tabs. Eventual corrections
 could be made back in QGIS.
@@ -287,12 +287,45 @@ intended server folder appears in the right one. Click on ``UPLOAD FILES`` butto
 
    Upload section displays local files and intended server folder.
 
-Advanced topics
----------------
+Third section is called ``SETTING``. There are few
+options in the settings window. It is possible to load map canvas using
+map button (1). Use delete button (2) in case of removing whole project.
+you delete your map. For logging out find the top right button (3).
+Furthermore, it is possible to change the project title (4), set the
+rate of autenthication (5) or edit map extent setting (6). There are few
+possibilities how to edit map extent (7). First of all is to fill in the
+desired coordinates into the frames. Secondly, map extent can be edited
+manually by drawing a delimiting rectangle area in map. Last option is to
+use extent of one imported layer or extent of all of them.
+Setting map scales is possible in the left box (8). Executed changes are
+reflected in map preview (9).
 
-.. _table-templates:
+.. figure:: ../img/ui-project-setting.png
 
-Table templates
-^^^^^^^^^^^^^^^
+   Project setting.
+ 
+.. figure:: ../img/ui-extent-setting.png
 
-.. todo:: To be added.
+   Couple of ways how to set map extent.
+
+Check the subsection Layers for advanced adjustment of layers. The base layer
+can be chosen in the left box (a blank base map is default). Within the right
+box it is possible to specify which layers will be published or hidden (or both
+which means that the layer will be published but turned off when the project is opened). 
+
+.. figure:: ../img/ui-layers-setting.png
+
+   Layers setting.
+
+Last subsection is dedicated to topics. Creating or removing topic is enabled.
+Select a topic to see involved features which can be subsequently modified.
+
+.. figure:: ../img/ui-topics-setting.png
+
+   Subsection Topics. Add and remove button are highlighted in red square.
+
+In the very last step, hit the update button to save all realized changes and finish the experimental publishing process.
+
+.. figure:: ../img/ui-update.png
+
+   Update button is highlighted in red square.
