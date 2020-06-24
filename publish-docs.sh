@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # build docs
-git checkout new_order
+git checkout master
 make clean
 make html
 git checkout gh-pages
@@ -13,4 +13,4 @@ git add -A
 git commit -m "publishing updated docs..."
 git push origin gh-pages
 # switch back
-git checkout new_order
+git checkout master
