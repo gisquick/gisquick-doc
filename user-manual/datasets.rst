@@ -1,8 +1,8 @@
 .. _data:
 
-***************
+===============
 Sample datasets
-***************
+===============
 
 Some basic information about our data aiming to be a part of examples
 introduced in this documentation. This section presents two sample
@@ -15,9 +15,8 @@ needs of Gisquick publishing platform.
 
 .. _dataset-natural-earth:
 
-=============
 Natural earth
-=============
+-------------
 
 Database ``natural-earth.sqlite``. Available online from `GitHub
 repository
@@ -55,14 +54,12 @@ feature names, which are ranked by relative importance. Other
 attributes facilitate faster map production, such as width attributes
 assigned to river segments for creating tapers, etc.
 
-.. figure:: ../img/qgis-natural-earth.png
-   :width: 90%
+.. thumbnail:: ../img/qgis-natural-earth.png
 
    Natural Earth sample project loaded in QGIS.
 
----------------
 Thematic layers
----------------
+^^^^^^^^^^^^^^^
 
 **Area** - matched boundary polygon for area of interest (administrative areas).
 
@@ -129,9 +126,9 @@ data and other information (urban landscape).
 
 .. _dataset-prague:
 
-======
+
 Prague
-======
+------
 
 Database ``prague.sqlite``. Downloadable as `zip file
 <http://training.gismentors.eu/geodata/gisquick/prague.tar.gz>`__.
@@ -160,14 +157,12 @@ Windows-1252. Raster data come in TIFF format.
 
 * *Extent:* ``50.3 (N), 49.9 (S), 14.8 (E), 14.2 (W)``
 
-.. figure:: ../img/qgis-prague.png
-   :width: 90%
+.. thumbnail:: ../img/qgis-prague.png
 
    Prague sample project loaded in QGIS.
 
----------------
 Thematic layers
----------------
+^^^^^^^^^^^^^^^
 
 **Administrative districts** - administrative boundaries in Prague.
 
