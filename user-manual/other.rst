@@ -69,14 +69,11 @@ later
 -----------------------
 Authors (documentation)
 -----------------------
-Documentation was updated within the subject **Free software GIS** at **Czech Technical University**
-in Prague by Josef Münzberger, Svetlana Usik and Zuzana Vaňková.
 
-..
-   ------------------------------------------
-   Alternative deploying method using Vagrant
-   ------------------------------------------
-   
-   See :ref:`docker` for recommended deployment procedure.
-   
-   .. include:: administrator-manual/installation/vagrant.rst
+* Martin Landa
+* Marcel Dancak
+* Jáchym Čepický
+
+Major Gisquick 2 update (spring 2020). Documentation was updated within the subject
+**Free software GIS** at **Czech Technical University** in Prague by
+Josef Münzberger, Svetlana Usik and Zuzana Vaňková.
