@@ -22,6 +22,10 @@ If you wonder **what does the output look like** or **which features are involve
 Browse chapter :ref:`chapter-6` for **metadata of example datasets** which were used for documentation. If you plan to
 **operate Gisquick publication server** on your own hardware, see chapter :ref:`chapter-7`.
 
+.. note::
+   
+   This documentation is dedicated to Gisquick version 2. For older documentation visit https://gisquick.rtfd.io/en/release-1_x/.
+
 .. thumbnail:: ./img/example.svg
 
    Gisquick in action.
