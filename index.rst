@@ -12,6 +12,10 @@ and web/mobile clients. The clients are designed with a goal to put
 together minimal set of functions for useful generic responsive web
 and mobile friendly mapping application.
 
+.. note::
+   
+   This documentation is dedicated to Gisquick version 1. For current documentation visit https://gisquick.rtfd.io/en/latest/.
+
 .. figure:: ./img/example.svg
 
    Gisquick in action.
