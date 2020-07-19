@@ -15,8 +15,8 @@ This section explains the process of publishing QGIS map project. It is
 assumed that `QGIS Desktop
 <http://qgis.org/en/site/forusers/download.html>`__ is installed on the
 user device and so is the Gisquick plugin in QGIS. This can be done in
-``Manage and install plugins`` inside ``Plugins`` tab. Type the plugin
-name into search bar and install it.
+``Manage and install plugins`` inside the ``Plugins`` tab. Type the plugin
+name into the search bar and install it.
 
 QGIS project dedicated for publishing is prepared in the standard
 way. Map layers can be combined from various data sources like flat
@@ -33,7 +33,7 @@ saved in QGS format (QGZ format is currently not supported by the plugin).
    **relative** paths (see *Project Properties*).
 
    When using any kind of authentication (databases, web services) it
-   must be ensured that server used for publishing will have access
+   must be ensured that the server used for publishing will have access
    rights to such data sources.
 
 Publishing QGIS project will be demonstrated on the :ref:`Prague sample
@@ -47,11 +47,11 @@ is.
 
    Prague sample project loaded in QGIS.
 
-The publication process is started by Gisquick QGIS plugin
-|plugin|. The plugin is designed as a wizard to simplify publishing
+The publication process is started by Gisquick QGIS plugin |plugin|.
+The plugin is designed as a wizard to simplify the publishing
 process as much as possible.
 
-First page of the wizard allows defining basic settings for publishing:
+The first page of the wizard allows defining basic settings for publishing:
 
 * **base layers**,
 * **overlay layers** and
@@ -91,12 +91,12 @@ etc.
 
 .. _publication-topics:
 
-In the following page **topics** can be defined. By topic it's meant
-a group of thematically-related overlay layers. Topics can be easily
-switched in ``Topics`` tab of Gisquick UI, see
+In the following page, **topics** can be defined. By topic, a group of
+thematically-related overlay layers is meant. Topics can be easily
+switched in the ``Topics`` tab of Gisquick UI, see
 :doc:`./user-interface` section. Layers which
 should be part of a defined topic are simply checked. Topics can be
-added or removed by buttons located in the bottom left part of the
+added or removed by buttons located in the bottom-left part of the
 dialog. Each topic has defined a short description (abstract) which is
 shown by Gisquick UI.
             
@@ -108,7 +108,7 @@ chance to go back by ``Back`` button and change publication settings.
 .. thumbnail:: ../img/project-publishing-5.png
 
 On the last page are displayed files need to be transferred to the
-Gisquick publication server. The result of publication process is two
+Gisquick publication server. The result of the publication process is two
 generated files: timestamped QGIS project (``.qgs``) and metafile
 (``.meta``). These files together with project data (see ``Data
 sources``) must be transferred to the publication server.
@@ -132,9 +132,9 @@ archive, which can be easily uploaded to the publication server, see
 
 Uploading project
 -----------------
-In the next step, user can upload a prepared project zip file created
-by Gisquick plugin as described in the section above. Login to your
-publication server account. In the user menu go to ``My profile``
+In the next step, the user can upload a prepared project zip file created
+by Gisquick plugin as described in the section above. Log in to your
+publication server account. In the user menu, go to ``My profile``
 (see :ref:`User profile page <user-profile-page>` for details).
 Go to ``Upload project``, enter the project zip file and upload the
 file using the ``Upload`` button.
@@ -143,7 +143,7 @@ file using the ``Upload`` button.
 
    Upload project zip file.
 
-After successful upload go to ``My Projects`` and find your first
+After successful upload, go to ``My Projects`` and find your first
 published project.
 
 .. thumbnail:: ../img/user-page-projects.png

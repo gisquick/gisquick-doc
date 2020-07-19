@@ -31,17 +31,17 @@
 User interface
 ==============
 
-The Gisquick clients are designed with a goal to put together minimal
+The Gisquick clients are designed with a goal to put together a minimal
 set of functions for useful generic responsive web and mobile-friendly
 mapping application.
 
-The major part of the client's User Interface (UI) are occupied by *map
+The major part of the client's User Interface (UI) is occupied by *map
 canvas* (``1``). :ref:`Content management tools <content-menu>` (``2``) are located 
 on the left side and can be hidden using the button on its right side (``3``). 
-Corners of map canvas are filled up (clockwise from
-bottom left corner) with *map scale* (``4``), :ref:`tools
+Corners of map canvas are filled up (clockwise from the
+bottom-left corner) with *map scale* (``4``), :ref:`tools
 <tool-menu>` (``5``), :ref:`user menu <user-menu>` (``6``) and
-:ref:`zoom tools <zoom-menu>` (``7``). Status bar is located in 
+:ref:`zoom tools <zoom-menu>` (``7``). The status bar is located in 
 the bottom part and it shows current scale, projection and map coordinates 
 of the cursor (``8``).
 
@@ -65,8 +65,8 @@ Content management widget is split into three major tabs:
            
    Content tabs.
 
-``Base Layers`` tab allows switching base layers in map canvas. The
-list of base layers is defined by publication process as described in
+``Base Layers`` tab allows switching base layers in the map canvas. The
+list of base layers is defined by the publication process as described in
 :ref:`Traditional publishing <publication-base-layers>` section.
 
 .. thumbnail:: ../img/ui-base-layers.png
@@ -74,7 +74,7 @@ list of base layers is defined by publication process as described in
            
    Switching among base layers.
      
-In the tab you can set opacity of the base layer.
+In the tab, you can set the opacity of the base layer.
 	 
 .. thumbnail:: ../img/ui-opacity.png
    :width: 250px
@@ -90,7 +90,7 @@ controlling overlay layers one by one.
            
    Switching among topics.
 
-In the tab you can set opacity of the base layer.
+In the tab, you can set the opacity of the base layer.
    
 .. thumbnail:: ../img/ui-opacity.png
    :width: 250px
@@ -124,15 +124,14 @@ In ``Layers`` mode the overlay layers can be switch on/off one by one.
 Attribute data
 --------------
 
-In ``Layers`` mode attribute data can be accessed by
-|layer-attributes|. Attribute table is displayed in bottom part, see
-figure below.
+In the ``Layers`` mode, attribute data can be accessed by |layer-attributes|.
+The attribute table is displayed in the bottom part, see figure below.
 
 .. thumbnail:: ../img/ui-attributes.png
           
    Layer attribute table.
 
-Attribute table allows filtering data based on simple queries, see
+The attribute table allows data filtering based on simple queries, see
 figures below.
 
 .. thumbnail:: ../img/ui-attribute-filter-0.png
@@ -148,7 +147,7 @@ figures below.
    to scroll through the rows. Attributes can be also 
    filtered by map canvas ``Filter to visible area``.
 
-Every row in attribute table has *Zoom to* button |zoom-to| which
+Every row in the attribute table has a *Zoom to* button |zoom-to| which
 enables zooming and centering related features in map canvas, see
 figure below.
 
@@ -176,7 +175,7 @@ Zoom tools enable controlling map view. Two basic zoom tools are available:
 * Zoom in/out |zoom-in-out|
 * Zoom to extent |zoom-extent|
 
-.. tip:: Zooming and panning is also possible by middle mouse button.
+.. tip:: Zooming and panning are also possible by the middle mouse button.
    
 .. _tool-menu:
 
@@ -198,7 +197,7 @@ example below in Schools and District layers).
 
    Identify schools and district layer.
 
-These settings can be changed in ``Identification`` combo box.
+These settings can be changed in the ``Identification`` combo box.
 
 .. thumbnail:: ../img/identification-layers.png
    :width: 250px
@@ -226,7 +225,7 @@ Three measurement modes are available:
 Location menu allows:
 
 * Zoom to location
-* Change spatial reference system
+* Change the spatial reference system
 By default, two systems are supported: QGIS project system and WGS-84 (EPSG:4326) 
 known as "GPS coordinates".
 
@@ -279,8 +278,8 @@ Before :doc:`project publication <project-publishing>`, the
 print tool |print| can be activated in Gisquick, which enables one to
 download raw output from QGIS server GetPrint request and allows
 interactive visualization of map content directly in this template.
-One can zoom, pan and rotate map and see exactly how the result will
-look like. To get a better idea, see video below.
+One can zoom, pan and rotate the map and see exactly how the result will
+look like. To get a better idea, see the video below.
 
 .. raw:: html
 
@@ -313,9 +312,9 @@ User menu allows to:
 User profile page
 =================
 
-User page (:menuselection:`My profile` in User menu) allows managing
+User page (:menuselection:`My profile` in the User menu) allows managing
 published projects and uploading new ones. In ``Projects`` tab user 
-can browse published projects including basic metadata. Project can 
+can browse published projects including basic metadata. A project can 
 be opened by clicking on its name.
 
 .. thumbnail:: ../img/ui-user-menu.png
@@ -323,9 +322,9 @@ be opened by clicking on its name.
    User page contains list of published projects.
    (Projects button is highlighted in red square)
    
-.. tip:: Project data is available also via WMS service, click WMS link button |wms|. To open project in map canvas click |map|.
+.. tip:: Project data is available also via WMS service, click WMS link button |wms|. To open the project in the map canvas, click |map|.
 
-New projects can be uploaded by clicking an upload button. Note that
+New projects can be uploaded by clicking the upload button. Note that
 existing project will be automatically overwritten. Projects can be
 uploaded in ``zip`` or ``tag.gz`` formats.
 
@@ -340,5 +339,5 @@ There is publishing button for this option.
    Upload project button is highlighted in red square.
    Project publishing button is highlighted in green square.
 
-Project setting is opened by clicking the project name. See chapter 
+Project settings are opened by clicking the project name. See chapter 
 :doc:`Releasing project <releasing-project>` for more information.

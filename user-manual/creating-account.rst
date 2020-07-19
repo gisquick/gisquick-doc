@@ -15,21 +15,21 @@ at https://projects.gisquick.org/accounts/signup/.
    Registration form for creating a new user account.
 
 After pressing ``CREATE ACCOUNT`` button a confirmation mail should
-be send to a given e-mail address.
+be sent to a given e-mail address.
 
 .. thumbnail:: ../img/gisquick-new-account-1.png
 
    Completion of registration process will be done by pressing
    ``ACTIVATE ACCOUNT`` button.
 
-Afterwards, a new user is notified about successfull singing-in.
+Afterwards, a new user is notified about successful singing-in.
 
 .. thumbnail:: ../img/gisquick-new-account-2.png
    :width: 300px
    
    A new user account has been successfully created.
 
-After clicking on ``CONTINUE`` button a new user will be redirected to
+After clicking on ``CONTINUE`` button, the new user will be redirected to
 the publication server welcome screen.
 
 .. thumbnail:: ../img/gisquick-new-account-3.png
@@ -37,8 +37,8 @@ the publication server welcome screen.
 
    Gisquick login screen.
 
-The user can login using credentials (user name and password). After successful
-login, Gisquick loads user's welcome page which includes list of already
+The user can log in using credentials (user name and password). After successful
+login, Gisquick loads user's welcome page which includes a list of already
 published projects. After the very first login or in case that user hasn't
 published any project yet, only the message appears stating how to proceed.
 

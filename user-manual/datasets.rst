@@ -8,7 +8,7 @@ Some basic information about our data aiming to be a part of examples
 introduced in this documentation. This section presents two sample
 datasets.
 
-The first one :ref:`dataset-natural-earth` has been original created
+The first one :ref:`dataset-natural-earth` has been originally created
 by GIS.lab developers and later adopted by Gisquick project. Subsequently,
 the second dataset :ref:`dataset-prague` was developed for specific
 needs of Gisquick publishing platform.
@@ -21,7 +21,7 @@ Natural earth
 Database ``natural-earth.sqlite``. Available online from `GitHub
 repository
 <https://github.com/gislab-npo/gisquick/tree/master/qgis/project/natural-earth>`__
-or directly as `zip file
+or directly as a `zip file
 <http://training.gismentors.eu/geodata/gisquick/natural-earth.tar.gz>`__.
 
 .. rubric:: Data source
@@ -34,7 +34,7 @@ project.  Dataset was built through a collaboration of many
 volunteers, it is supported by *NACIS* - North American Cartographic
 Information Society and contains a series of vector and raster
 data. With Natural Earth one can make a variety of maps with all
-commonly used cartography and GIS software.
+commonly-used cartography and GIS software.
 
 .. rubric:: Coordinate systems
 
@@ -48,7 +48,7 @@ encoding is Windows-1252. Vector features include name attributes and
 bounding box extent. Natural Earth Raster comes in TIFF format with a
 TFW world file.
 
-Natural Earth is very useful collection of data. Most of their
+Natural Earth is a very useful collection of data. Most of their
 attributes are equally important for map-making. They contain embedded
 feature names, which are ranked by relative importance. Other
 attributes facilitate faster map production, such as width attributes
@@ -61,7 +61,7 @@ assigned to river segments for creating tapers, etc.
 Thematic layers
 ^^^^^^^^^^^^^^^
 
-**Area** - matched boundary polygon for area of interest (administrative areas).
+**Area** - matched boundary polygon for the area of interest (administrative areas).
 
 * *Layer name*: ``area``
 * *Storage type*: SQLite database
@@ -75,7 +75,7 @@ countries.
 * *Geometry type*: Polygon
 * *Attributes*:
 
-.. csv-table:: Attributes of country layer.
+.. csv-table:: Attributes of the country layer.
    :header: "Name", "Description"
    :widths: 10, 10
 
@@ -92,7 +92,7 @@ data and other information (urban landscape).
 * *Geometry type*: Point
 * *Attributes*:
 
-.. csv-table:: Attributes of places layer.
+.. csv-table:: Attributes of the places layer.
    :header: "Name", "Description"
    :widths: 10, 10
 
@@ -100,8 +100,8 @@ data and other information (urban landscape).
    "*adm0name*", "country name"
    "*adm0_a3*", "country code"
    "*adm1name*", "sub-country name"
-   "*lattitude*", "latitude of interior point (degrees)"
-   "*longitude*", "longitude of interior point (degrees)"
+   "*lattitude*", "latitude of the interior point (degrees)"
+   "*longitude*", "longitude of the interior point (degrees)"
    "*pop_max*", "population for the metropolitan area"
    "*pop_min*", "population for the incorporated city"
    "*gtopo30*", "DEM with 30-arc second resolution"
@@ -114,7 +114,7 @@ data and other information (urban landscape).
 * *Geometry type*: Polyline
 * *Attributes*:
 
-.. csv-table:: Attributes of places layer.
+.. csv-table:: Attributes of the places layer.
    :header: "Name", "Description"
    :widths: 10, 10
 
@@ -130,7 +130,7 @@ data and other information (urban landscape).
 Prague
 ------
 
-Database ``prague.sqlite``. Downloadable as `zip file
+Database ``prague.sqlite``. Downloadable as a `zip file
 <http://training.gismentors.eu/geodata/gisquick/prague.tar.gz>`__.
 
 .. rubric:: Data source
@@ -142,7 +142,7 @@ open data `IPR <http://www.geoportalpraha.cz/en/opendata>`_ provided by
 *Registry of Territorial Identification, Addresses and Real Estate*, data 
 `DIBAVOD <http://www.dibavod.cz/index.php?id=27&PHPSESSID=vcbxqccbl>`_ provided 
 by *T. G. Masaryk water research institute, public research institution* and 
-from great resource for free and openly licensed data, 
+from a great resource for free and openly licensed data, 
 `OpenStreetMap (OSM) <http://www.openstreetmap.org/>`_. Some statistics data
 are from `Czech statistical office <https://www.czso.cz/csu/czso/home>`_.
 
@@ -171,7 +171,7 @@ Thematic layers
 * *Geometry type*: Polygon
 * *Attributes*:
 
-.. csv-table:: Attributes of administrative districts layer.
+.. csv-table:: Attributes of the administrative districts layer.
    :header: "Name", "Description"
    :widths: 10, 10
 
@@ -187,7 +187,7 @@ Thematic layers
 * `Source <http://www.geoportalpraha.cz/cs/opendata/5BB4E2C5-9D4B-4B2B-BF0A-E0B98EE6013A>`__
 * *Attributes*:
 
-.. csv-table:: Attributes of air pollution layer.
+.. csv-table:: Attributes of the air pollution layer.
    :header: "Name", "Description"
    :widths: 10, 10
 
@@ -202,7 +202,7 @@ Thematic layers
 * `Source <http://www.dibavod.cz/download.php?id_souboru=1418&PHPSESSID=vcbxqccbl>`__
 * *Attributes*:
 
-.. csv-table:: Attributes of basins layer.
+.. csv-table:: Attributes of the basins layer.
    :header: "Name", "Description"
    :widths: 10, 10
 
@@ -220,7 +220,7 @@ Thematic layers
   `metadata <http://www.geoportalpraha.cz/cs/fulltext_geoportal?id=0AF6DE97-68B3-4CD6-AE5D-76ACEEE50636>`__
 * *Attributes*:
 
-.. csv-table:: Attributes of bike routes layer.
+.. csv-table:: Attributes of the bike routes layer.
    :header: "Name", "Description"
    :widths: 10, 10
 
@@ -239,7 +239,7 @@ Thematic layers
   `metadata <http://www.geoportalpraha.cz/cs/fulltext_geoportal?id=7ED6D2D8-A68C-44F1-8EC3-0F75A5AEF781>`__
 * *Attributes*:
 
-.. csv-table:: Attributes of bike signs layer.
+.. csv-table:: Attributes of the bike signs layer.
    :header: "Name", "Description"
    :widths: 10, 10
 
@@ -254,7 +254,7 @@ Thematic layers
 * `Source <http://www.geoportalpraha.cz/cs/opendata/669607B8-EA0A-44FB-8771-C509C2384E59>`__
 * *Attributes*:
 
-.. csv-table:: Attributes of boundary region.
+.. csv-table:: Attributes of the boundary region.
    :header: "Name", "Description"
    :widths: 10, 10
 
@@ -286,7 +286,7 @@ Thematic layers
 * `Source <http://www.geoportalpraha.cz/en/opendata/A0198E36-FCAD-42E7-BE4A-3B7755A48DAC>`__
 * *Attributes*:
 
-.. csv-table:: Attributes of landuse layer.
+.. csv-table:: Attributes of the landuse layer.
    :header: "Name", "Description"
    :widths: 10, 10
 
@@ -312,7 +312,7 @@ Thematic layers
 * `Source <http://www.geoportalpraha.cz/en/opendata/31363CF6-2A9F-41D1-B000-23587084BC7A>`__
 * *Attributes*:
 
-.. csv-table:: Attributes of parcels layer.
+.. csv-table:: Attributes of the parcels layer.
    :header: "Name", "Description"
    :widths: 10, 10
 
@@ -326,7 +326,7 @@ Thematic layers
 * *Geometry type*: Point
 * *Attributes*:
 
-.. csv-table:: Attributes of pharmacy layer.
+.. csv-table:: Attributes of the pharmacy layer.
    :header: "Name", "Description"
    :widths: 10, 10
 
