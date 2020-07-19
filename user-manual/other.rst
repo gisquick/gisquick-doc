@@ -76,4 +76,4 @@ Authors (documentation)
 
 Major Gisquick 2 update (spring 2020). Documentation was updated within the subject
 **Free software GIS** at **Czech Technical University** in Prague by
-Josef Münzberger, Svetlana Usik and Zuzana Vaňková.
+Josef Münzberger, Svetlana Usik and Zuzana Vaňková. Language corrections done by Ondřej Pešek.
