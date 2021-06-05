@@ -4,12 +4,7 @@
 Releasing project
 =================
 
-This chapter follows up on chapters :ref:`chapter-2` or
-:ref:`chapter-3` and represents last steps of project publishing. If
-the traditional way was followed, display user's project page and
-click on the project name (blue colour).  If the user went through the
-experimental way, the text below continues directly to chapter
-:ref:`chapter-4`.
+This chapter follows up on chapter :ref:`chapter-2` and represents last steps of project publishing. 
 
 A section called ``SETTINGS`` is displayed. There are a few
 options in the settings window. It is possible to load map canvas using the
@@ -49,7 +44,7 @@ Select a topic to see involved features which can be subsequently modified.
 
    Subsection Topics. Add and remove button are highlighted in red square.
 
-In the very last step, hit the update button to save all realized changes and finish the experimental publishing process.
+In the very last step, hit the update button to save all realized changes and finish the publishing process.
 
 .. thumbnail:: ../img/ui-update.png
    :width: 250px
