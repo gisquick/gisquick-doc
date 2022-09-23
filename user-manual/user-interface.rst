@@ -66,8 +66,7 @@ Content management widget is split into three major tabs:
    Content tabs.
 
 ``Base Layers`` tab allows switching base layers in the map canvas. The
-list of base layers is defined by the publication process as described in
-:ref:`Traditional publishing <publication-base-layers>` section.
+list of base layers is defined by the publication process.
 
 .. thumbnail:: ../img/ui-base-layers.png
    :width: 250px
@@ -81,8 +80,7 @@ In the tab, you can set the opacity of the base layer.
            
    Setting opacity of the base layer.
      
-``Overlay Layers`` tab allows switching among topics (layer groups),
-see :ref:`Traditional publishing <publication-topics>` section, or
+``Overlay Layers`` tab allows switching among topics (layer groups), or
 controlling overlay layers one by one.
    
 .. thumbnail:: ../img/ui-topics.png
@@ -274,7 +272,7 @@ imperial (UK, US).
 Print tool
 ----------
 
-Before :doc:`project publication <project-publishing>`, the
+Before :doc:`project publication <publishing>`, the
 print tool |print| can be activated in Gisquick, which enables one to
 download raw output from QGIS server GetPrint request and allows
 interactive visualization of map content directly in this template.
@@ -330,9 +328,6 @@ uploaded in ``zip`` or ``tag.gz`` formats.
 
 .. note:: |note| See project size limits in :ref:`Configuration
    <docker-configuration>` section.
-
-Another option is :doc:`Experimental publishing <experimental-publishing>`.
-There is publishing button for this option.
    
 .. thumbnail:: ../img/ui-user-page-upload.png
 

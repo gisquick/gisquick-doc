@@ -14,13 +14,12 @@ Gisquick (http://gisquick.org) is an open-source geospatial data platform for pu
 sharing `QGIS <http://qgis.org>`__ projects. Explore more to see how easy yet powerful is working in Gisquick.
 
 There are a few topics you might be interested in. Firstly, if you are about to **publish** your **QGIS**
-**project online**, see chapter :ref:`chapter-1` to :ref:`chapter-4`. Please notice that there are two alternative approaches of publishing
-so the choice must be made which one to follow (chapter :ref:`chapter-2` or :ref:`chapter-3`). Together with every released project,
+**project online**, see chapter :ref:`chapter-1` to :ref:`chapter-3`. Together with every released project,
 web map service (**WMS**) is created and can be subsequently modified.
 
-If you wonder **what does the output look like** or **which features are involved**, check chapter :ref:`chapter-5`.
-Browse chapter :ref:`chapter-6` for **metadata of example datasets** which were used for documentation. If you plan to
-**operate Gisquick publication server** on your own hardware, see chapter :ref:`chapter-7`.
+If you wonder **what does the output look like** or **which features are involved**, check chapter :ref:`chapter-4`.
+Browse chapter :ref:`chapter-5` for **metadata of example datasets** which were used for documentation. If you plan to
+**operate Gisquick publication server** on your own hardware, see chapter :ref:`chapter-6`.
 
 .. note::
    
@@ -38,59 +37,41 @@ It is necessary to create an account.
 
 .. _chapter-2:
 
-2. :doc:`Traditional publishing <user-manual/traditional-publishing>`
---------------------------------------------------------------------
-Whether to follow the traditional way of publishing depends only on the user. Nevertheless, both ways have its
-pros & cons. Definitely, the traditional approach is a good point to start, since it uses the Gisquick plugin
-|plugin|, which has been tested for a long time.
-Anyway, please read a short description of the experimental approach to consider which one to follow.
-
-2.1 :ref:`Preparing a project <preparing-project>`
-"""""""""""""""""""""""""""""""""""""""""""""""
-How to proceed in QGIS.
-
-2.2 :ref:`Uploading project <uploading-project>`
-"""""""""""""""""""""""""""""""""""""""""""""""
-How to upload a project created with the plugin to server.
-
-.. _chapter-3:
-
-3. :doc:`Experimental publishing <user-manual/experimental-publishing>`
+2. :doc:`Publishing <user-manual/publishing>`
 ----------------------------------------------------------------------
-Experimental way of publishing is kind of innovative approach to Gisquick. A new plugin |plugin2| is involved.
-In comparison to the traditional approach, it allows user to easily edit published projects; every change made in
+Gisquick allows user to easily edit published projects using QGIS plugin; every change made in
 project in QGIS can be reflected in Gisquick by activating plugin which enables the user to compare local and cloud
 project's folders, layer by layer.
 
-3.1 :ref:`Preparing project <experimental-preparing-project>`
+2.1 :ref:`Preparing project <preparing-project>`
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 How to proceed in QGIS.
 
-3.2 :ref:`Uploading project <experimental-uploading-project>`
+2.2 :ref:`Uploading project <uploading-project>`
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 How to connect to the server directly from QGIS and upload a project.
 
+.. _chapter-3:
+
+3. :doc:`Releasing project <user-manual/releasing-project>`
+----------------------------------------------------------
+Releasing projet using QGIS plugin.
+
 .. _chapter-4:
 
-4. :doc:`Releasing project <user-manual/releasing-project>`
-----------------------------------------------------------
-Last few steps of the publishing process are identical for both traditional and experimental way.
-
-.. _chapter-5:
-
-5. :doc:`User interface <user-manual/user-interface>`
+4. :doc:`User interface <user-manual/user-interface>`
 ----------------------------------------------------
 Each component involved in UI is described in this chapter.
 
-.. _chapter-6:
+.. _chapter-5:
 
-6. :doc:`Sample datasets <user-manual/datasets>`
+5. :doc:`Sample datasets <user-manual/datasets>`
 -------------------------------------------
 Basic information about datasets which were used for documentation.
 
-.. _chapter-7:
+.. _chapter-6:
 
-7. :doc:`Other <user-manual/other>`
+6. :doc:`Other <user-manual/other>`
 ----------------------------------
 Interesting links to video tutorials, used technologies or source code.
 
@@ -106,8 +87,7 @@ Summarized chapters and subchapters as they appear in the left side menu.
    :maxdepth: 2
 
    user-manual/creating-account
-   user-manual/traditional-publishing
-   user-manual/experimental-publishing
+   user-manual/publishing
    user-manual/releasing-project
    user-manual/user-interface
    user-manual/datasets
