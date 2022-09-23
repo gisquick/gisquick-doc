@@ -1,17 +1,16 @@
-.. _experimental-publishing:
+.. _publishing:
 
 =======================
-Experimental publishing
+Publishing
 =======================
 
-.. _experimental-preparing-project:
+.. _preparing-project:
 
 Preparing project
 -----------------
-Another so-called 'experimental' option how to publish project is described
-in this part. Firstly, click on ``Publish`` button which is situated next to the
+Firstly, click on ``Publish`` button which is situated next to the
 ``Upload`` button in the user's project page. It allows publishing a project
-directly from QGIS. In order to use this alternative, the QGIS plugin needs to be
+directly from QGIS. In order to publish a project, the QGIS plugin needs to be
 installed and connected. The required plugin is available to download for 64-bit OS
 (Windows, Linux, Darwin).
 
@@ -34,8 +33,7 @@ zip`` tab, set path to the downloaded zip file and hit the install button.
 
 When the installation is finished, it is possible to check new acquisition
 in the list of installed plugins. Also, a new icon appears in QGIS toolbar.
-In comparison with classic Gisquick icon, it only differs in small digit 2
-in the middle. Next step is to prepare the project in QGIS.
+Next step is to prepare the project in QGIS.
 
 .. thumbnail:: ../img/publish-button/publish-button-4.png
 
@@ -57,12 +55,12 @@ Save the project before the next step.
 
    Error warning when different source paths are used.
 
-.. _experimental-uploading-project:
+.. _uploading-project:
 
 Uploading project
 -----------------
 
-Once the project is ready, click on experimental Gisquick plugin logo.
+Once the project is ready, click on Gisquick plugin logo.
 For the very first time, Gisquick asks the user to fill in the connection
 and Gisquick login details.
 
