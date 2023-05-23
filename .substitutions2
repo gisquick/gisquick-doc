@@ -1,0 +1,18 @@
+.. |tip| image:: ../img/paragraphs/tip.png
+   :width: 2.5em
+.. |att| image:: ../img/paragraphs/attention.png
+   :width: 2.5em
+.. |todo| image:: ../img/paragraphs/todo.png
+   :width: 1.5em
+.. |see| image:: ../img/paragraphs/see.png
+   :width: 1.5em
+.. |note| image:: ../img/paragraphs/note.png
+   :width: 1.5em
+.. |imp| image:: ../img/paragraphs/important.png
+   :width: 1.5em
+.. |danger| image:: ../img/paragraphs/danger.png
+   :width: 1.5em
+.. |problem| image:: ../img/paragraphs/problem.png
+   :width: 1em
+.. |solution| image:: ../img/paragraphs/solution.png
+   :width: 1em
