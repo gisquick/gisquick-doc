@@ -4,6 +4,9 @@
 Creating account
 ================
 
+FGIS modification
+
+
 First of all, a new user account must be created on a publication
 server (for example on Gisquick demo publication server as it is described below).
 This can be done easily by filling the registration form available
