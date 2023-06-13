@@ -1,13 +1,14 @@
 .. _publishing:
 
 =======================
-Publishing
+Before publishing
 =======================
 
 .. _preparing-project:
 
-Preparing project
+Creating Gisquick account
 -----------------
+EDIT ↓
 Firstly, click on ``Publish`` button which is situated next to the
 ``Upload`` button in the user's project page. It allows publishing a project
 directly from QGIS. In order to publish a project, the QGIS plugin needs to be
@@ -57,9 +58,10 @@ Save the project before the next step.
 
 .. _uploading-project:
 
-Uploading project
+Downloading Gisquick plugin
 -----------------
 
+EDIT ↓
 Once the project is ready, click on Gisquick plugin logo.
 For the very first time, Gisquick asks the user to fill in the connection
 and Gisquick login details.
@@ -94,3 +96,10 @@ intended server folder appears in the right one. Click on ``UPLOAD FILES`` butto
 .. thumbnail:: ../img/publish-button/publish-button-7.png
 
    Upload section displays local files and intended server folder.
+
+.. _preparation-in-qgis:
+
+Preparation in QGIS
+-------------------
+
+EDIT ↓
