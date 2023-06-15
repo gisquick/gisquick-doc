@@ -47,6 +47,8 @@ published projects. After the very first login or in case that user hasn't
 published any project yet, only the message appears stating how to proceed.
 
 .. thumbnail:: ../img/gisquick-new-account-04.png
+   :width: 400px
+
    User's profile page after first login.
 
 In order to publish a ``NEW PROJECT`` from QGIS, a QGIS Gisquick plugin must be connected, see chapter below.
@@ -56,20 +58,29 @@ In order to publish a ``NEW PROJECT`` from QGIS, a QGIS Gisquick plugin must be 
 QGIS Gisquick plugin
 ---------------------------
 
-In order to publish a project from QGIS, the QGIS Qickquick plugin needs to be
+In order to publish a project from QGIS, the Qickquick QGIS plugin needs to be
 installed and connected. The required plugin is available to download for 64-bit OS
 (Windows, Linux, MacOS). Click on ``GET PLUGIN`` and copy the link for your OS.
 
 .. thumbnail:: ../img/qgis-plugin-download.png
-   Link to Gisquick plugin for QGIS.
+   :width: 400px
+
+   Link to Gisquick QGIS plugin source.
 
 In QGIS, open tab ``Plugins`` and choose ``Manage and Install Plugins``. Continue to ``Settings`` tab and click ``Add``.
 
 .. thumbnail:: ../img/qgis-plugins.png
+   :width: 300px
+
    How to install plugin in QGIS.
 
 Paste the copied link for Gisquick plugin in here. The plugin is now installed in QGIS, you can check it in the list of installed plugins.
-A new icon also appears in QGIS toolbar.
+A new icon should also appear in QGIS plugins toolbar.
+
+.. thumbnail:: ../img/logo.png
+   :width: 30px
+
+   Gisquick QGIS plugin icon.
 
 The plugin is now installed but not connected to the Gisquick publication server.
 To connect it, click the icon in QGIS toolbar or go to tab ``Web`` - ``Gisquick`` - ``Configure``.
@@ -81,7 +92,7 @@ To connect it, click the icon in QGIS toolbar or go to tab ``Web`` - ``Gisquick`
 
 Fill in the Gisquick server URL, username and password. You are now connected to the publication server and ready to publish your QGIS projects.
 
-.. thumbnail:: ../img/connect-to-server-02.png
+.. thumbnail:: ../img/connect-to-server-01.png
    :width: 300px
    
    Fill in the connection to publication server.
@@ -91,6 +102,4 @@ Fill in the Gisquick server URL, username and password. You are now connected to
 
 Preparation in QGIS
 -------------------
-
-EDIT ↓
 
