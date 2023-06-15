@@ -12,6 +12,8 @@
    :width: 2.2em
 .. |measure-identify| image:: ../img/user_interface/ui-tools.png
    :width: 2.2em
+.. |user-menu-icon| image:: ../img/user_interface/ui-user-menu-icon.png
+   :width: 2.2em
 
 .. _user-interface:
 
@@ -24,17 +26,16 @@ set of functions for useful generic responsive web and mobile-friendly
 mapping application.
 
 The major part of the client's User Interface (UI) is occupied by *map
-canvas* (``1``). :ref:`Content management tools <content-management>` (``2``) are located
-on the left side and can be hidden using the button on its right side (``3``).
+canvas* (1). :ref:`Content management tools <content-management>` (2) are located
+on the left side and can be hidden using the button on its right side (3).
 Corners of map canvas are filled up (clockwise from the
-bottom-left corner) with *map scale* (``4``), :ref:`tools
-<tools>` (``5``), :ref:`user menu <user-menu>` (``6``) and
-:ref:`zoom tools <tools>` (``7``). The status bar is located in
+bottom-left corner) with *map scale* (4), :ref:`tools
+<tools>` (5), :ref:`user menu <user-menu>` (6) and
+:ref:`zoom tools <tools>` (7). The status bar is located in
 the bottom part and it shows current scale, projection and map coordinates
-of the cursor (``8``).
+of the cursor (8).
 
 .. thumbnail:: ../img/user_interface/gisquick-ui.png
-
 Gisquick user interface description.
 
 -------------------------------------
@@ -92,15 +93,42 @@ The tools located in the lower right corner of map canvas, can be used for:
 
 The tools situated at the top-left corner of the map canvas (accessed by |measure-identify|), can be used for:
 
-*   Identification of feature |identify|
+*   Identify |identify|
 *   Measurement |measure|
+
+**Indentify tool** allows to, by default, identify features in all visible layers.
+Settings can be changed in the Identification combo box.
+
+!!!!!!!!!!!!!!!!Sem dopnit obrazek!!!!!!!!!!!!!!!!
+
+**Measurement** tool allows to measure:
+
+*   **Coordinates** (Location) in two different coordinate systems (the project one or WGS-84).
+*   **Distance** between two or more points in international (m, km) or imperial units (yd, mi).
+*   **Area** of marked polygon in international or imperial units.
+
+.. thumbnail:: ../img/user_interface/ui-measurement.png
+
+---------------------------------
 
 .. _user-menu:
 
 User menu
 ---------
 
+User menu, accessed by |user-menu-icon| in top right corner, allows to:
 
+*  **Logout** current user
+*  Open user **profile page**
+*  Enter/Leave **full screen** mode
+*  Display **attributions**
+*  Copy **permalink**
+*  Show **help**
+
+.. thumbnail:: ../img/user_interface/ui-user-menu.png
+   :width: 250px
+
+---------------------------------
 
 .. _profile-page:
 
@@ -110,11 +138,11 @@ Profile page
 User page (:menuselection:`My profile` in the User menu) allows managing
 published projects and uploading new ones.
 
-*   In ``Projects`` search tab user can browse published projects including basic metadata.
+*   In Projects search tab user can browse published projects including basic metadata.
 *   A web map can be opened by clicking on its thumbnail.
 *   By clicking on its name, one can access project settings.
-*   New projects can be uploaded by clicking the ``New project`` button. Note that existing project will be automatically overwritten.
+*   New projects can be uploaded by clicking the New project button. Note that existing project will be automatically overwritten.
 *   The remaining number of possible projects and storage usage can be observed in the lower right corner.
 *   Logging out and changing the password is possible by clicking on the icon in the upper right corner.
 
-.. thumbnail:: ../img/user_interface/ui-user-menu.png
+.. thumbnail:: ../img/user_interface/ui-user-page.png
