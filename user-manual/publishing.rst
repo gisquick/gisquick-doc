@@ -1,7 +1,7 @@
 .. _publishing:
 
 =======================
-Before publishing
+Publishing
 =======================
 
 .. _preparing-project:

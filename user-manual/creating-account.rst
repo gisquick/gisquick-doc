@@ -1,8 +1,12 @@
-.. _creating-account:
+.. _before-publishing:
 
 ================
-Creating account
+Before publishing
 ================
+
+.. _preparing-project:
+
+Creating Gisquick account
 
 First of all, a new user account must be created on a publication
 server (for example on Gisquick demo publication server as it is described below).
@@ -45,3 +49,17 @@ published any project yet, only the message appears stating how to proceed.
 .. thumbnail:: ../img/gisquick-new-account-4.png
 
    User's welcome page after first login.
+
+.. _uploading-project:
+
+Downloading Gisquick plugin
+---------------------------
+
+
+.. _preparation-in-qgis:
+
+Preparation in QGIS
+-------------------
+
+EDIT ↓
+
