@@ -42,14 +42,17 @@ the publication server welcome screen.
 
    Gisquick login screen.
 
-The user can log in using credentials (user name and password). After successful
-login, Gisquick loads user's welcome page which includes a list of already
+The user can log in with user name and password. After successful
+login, Gisquick loads user's profile page which includes a list of already
 published projects. After the very first login or in case that user hasn't
 published any project yet, only the message appears stating how to proceed.
 
-.. thumbnail:: ../img/gisquick-new-account-4.png
+.. thumbnail:: ../img/gisquick-new-account-04.png
+   :width: 300px
+   User's profile page after first login.
 
-   User's welcome page after first login.
+In order to publish a ``NEW PROJECT`` from QGIS, a QGIS Gisquick plugin must be connected, see chapter below.
+
 
 .. _uploading-project:
 

@@ -88,7 +88,7 @@ Summarized chapters and subchapters as they appear in the left side menu.
 .. toctree::
    :maxdepth: 2
 
-   user-manual/creating-account
+   user-manual/before-publishing
    user-manual/publishing
    user-manual/releasing-project
    user-manual/user-interface
