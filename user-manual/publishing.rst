@@ -6,14 +6,12 @@ Publishing
 
 .. _preparing-project:
 
-EDIT - tato cast NEBUDE v teto kapitole Publishing
+EDIT Publishing
 -----------------
-EDIT ↓
+EDIT - tato cast nebude v teto kapitalo Publishing, ale v Before publishing
 Firstly, click on ``Publish`` button which is situated next to the
 ``Upload`` button in the user's project page. It allows publishing a project
-directly from QGIS. In order to publish a project, the QGIS plugin needs to be
-installed and connected. The required plugin is available to download for 64-bit OS
-(Windows, Linux, Darwin).
+directly from QGIS. 
 
 .. thumbnail:: ../img/publish-button/publish-button-1.png
    :width: 300px
@@ -58,8 +56,9 @@ Save the project before the next step.
 
 .. _uploading-project:
 
-TOTO je cast Uploading project - to bude prvni cast v teto kapitole Publishing
+Uploading project 
 -----------------
+- toto bude prvni cast v teto kapitole Publishing + neni nutne opakovat connection to server
 
 Once the project is ready, click on Gisquick plugin logo.
 For the very first time, Gisquick asks the user to fill in the connection
