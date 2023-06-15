@@ -7,26 +7,27 @@ Before publishing
 .. _preparing-project:
 
 Creating Gisquick account
+-------------------------
 
-First of all, a new user account must be created on a publication
+First of all, a new user account has to be created on a publication
 server (for example on Gisquick demo publication server as it is described below).
-This can be done easily by filling the registration form available
-at https://projects.gisquick.org/accounts/signup/.
+This can be done by filling in the registration form available
+at https://demo.gisquick.org/.
 
 .. thumbnail:: ../img/gisquick-new-account-0.png
    :width: 300px
 
    Registration form for creating a new user account.
 
-After pressing ``CREATE ACCOUNT`` button a confirmation mail should
+After pressing ``CREATE ACCOUNT`` button a confirmation e-mail should
 be sent to a given e-mail address.
-
+ 
 .. thumbnail:: ../img/gisquick-new-account-1.png
 
    Completion of registration process will be done by pressing
    ``ACTIVATE ACCOUNT`` button.
 
-Afterwards, a new user is notified about successful singing-in.
+Afterwards, a new user is notified about successful signing-in.
 
 .. thumbnail:: ../img/gisquick-new-account-2.png
    :width: 300px
