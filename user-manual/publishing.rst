@@ -6,37 +6,13 @@ Publishing
 
 .. _preparing-project:
 
-EDIT Publishing
+This section describes the proccess of uploading and publishing QGIS project to Gisquick. It is assumed that
+QGIS Gisquick plugin is installed, connected to Gisquick server (see :doc:`Before publishing <user-manual/before-publishing>`) and 
+project is prepared and ready to be published.
+
+Uploading project
 -----------------
-EDIT - tato cast nebude v teto kapitalo Publishing, ale v Before publishing
-Firstly, click on ``Publish`` button which is situated next to the
-``Upload`` button in the user's project page. It allows publishing a project
-directly from QGIS. 
 
-.. thumbnail:: ../img/publish-button/publish-button-1.png
-   :width: 300px
-   
-   Placement of publish button.
-
-.. thumbnail:: ../img/publish-button/publish-button-2.png
-
-   Where to download plugin for direct publishing from QGIS.
-
-Once the download is complete, open QGIS and find tab ``Plugins`` and
-choose ``Manage and install plugins``. Continue to the ``Install from
-zip`` tab, set path to the downloaded zip file and hit the install button.
-
-.. thumbnail:: ../img/publish-button/publish-button-3.png
-
-   How to proceed in QGIS to install the experimental plugin.
-
-When the installation is finished, it is possible to check new acquisition
-in the list of installed plugins. Also, a new icon appears in QGIS toolbar.
-Next step is to prepare the project in QGIS.
-
-.. thumbnail:: ../img/publish-button/publish-button-4.png
-
-   List of installed plugins.
 
 Save the project before the next step.
 
@@ -98,12 +74,12 @@ intended server folder appears in the right one. Click on ``UPLOAD FILES`` butto
 .. _preparation-in-qgis:
 
 
-↓ ZKOPIROVANO Z RELEASING-PROJECT - toto bude druha cast teto kapitoly Publishing
-
 .. _releasing-project:
 
-Releasing project
+Publishing project
 -----------------
+
+-- popsat, ze podrobne nastaveni vseho, co lze udelat pred (i po) Publish, je popsano v dalsi sekci
 
 This chapter follows up on chapter :ref:`chapter-2` and represents last steps of project publishing. 
 
@@ -119,6 +95,8 @@ manually by drawing a delimiting rectangle area ina  map. The last option is to
 use the extent of one imported layer or extent of all of them.
 Setting map scales is possible in the left box (``8``). Executed changes are
 reflected in map preview (``9``).
+
+all possible project settings/possibilities are described further in chapetr??
 
 .. thumbnail:: ../img/ui-project-setting.png
 

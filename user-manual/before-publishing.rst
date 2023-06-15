@@ -4,6 +4,8 @@
 Before publishing
 ================
 
+
+
 .. _preparing-project:
 
 Creating Gisquick account
@@ -47,7 +49,7 @@ published projects. After the very first login or in case that user hasn't
 published any project yet, only the message appears stating how to proceed.
 
 .. thumbnail:: ../img/gisquick-new-account-04.png
-   :width: 400px
+   :width: 500px
 
    User's profile page after first login.
 
@@ -63,14 +65,14 @@ installed and connected. The required plugin is available to download for 64-bit
 (Windows, Linux, MacOS). Click on ``GET PLUGIN`` and copy the link for your OS.
 
 .. thumbnail:: ../img/qgis-plugin-download.png
-   :width: 400px
+   :width: 500px
 
    Link to Gisquick QGIS plugin source.
 
 In QGIS, open tab ``Plugins`` and choose ``Manage and Install Plugins``. Continue to ``Settings`` tab and click ``Add``.
 
 .. thumbnail:: ../img/qgis-plugins.png
-   :width: 300px
+   :width: 1000px
 
    How to install plugin in QGIS.
 
@@ -93,7 +95,7 @@ To connect it, click the icon in QGIS toolbar or go to tab ``Web`` - ``Gisquick`
 Fill in the Gisquick server URL, username and password. You are now connected to the publication server and ready to publish your QGIS projects.
 
 .. thumbnail:: ../img/connect-to-server-01.png
-   :width: 300px
+   :width: 350px
    
    Fill in the connection to publication server.
 
