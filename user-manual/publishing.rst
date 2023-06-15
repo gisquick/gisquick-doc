@@ -7,14 +7,29 @@ Publishing
 .. _preparing-project:
 
 This section describes the proccess of uploading and publishing QGIS project to Gisquick. It is assumed that
-QGIS Gisquick plugin is installed, connected to Gisquick server (see :doc:`Before publishing <user-manual/before-publishing>`) and 
+QGIS Gisquick plugin is installed, connected to Gisquick server (see :ref:`Before publishing <before-publishing>`) and 
 project is prepared and ready to be published.
 
-Uploading project
------------------
+Once the project in QGIS is ready, click on the Gisquick plugin logo.
+If the user is already connected to publication server (see QGIS Gisquick plugin),
+green message pane will appear.
+Otherwise, fill in the connection and Gisquick login details. Then click on ``Open browser``. 
+
+.. thumbnail:: ../img/publish-button/publish-button-5.png
+   :width: 300px
+   
+   --sem screenshot Open Browser
+
+The user's profile page profile page opens in browser. Click on ``NEW PROJECT``.
 
 
-Save the project before the next step.
+
+.. thumbnail:: ../img/gisquick-new-account-04.png
+   :width: 500px
+
+   User's profile page.
+
+
 
 .. important:: |imp| When using flat files or file-based databases as
    data stores it is highly recommended to save all the files (data and QGIS
@@ -32,18 +47,10 @@ Save the project before the next step.
 
 .. _uploading-project:
 
-Uploading project 
------------------
-- toto bude prvni cast v teto kapitole Publishing + neni nutne opakovat connection to server
 
-Once the project is ready, click on Gisquick plugin logo.
-For the very first time, Gisquick asks the user to fill in the connection
-and Gisquick login details.
 
-.. thumbnail:: ../img/publish-button/publish-button-5.png
-   :width: 300px
-   
-   Example of filled connection and login details.
+
+EDIT ↓
 
 After succesful check-in to the Gisquick server, the project is screened
 in user's experimental publish window. Notice, that the Gisquick 2
@@ -79,7 +86,7 @@ intended server folder appears in the right one. Click on ``UPLOAD FILES`` butto
 Publishing project
 -----------------
 
--- popsat, ze podrobne nastaveni vseho, co lze udelat pred (i po) Publish, je popsano v dalsi sekci
+EDIT ↓
 
 This chapter follows up on chapter :ref:`chapter-2` and represents last steps of project publishing. 
 

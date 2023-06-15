@@ -74,7 +74,7 @@ In QGIS, open tab ``Plugins`` and choose ``Manage and Install Plugins``. Continu
 .. thumbnail:: ../img/qgis-plugins.png
    :width: 1000px
 
-   How to install plugin in QGIS.
+   How to install Gisquick plugin in QGIS.
 
 Paste the copied link for Gisquick plugin in here. The plugin is now installed in QGIS, you can check it in the list of installed plugins.
 A new icon should also appear in QGIS plugins toolbar.
