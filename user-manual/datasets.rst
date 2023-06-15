@@ -8,121 +8,12 @@ Some basic information about our data aiming to be a part of examples
 introduced in this documentation. This section presents two sample
 datasets.
 
-The first one :ref:`dataset-natural-earth` has been originally created
-by GIS.lab developers and later adopted by Gisquick project. Subsequently,
-the second dataset :ref:`dataset-prague` was developed for specific
-needs of Gisquick publishing platform.
+The first one :ref:`dataset-prague` was developed for specific
+needs of this Gisquick publishing platform. 
+Subsequently,
+the second dataset :ref:`dataset-natural-earth` was originally created
+by the developers of GIS.lab and was later adopted by the Gisquick project. 
 
-.. _dataset-natural-earth:
-
-Natural earth
--------------
-
-Database ``natural-earth.sqlite``. Available online from `GitHub
-repository
-<https://github.com/gislab-npo/gisquick/tree/master/qgis/project/natural-earth>`__
-or directly as a `zip file
-<http://training.gismentors.eu/geodata/gisquick/natural-earth.tar.gz>`__.
-
-.. rubric:: Data source
-
-The data are sourced from `Natural Earth dataset
-<http://www.naturalearthdata.com/downloads/>`_.  It is a public domain
-map dataset available at ``1:10 million``, ``1:50 million`` and
-``1:110 million`` map scales. It is free for use in any type of
-project.  Dataset was built through a collaboration of many
-volunteers, it is supported by *NACIS* - North American Cartographic
-Information Society and contains a series of vector and raster
-data. With Natural Earth one can make a variety of maps with all
-commonly-used cartography and GIS software.
-
-.. rubric:: Coordinate systems
-
-All Natural Earth data use the Geographic coordinate system WGS84
-(EPSG:4326).
-
-.. rubric:: Format and other key features
-
-Natural Earth Vector comes in Esri Shapefile format. Character
-encoding is Windows-1252. Vector features include name attributes and
-bounding box extent. Natural Earth Raster comes in TIFF format with a
-TFW world file.
-
-Natural Earth is a very useful collection of data. Most of their
-attributes are equally important for map-making. They contain embedded
-feature names, which are ranked by relative importance. Other
-attributes facilitate faster map production, such as width attributes
-assigned to river segments for creating tapers, etc.
-
-.. thumbnail:: ../img/qgis-natural-earth.png
-
-   Natural Earth sample project loaded in QGIS.
-
-Thematic layers
-^^^^^^^^^^^^^^^
-
-**Area** - matched boundary polygon for the area of interest (administrative areas).
-
-* *Layer name*: ``area``
-* *Storage type*: SQLite database
-* *Geometry type*: Polygon
-
-**Countries** - matched boundary lines and polygons with various attributes for 
-countries.
-
-* *Layer name*: ``countries``
-* *Storage type*: SQLite database
-* *Geometry type*: Polygon
-* *Attributes*:
-
-.. csv-table:: Attributes of the country layer.
-   :header: "Name", "Description"
-   :widths: 10, 10
-
-   "*adm0_a3*", "country code"
-   "*name*", "estimated total population"
-   "*gdp_md_est*", "estimated total GDP in millions of dollars"
-   "*subregion*", "part of a larger region or continent"
-
-**Places** - point symbols with name attributes. Includes DEM data, population 
-data and other information (urban landscape).
-
-* *Layer name*: ``places``
-* *Storage type*: SQLite database
-* *Geometry type*: Point
-* *Attributes*:
-
-.. csv-table:: Attributes of the places layer.
-   :header: "Name", "Description"
-   :widths: 10, 10
-
-   "*name*", "name of entity"
-   "*adm0name*", "country name"
-   "*adm0_a3*", "country code"
-   "*adm1name*", "sub-country name"
-   "*lattitude*", "latitude of the interior point (degrees)"
-   "*longitude*", "longitude of the interior point (degrees)"
-   "*pop_max*", "population for the metropolitan area"
-   "*pop_min*", "population for the incorporated city"
-   "*gtopo30*", "DEM with 30-arc second resolution"
-   "*timezone*", "timezone"
-
-**Roads** - road lines with attributes.
-
-* *Layer name*: ``roads``
-* *Storage type*: SQLite database
-* *Geometry type*: Polyline
-* *Attributes*:
-
-.. csv-table:: Attributes of the places layer.
-   :header: "Name", "Description"
-   :widths: 10, 10
-
-   "*type*", "type of road"
-   "*length_km*", "road length (km)"
-   "*label*", "label"
-   "*local*", "local label"
-   "*expressway*", "1 for expressway, 0 for other"
 
 .. _dataset-prague:
 
@@ -472,3 +363,114 @@ Thematic layers
 
    "*number*", "number of building"
    "*code*", "zip code"
+   
+   .. _dataset-natural-earth:
+
+Natural earth
+-------------
+
+Database ``natural-earth.sqlite``. Available online from `GitHub
+repository
+<https://github.com/gislab-npo/gisquick/tree/master/qgis/project/natural-earth>`__
+or directly as a `zip file
+<http://training.gismentors.eu/geodata/gisquick/natural-earth.tar.gz>`__.
+
+.. rubric:: Data source
+
+The data are sourced from `Natural Earth dataset
+<http://www.naturalearthdata.com/downloads/>`_.  It is a public domain
+map dataset available at ``1:10 million``, ``1:50 million`` and
+``1:110 million`` map scales. It is free for use in any type of
+project.  Dataset was built through a collaboration of many
+volunteers, it is supported by *NACIS* - North American Cartographic
+Information Society and contains a series of vector and raster
+data. With Natural Earth one can make a variety of maps with all
+commonly-used cartography and GIS software.
+
+.. rubric:: Coordinate systems
+
+All Natural Earth data use the Geographic coordinate system WGS84
+(EPSG:4326).
+
+.. rubric:: Format and other key features
+
+Natural Earth Vector comes in Esri Shapefile format. Character
+encoding is Windows-1252. Vector features include name attributes and
+bounding box extent. Natural Earth Raster comes in TIFF format with a
+TFW world file.
+
+Natural Earth is a very useful collection of data. Most of their
+attributes are equally important for map-making. They contain embedded
+feature names, which are ranked by relative importance. Other
+attributes facilitate faster map production, such as width attributes
+assigned to river segments for creating tapers, etc.
+
+.. thumbnail:: ../img/qgis-natural-earth.png
+
+   Natural Earth sample project loaded in QGIS.
+
+Thematic layers
+^^^^^^^^^^^^^^^
+
+**Area** - matched boundary polygon for the area of interest (administrative areas).
+
+* *Layer name*: ``area``
+* *Storage type*: SQLite database
+* *Geometry type*: Polygon
+
+**Countries** - matched boundary lines and polygons with various attributes for 
+countries.
+
+* *Layer name*: ``countries``
+* *Storage type*: SQLite database
+* *Geometry type*: Polygon
+* *Attributes*:
+
+.. csv-table:: Attributes of the country layer.
+   :header: "Name", "Description"
+   :widths: 10, 10
+
+   "*adm0_a3*", "country code"
+   "*name*", "estimated total population"
+   "*gdp_md_est*", "estimated total GDP in millions of dollars"
+   "*subregion*", "part of a larger region or continent"
+
+**Places** - point symbols with name attributes. Includes DEM data, population 
+data and other information (urban landscape).
+
+* *Layer name*: ``places``
+* *Storage type*: SQLite database
+* *Geometry type*: Point
+* *Attributes*:
+
+.. csv-table:: Attributes of the places layer.
+   :header: "Name", "Description"
+   :widths: 10, 10
+
+   "*name*", "name of entity"
+   "*adm0name*", "country name"
+   "*adm0_a3*", "country code"
+   "*adm1name*", "sub-country name"
+   "*lattitude*", "latitude of the interior point (degrees)"
+   "*longitude*", "longitude of the interior point (degrees)"
+   "*pop_max*", "population for the metropolitan area"
+   "*pop_min*", "population for the incorporated city"
+   "*gtopo30*", "DEM with 30-arc second resolution"
+   "*timezone*", "timezone"
+
+**Roads** - road lines with attributes.
+
+* *Layer name*: ``roads``
+* *Storage type*: SQLite database
+* *Geometry type*: Polyline
+* *Attributes*:
+
+.. csv-table:: Attributes of the places layer.
+   :header: "Name", "Description"
+   :widths: 10, 10
+
+   "*type*", "type of road"
+   "*length_km*", "road length (km)"
+   "*label*", "label"
+   "*local*", "local label"
+   "*expressway*", "1 for expressway, 0 for other"
