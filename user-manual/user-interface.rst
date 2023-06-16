@@ -14,6 +14,8 @@
    :width: 2.2em
 .. |user-menu-icon| image:: ../img/user_interface/ui-user-menu-icon.png
    :width: 2.2em
+.. |print| image:: ../img/user_interface/ui-print.png
+   :width: 2.2em
 
 .. _user-interface:
 
@@ -36,6 +38,7 @@ the bottom part and it shows current scale, projection and map coordinates
 of the cursor (8).
 
 .. thumbnail:: ../img/user_interface/gisquick-ui.png
+
 Gisquick user interface description.
 
 -------------------------------------
@@ -44,7 +47,6 @@ Gisquick user interface description.
 
 Web map
 =======
-
 
 .. _content-management:
 
@@ -95,11 +97,12 @@ The tools situated at the top-left corner of the map canvas (accessed by |measur
 
 *   Identify |identify|
 *   Measurement |measure|
+*   Print |print|
 
-**Indentify tool** allows to, by default, identify features in all visible layers.
+**Indentify** tool allows to, by default, identify features in all visible layers.
 Settings can be changed in the Identification combo box.
 
-!!!!!!!!!!!!!!!!Sem dopnit obrazek!!!!!!!!!!!!!!!!
+.. thumbnail:: ../img/user_interface/ui-identify-2.png
 
 **Measurement** tool allows to measure:
 
@@ -108,6 +111,15 @@ Settings can be changed in the Identification combo box.
 *   **Area** of marked polygon in international or imperial units.
 
 .. thumbnail:: ../img/user_interface/ui-measurement.png
+
+**Print** tool allows to print selected layers. User can set:
+
+*   Layout size
+*   Format
+*   Quality
+*   Title
+
+.. thumbnail:: ../img/user_interface/ui-print-2.png
 
 ---------------------------------
 
