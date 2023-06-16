@@ -90,7 +90,7 @@ Summarized chapters and subchapters as they appear in the left side menu.
 
    user-manual/before-publishing
    user-manual/publishing
-   user-manual/releasing-project
+   user-manual/setting-up-project
    user-manual/user-interface
    user-manual/datasets
    user-manual/other
