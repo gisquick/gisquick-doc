@@ -18,7 +18,7 @@ Otherwise, fill in the connection and Gisquick login details. Then click on ``Op
 .. thumbnail:: ../img/open-browser.png
    :width: 1000px
    
-   Successfull connection to Gisquick server.
+   Successfull connection to Gisquick server in QGIS.
 
 The user's profile page opens in browser. If you have not published any projects yet, the profile page looks like this,
 if you have, you will see a list of your published projects. For publishing a new project, click on ``NEW PROJECT``.
