@@ -61,7 +61,7 @@ In order to publish a ``NEW PROJECT`` from QGIS, a QGIS Gisquick plugin must be 
 QGIS Gisquick plugin
 ---------------------------
 
-In order to publish a project from QGIS, the Qickquick QGIS plugin needs to be
+In order to publish a project from QGIS, the QGIS Gisquick plugin needs to be
 installed and connected. The required plugin is available to download for 64-bit OS
 (Windows, Linux, MacOS). Click on ``GET PLUGIN`` and copy the link for your OS.
 
@@ -78,15 +78,10 @@ In QGIS, open tab ``Plugins`` and choose ``Manage and Install Plugins``. Continu
    How to install Gisquick plugin in QGIS.
 
 Paste the copied link for Gisquick plugin in here. The plugin is now installed in QGIS, you can check it in the list of installed plugins.
-A new icon should also appear in QGIS plugins toolbar.
-
-.. thumbnail:: ../img/logo.png
-   :width: 30px
-
-   Gisquick QGIS plugin icon.
+A new icon |logo| should also appear in QGIS plugins toolbar.
 
 The plugin is now installed but not connected to the Gisquick publication server.
-To connect it, click the icon in QGIS toolbar or go to tab ``Web`` - ``Gisquick`` - ``Configure``.
+To connect to server, click the icon |logo| in QGIS toolbar or go to tab ``Web`` - ``Gisquick`` - ``Configure``.
 
 .. thumbnail:: ../img/connect-to-server-02.png
    :width: 300px

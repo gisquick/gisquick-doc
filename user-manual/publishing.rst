@@ -11,7 +11,7 @@ QGIS Gisquick plugin is installed, connected to Gisquick server (see :ref:`Befor
 project is prepared and ready to be published.
 
 Once the project in QGIS is ready, click on the Gisquick plugin logo.
-If the user is already connected to publication server (see QGIS Gisquick plugin),
+If the user is already connected to publication server (see :ref:`QGIS Gisquick plugin <before-publishing>`),
 green message pane will appear.
 Otherwise, fill in the connection and Gisquick login details. Then click on ``Open browser``. 
 
