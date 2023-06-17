@@ -1,3 +1,6 @@
+.. |logo| image:: ../img/logo.png
+   :width: 2em
+
 .. _publishing:
 
 =======================
