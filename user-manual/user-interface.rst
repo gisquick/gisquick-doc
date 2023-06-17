@@ -112,6 +112,10 @@ Settings can be changed in the Identification combo box.
 
 .. thumbnail:: ../img/user_interface/ui-measurement.png
 
+.. note:: Measurement tool completed by double click.
+
+.. thumbnail:: ../img/user_interface/ui-measurement.gif
+
 **Print** tool allows to print selected layers. User can set:
 
 *   Layout size
@@ -120,6 +124,11 @@ Settings can be changed in the Identification combo box.
 *   Title
 
 .. thumbnail:: ../img/user_interface/ui-print-2.png
+
+.. note:: Layers can be rotated in print function using ALT + SHIFT + dragging.
+
+.. thumbnail:: ../img/user_interface/ui-print-2.gif
+
 
 ---------------------------------
 
