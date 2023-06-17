@@ -23,8 +23,7 @@ Otherwise, fill in the connection and Gisquick login details. Then click on ``Op
 The user's profile page opens in browser. If you have not published any projects yet, the profile page looks like this,
 if you have, you will see a list of your published projects. For publishing a new project, click on ``NEW PROJECT``.
 
-.. thumbnail:: ../img/gisquick-new-account-04.png
-   :width: 500px
+.. thumbnail:: ../img/publish/create-account.png
 
    User's profile page.
 
