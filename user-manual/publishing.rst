@@ -20,16 +20,40 @@ Otherwise, fill in the connection and Gisquick login details. Then click on ``Op
    
    --sem screenshot Open Browser
 
-The user's profile page profile page opens in browser. Click on ``NEW PROJECT``.
-
-
+The user's profile page opens in browser. If you have not published any projects yet, the profile page looks like this,
+if you have, you will see a list of your published projects. For publishing a new project, click on ``NEW PROJECT``.
 
 .. thumbnail:: ../img/gisquick-new-account-04.png
    :width: 500px
 
    User's profile page.
 
+After that, an overview of the project appears. Basic information, such as QGIS project location, 
+map projection, units and print templates, and all layers that are about to be published
+are listed in here. It is not possible to make any changes within this step.
+Click the button ``LOAD FILES`` and after that, type a project's name and hit ``CREATE``.
+Note that the project name cannot be changed later.
 
+--screenshot LOAD FILES
+
+--screenshot Project name - CREATE
+
+The last obligatory step before publishing is setting the project title. 
+After setting the title, the project is ready to be published by clicking the button ``PUBLISH``
+in the top right corner of Gisquick web interface. Before publishing, project is marked as 
+``STAGED``, after publishing it is marked as ``PUBLISHED``.
+
+.. note:: Project name may or may not be the same as project title. Unlike the project name,
+   the project title can be changed in this **General** section of Gisquick web interace.
+
+--screenshot cervene PUBLISH + staged/published
+
+See section :ref:`Setting up the project <setting-up-project>` for further information about all 
+the possible settings of a project you are publishing. These settings can be changed before the
+hitting the button ``PUBLISH`` or after that.
+
+
+EDIT ↓
 
 .. important:: |imp| When using flat files or file-based databases as
    data stores it is highly recommended to save all the files (data and QGIS
@@ -47,92 +71,3 @@ The user's profile page profile page opens in browser. Click on ``NEW PROJECT``.
 
 .. _uploading-project:
 
-
-
-
-EDIT ↓
-
-After succesful check-in to the Gisquick server, the project is screened
-in user's experimental publish window. Notice, that the Gisquick 2
-icon stays active in QGIS until the user clicks on it again and interrupts the
-connection with the server.
-
-.. thumbnail:: ../img/publish-button/publish-button-6.png
-
-   Successful check-in to the Gisquick server and loaded sample project.
-
-The first section called ``CHECK-IN`` consists of two tabs and represents
-an overview which is designed to easily check on loaded layers. It is not
-possible to make any changes within these tabs. Eventual corrections
-could be made back in QGIS.
-
-First tab ``General`` includes some fundamental information about user's
-project, e.g. map projection, units, predefined scales or print templates.
-Second tab ``Layers`` contains a list of layers with additional information.
-
-When the project is checked and ready, proceed to the ``Upload`` section.
-Two windows will split the screen: local project files are listed in the left,
-intended server folder appears in the right one. Click on ``UPLOAD FILES`` button.
-
-.. thumbnail:: ../img/publish-button/publish-button-7.png
-
-   Upload section displays local files and intended server folder.
-
-.. _preparation-in-qgis:
-
-
-.. _releasing-project:
-
-Publishing project
------------------
-
-EDIT ↓
-
-This chapter follows up on chapter :ref:`chapter-2` and represents last steps of project publishing. 
-
-A section called ``SETTINGS`` is displayed. There are a few
-options in the settings window. It is possible to load map canvas using the
-map button (``1``). Use the delete button (``2``) in case of removing the whole project.
-For logging out find the top right button (``3``).
-Furthermore, it is possible to change the project title (``4``), set the
-rate of authentication (``5``) or edit map extent setting (``6``). There are few
-possibilities how to edit map extent (``7``). The first is to fill in the
-desired coordinates into the frames. The second possibility, the map extent can be edited
-manually by drawing a delimiting rectangle area ina  map. The last option is to
-use the extent of one imported layer or extent of all of them.
-Setting map scales is possible in the left box (``8``). Executed changes are
-reflected in map preview (``9``).
-
-all possible project settings/possibilities are described further in chapetr??
-
-.. thumbnail:: ../img/ui-project-setting.png
-
-   Project setting.
- 
-.. thumbnail:: ../img/ui-extent-setting.png
-   :width: 200px
-   
-   Couple of ways how to set map extent.
-
-Check the subsection Layers for advanced adjustment of layers. The base layer
-can be chosen in the left box (a blank base map is default). Within the right
-box, it is possible to specify which layers will be published or hidden (or both
-which means that the layer will be published but turned off when the project is opened). 
-
-.. thumbnail:: ../img/ui-layers-setting.png
-
-   Layers setting.
-
-The last subsection is dedicated to topics. Creating or removing a topic is enabled.
-Select a topic to see involved features which can be subsequently modified.
-
-.. thumbnail:: ../img/ui-topics-setting.png
-
-   Subsection Topics. Add and remove button are highlighted in red square.
-
-In the very last step, hit the update button to save all realized changes and finish the publishing process.
-
-.. thumbnail:: ../img/ui-update.png
-   :width: 250px
-   
-   Update button is highlighted in red square.

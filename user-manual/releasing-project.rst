@@ -3,7 +3,6 @@
 =================
 Releasing project
 =================
--- z teto kapitoly udelat kapitolu Setting up the project
 This chapter follows up on chapter :ref:`chapter-2` and represents last steps of project publishing.
 
 A section called ``SETTINGS`` is displayed. There are a few

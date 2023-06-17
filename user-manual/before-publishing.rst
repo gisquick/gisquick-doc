@@ -4,7 +4,8 @@
 Before publishing
 ================
 
-
+This section describes the steps that need to be done before publishing a project from QGIS 
+on Gisquick platform.
 
 .. _preparing-project:
 
@@ -105,3 +106,4 @@ Fill in the Gisquick server URL, username and password. You are now connected to
 Preparation in QGIS
 -------------------
 
+EDIT
