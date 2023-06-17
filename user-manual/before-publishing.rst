@@ -9,6 +9,8 @@ Before publishing
 
 This part of the documentation describes the steps that need to be done before publishing a project from QGIS 
 on Gisquick platform.
+It is also assumed that the user has a project with the required layers
+ready in QGIS and wants to publish it. 
 
 .. _creating-account:
 

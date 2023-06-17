@@ -10,7 +10,7 @@ Other
 Video tutorials
 ---------------
 
-Gisquick video tutorials are available from `YouTube channel
+Gisquick video tutorials are available on `YouTube channel
 <https://www.youtube.com/channel/UCHXyhq_wrEBnGYTRJovxrCg/videos>`__.
 
 .. note:: Gisquick is already minimally bound to GIS.lab. Gisquick is running in

@@ -37,7 +37,7 @@ Note that the project name cannot be changed later.
 
 --screenshot Project name - CREATE - GIF ?
 
-The last obligatory step before publishing is setting the project title. 
+The last obligatory step before publishing is setting the project's title. 
 After setting the title, the project is ready to be published by clicking the button ``PUBLISH``
 in the top-right corner of Gisquick web interface. Before publishing, project is marked as 
 **STAGED**, after publishing it is marked as **PUBLISHED**.
