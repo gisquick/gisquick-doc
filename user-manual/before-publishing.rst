@@ -1,3 +1,6 @@
+.. |logo| image:: ../img/logo.png
+   :width: 2em
+
 .. _before-publishing:
 
 ================
@@ -7,7 +10,7 @@ Before publishing
 This part of the documentation describes the steps that need to be done before publishing a project from QGIS 
 on Gisquick platform.
 
-.. _preparing-project:
+.. _creating-account:
 
 Creating Gisquick account
 -------------------------
@@ -56,7 +59,7 @@ published any project yet, only the message appears stating how to proceed.
 
 In order to publish a ``NEW PROJECT`` from QGIS, a QGIS Gisquick plugin must be connected, see chapter below.
 
-.. _uploading-project:
+.. _gisquick-plugin:
 
 QGIS Gisquick plugin
 ---------------------------
