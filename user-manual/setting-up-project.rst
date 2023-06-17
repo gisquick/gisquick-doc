@@ -85,6 +85,20 @@ Layers
 Topics
 ======
 
+The **Topics** section is used to group the layers that are in the project.
+Layers can be grouped (e. g. based on their similar theme) already in QGIS, or
+the topics (groups of layers) can be created here. A project may or may not have Topics,
+the decision is up to the user. A Topic can also contain only a single layer.
+If Topics are created, it will affect the appearance of the :ref:`Content management <user-interface>`
+widget in the published web map. **Topics tab** is located next to the **Layers tab** in the user interface.
+A Topic can simply be added or removed using ``ADD`` or ``REMOVE`` buttons. After clicking on
+``ADD`` button, the user can edit Topic's name and description and select the layers wanted in the Topic.
+Save all changes by using the ``SAVE`` button in the top right corner.
+
+.. note:: The **Description** of a Topic is called **Abstract** in the web map.
+
+--screenshot Topics, vyznacit ADD/REMOVE
+
 ---------------------------------
 
 

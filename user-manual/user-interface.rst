@@ -63,7 +63,7 @@ Content management widget is split into three major tabs:
 
    Content tabs.
 
-.. tip:: |tip| In the tab, you can set the opacity of the base layer.
+.. tip:: |tip| In the tab, you can set the opacity of the base layer or the overlay layer.
 
 --------------------
 
