@@ -36,8 +36,6 @@ Technologies
 * `Django <https://www.djangoproject.com/>`__
 * `Python <https://www.python.org/>`__
 
-.. todo:: Update technologies
-
 .. _source-code-layout:
  
 ------------------
@@ -77,5 +75,5 @@ Authors (documentation)
 Major Gisquick 2 update (spring 2020). Documentation was updated
 within the subject **Free software GIS** at **Czech Technical
 University** in Prague by Josef Münzberger, Svetlana Usik and Zuzana
-Vaňková. Language corrections done by Ondřej Pešek. Additional updates
+Vaňková in 2020 and Jakub Snopl, Tatana Blahova and Dennis Dvorak in 2023. Language corrections done by Ondřej Pešek. Additional updates
 were made by František Mužík in 2021.
