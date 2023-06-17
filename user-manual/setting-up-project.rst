@@ -2,7 +2,7 @@
    :width: 2em
 .. |extent-lay| image:: ../img/settings/extent-lay.png
    :width: 2em
-.. |extent-lay| image:: ../img/settings/plus.png
+.. |plus| image:: ../img/settings/plus.png
    :width: 2em
 
 
@@ -101,7 +101,9 @@ Save all changes by using the ``SAVE`` button in the top-right corner.
 .. note:: The **Description** of a Topic is called **Abstract** in the Content management
    widget of the web map.
 
---screenshot Topics, vyznacit ADD/REMOVE
+.. thumbnail:: ../img/settings/topics.png
+
+
 
 ---------------------------------
 
@@ -114,31 +116,28 @@ The **Permissions** section defines who has access to the published project.
 The default setting is that the project is Private.
 The Permissions can be:
 
-* **Public** - web map is public and everyone, with or without a Gisquick account,
-can see it online and interact with it.
+* **Public** - web map is public and everyone, with or without a Gisquick account, can see it online and interact with it.
 * **Private** - only the author of the project has access to it.
 * **Authenticated** - only users with valid Gisquick account can see the project/web map online and interact with it.
 * **Selected Users** - the author gives permissions to project to selected users by filling in their Gisquick usernames.
 
 .. thumbnail:: ../img/settings/permissions-basic.png
-   :width: 600px
 
    Basic permissions to project.
 
 
-These 4 options are the basic Permissions settings.
+These four options are the basic Permissions settings.
 However, there is also an advanced setting that is available by checking
 the **Multiple roles permissions** option.
 
 .. thumbnail:: ../img/settings/permissions-advanced.png
-   :width: 600px
 
    Advanced permissions to project.
 
 This option allows the user to create one or more Groups of users
 who have different access to layers in the project and can see the resulting web map differently.
 The group must be created by clicking on the plus icon |plus| and then
-the user can set different settings (Role Settings, Layers & Attributes, Topics) for the group.
+the user can set different settings (**Role Settings, Layers & Attributes, Topics**) for the group.
 
 
 ---------------------------------
