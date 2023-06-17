@@ -14,12 +14,12 @@ Gisquick (http://gisquick.org) is an open-source geospatial data platform for pu
 sharing `QGIS <http://qgis.org>`__ projects. Explore more to see how easy yet powerful is working in Gisquick.
 
 There are a few topics you might be interested in. Firstly, if you want to **publish** your **QGIS**
-**project online**, see chapters :ref:`chapter-1`, :ref:`chapter-2` and :ref:`chapter-3`. Together with every published project,
-web map service (**WMS**) is created and can be subsequently modified.
+**project online**, see sections :ref:`chapter-1` and :ref:`chapter-2`.
+Together with every published project, web map service (**WMS**) is created and can be subsequently modified.
 
-If you wonder **what does the output look like** or **which features are involved**, check chapter :ref:`chapter-4`.
-Browse chapter :ref:`chapter-5` for **metadata of example datasets** which were used for documentation. If you plan to
-**operate Gisquick publication server** on your own hardware, see chapter :ref:`chapter-6`.
+If you wonder **what does the output look like** or **which features are involved**, check sections :ref:`chapter-3` and :ref:`chapter-4`.
+Browse section :ref:`chapter-5` for **metadata of example datasets** that were used for documentation. If you plan to
+**operate Gisquick publication server** on your own hardware, see section :ref:`chapter-6`.
 
 .. note::
    
@@ -33,49 +33,38 @@ Browse chapter :ref:`chapter-5` for **metadata of example datasets** which were 
 
 1. :doc:`Before publishing <user-manual/before-publishing>`
 --------------------------------------------------------
-It is necessary to create a Gisquick account and download QGIS Plugin.
-
---pridat odkazy na kazdou podkapitolu
+To successfuly use Gisquick platform, a Gisquick user account must be created and
+QGIS Gisquick plugin must be installed.
 
 .. _chapter-2:
 
 2. :doc:`Publishing <user-manual/publishing>`
 ----------------------------------------------------------------------
-Gisquick allows user to easily edit published projects using QGIS plugin; every change made in
-project in QGIS can be reflected in Gisquick by activating plugin which enables the user to compare local and cloud
-project's folders, layer by layer.
-
-2.1 :ref:`Preparing project <preparing-project>`
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-How to proceed in QGIS.
-
-2.2 :ref:`Uploading project <uploading-project>`
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-How to connect to the server directly from QGIS and upload a project.
+Proccess of publishing a project from QGIS to Gisquick.
 
 .. _chapter-3:
 
-3. :doc:`Releasing project <user-manual/releasing-project>`
+3. :doc:`Setting up the project <user-manual/setting-up-project>`
 ----------------------------------------------------------
-Releasing projet using QGIS plugin.
+All possible settings that can be set to a published project.
 
 .. _chapter-4:
 
 4. :doc:`User interface <user-manual/user-interface>`
 ----------------------------------------------------
-Each component involved in UI is described in this chapter.
+Each feature involved in Gisquick user interface.
 
 .. _chapter-5:
 
 5. :doc:`Sample datasets <user-manual/datasets>`
 -------------------------------------------
-Basic information about datasets which were used for documentation.
+Basic information about datasets that were used for documentation.
 
 .. _chapter-6:
 
 6. :doc:`Other <user-manual/other>`
 ----------------------------------
-Interesting links to video tutorials, used technologies or source code.
+Links to video tutorials, used technologies and source code.
 
 .. note:: Gisquick has been originally developed for `GIS.lab
    <http://gislab-npo.github.io/gislab/>`__ system with an aim to produce

@@ -15,7 +15,7 @@ If the user is already connected to publication server (see :ref:`QGIS Gisquick 
 green message pane will appear.
 Otherwise, fill in the connection and Gisquick login details. Then click on ``Open browser``. 
 
-.. thumbnail:: ../img/open-browser.png
+.. thumbnail:: ../img/publish/open-browser.png
    :width: 1000px
    
    Successfull connection to Gisquick server in QGIS.
@@ -33,9 +33,9 @@ are listed in here. It is not possible to make any changes within this step.
 Click the button ``LOAD FILES`` and after that, type a project's name and hit ``CREATE``.
 Note that the project name cannot be changed later.
 
---screenshot LOAD FILES
+--screenshot LOAD FILES - GIF ?
 
---screenshot Project name - CREATE
+--screenshot Project name - CREATE - GIF ?
 
 The last obligatory step before publishing is setting the project title. 
 After setting the title, the project is ready to be published by clicking the button ``PUBLISH``
@@ -43,11 +43,11 @@ in the top-right corner of Gisquick web interface. Before publishing, project is
 **STAGED**, after publishing it is marked as **PUBLISHED**.
 
 .. note:: Project name may or may not be the same as project title. Unlike the project name,
-   the project title can be changed in this **General** section of Gisquick web interace.
+   the project title can be changed in this **General** section of Gisquick web interface.
 
 --screenshot cervene PUBLISH + staged/published + MAP
 
-The button ``MAP`` gets user to the published web map.
+The button ``MAP`` gets user to the published web map interface.
 
 See section :ref:`Setting up the project <setting-up-project>` for further information about all 
 the possible settings of a project you are publishing. These settings can be changed before the
