@@ -16,7 +16,7 @@ green message pane will appear.
 Otherwise, fill in the connection and Gisquick login details. Then click on ``Open browser``. 
 
 .. thumbnail:: ../img/open-browser.png
-   :width: 300px
+   :width: 1000px
    
    Successfull connection to Gisquick server.
 
