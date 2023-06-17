@@ -14,7 +14,7 @@ Gisquick (http://gisquick.org) is an open-source geospatial data platform for pu
 sharing `QGIS <http://qgis.org>`__ projects. Explore more to see how easy yet powerful is working in Gisquick.
 
 There are a few topics you might be interested in. Firstly, if you want to **publish** your **QGIS**
-**project online**, see chapters :ref:`chapter-1`, :ref:`chapter-2` and :ref:`chapter-3`. Together with every released project,
+**project online**, see chapters :ref:`chapter-1`, :ref:`chapter-2` and :ref:`chapter-3`. Together with every published project,
 web map service (**WMS**) is created and can be subsequently modified.
 
 If you wonder **what does the output look like** or **which features are involved**, check chapter :ref:`chapter-4`.
