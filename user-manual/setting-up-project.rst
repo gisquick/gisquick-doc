@@ -4,7 +4,14 @@
    :width: 2em
 .. |plus| image:: ../img/settings/plus.png
    :width: 2em
-
+.. |thumbnail-1| image:: ../img/settings/thumbnail-1.png
+   :width: 2em
+.. |thumbnail-2| image:: ../img/settings/thumbnail-2.png
+   :width: 2em
+.. |layers-1| image:: ../img/settings/layers-1.png
+   :width: 6em
+.. |layers-settings| image:: ../img/settings/layers-settings.png
+   :width: 2em
 
 
 .. _setting-up-project:
@@ -70,15 +77,41 @@ marked scale will be removed. Double-click on particular scale allows to redefin
 *   by taking over from defined layer (accessed by |extent-lay|)
 
 .. thumbnail:: ../img/settings/extent.png
-   :width: 720px
-Extent
----------------------------------
 
+The Project **Thumbnail** is a useful tool when it comes to orientation among other projects on the profile page.
+Two methods are available for setting the thumbnail:
+
+*   uploading from a file (accessed by |thumbnail-1|)
+*   defining the extent and layer to appear on the thumbnail (accessed by |thumbnail-2|)
+
+.. thumbnail:: ../img/settings/thumbnail.png
+   :width: 220px
+
+---------------------------------
 
 .. _layers:
 
 Layers
 ======
+
+Within the **Layers** section, users are granted the ability to manage layers. With a vast selection of options,
+users can tailor layers to their exact needs.
+
+**Base layers** on the left half of the screen can be defined by dragging and dropping an arbitrary layer from
+the right half. The behavior of these layers in the web map is described in :ref:`Content management <content-management>`.
+
+**Flags**, accessed by |layers-1| or in settings |layers-settings|:
+
+*   **Excluded** layers are not in the layers content tab, neither in the map.
+*   **Hidden** layers are not shown in the layers content tab, but they are in the map.
+*   **Renderless** layers are shown in the layers content tab, but are not in the map.
+*   **Queryable** enable to display attribute table.
+*   **Editable** enable editing of layer.
+*   **Exportable** enable to download attribute table. At the same time have to be Quaryable.
+
+.. thumbnail:: ../img/settings/layers.gif
+
+**ZBEZNE VYTVORENY GIF - PREDELAT???**
 
 ---------------------------------
 
