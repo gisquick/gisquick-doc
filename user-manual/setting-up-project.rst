@@ -102,16 +102,22 @@ the right half. The behavior of these layers in the web map is described in :ref
 
 **Flags**, accessed by |layers-1| or in settings |layers-settings|:
 
-*   **Excluded** layers are not in the layers content tab, neither in the map.
-*   **Hidden** layers are not shown in the layers content tab, but they are in the map.
-*   **Renderless** layers are shown in the layers content tab, but are not in the map.
+*   **Excluded** layers are not in the layer's content tab, neither in the map.
+*   **Hidden** layers are not shown in the layer's content tab, but they are in the map.
+*   **Renderless** layers are shown in the layer's content tab, but are not in the map.
 *   **Queryable** enable to display attribute table.
 *   **Editable** enable editing of layer.
 *   **Exportable** enable to download attribute table. At the same time have to be Quaryable.
 
-.. thumbnail:: ../img/settings/layers.gif
+Layer **Settings**, accessed by |layers-settings|, enables:
 
-**ZBEZNE VYTVORENY GIF - PREDELAT???**
+*   Preview of basic layer's metadata
+*   Formatting attribute data
+*   Change exportability of attribute data
+*   Customize appearance of layer's info panel via Vue.js component
+*   Flags
+
+.. thumbnail:: ../img/settings/layers.gif
 
 ---------------------------------
 

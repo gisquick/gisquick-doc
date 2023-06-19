@@ -75,7 +75,7 @@ Possible operations with attribute table:
 *   Filter data - by clicking on |filter| icon next to attribute name
 *   Pan to feature - by clicking on |pan-to| icon
 *   Open pop up window with feature info - by clicking on |pop-up-info| icon
-
+*   Export attribute table - by clicking on Export button
 
 .. thumbnail:: ../img/user_interface/ui-attributes.png
 
