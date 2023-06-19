@@ -45,7 +45,7 @@ in the top-right corner of Gisquick web interface. Before publishing, project is
 **STAGED**, after publishing it is marked as **PUBLISHED**.
 
 .. note:: Project name may or may not be the same as project title. Unlike the project name,
-   the project title can be changed in this **General** section of Gisquick web interface.
+   the project title can be changed in this :ref:`General <general>` section of Gisquick web interface.
 
 
 The button ``MAP`` gets user to the published web map interface.

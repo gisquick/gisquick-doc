@@ -99,7 +99,10 @@ To connect to server, click the icon |logo| in QGIS toolbar or go to tab ``Web``
    Connect to publication server.
 
 Fill in the Gisquick server URL, username and password. You are now connected
-to the publication server and ready to publish projects from QGIS.
+to the publication server and ready to publish projects from QGIS. If you fill in the
+server URL, username or password incorrectly, the message **Failed to connect!** is displayed
+when you try to connect to Gisquick server (by clicking the icon |logo|).
+You can correct the information right here in the ``Configure`` tab.
 
 .. thumbnail:: ../img/publish/publish.gif
 
