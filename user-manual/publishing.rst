@@ -33,9 +33,11 @@ are listed in here. It is not possible to make any changes within this step.
 Click the button ``LOAD FILES`` and after that, type a project's name and hit ``CREATE``.
 Note that the project name cannot be changed later.
 
---screenshot LOAD FILES - GIF ?
+.. note:: When uploading data to GISQUICK, the entire folder with all files is uploaded. You can specify which files you don't want to upload to the server. Use the .gisquickignore file.
 
---screenshot Project name - CREATE - GIF ?
+.. thumbnail:: ../img/publish/gisquickignore.gif
+
+    How to use gisquickignore file.
 
 The last obligatory step before publishing is setting the project's title. 
 After setting the title, the project is ready to be published by clicking the button ``PUBLISH``
@@ -45,7 +47,6 @@ in the top-right corner of Gisquick web interface. Before publishing, project is
 .. note:: Project name may or may not be the same as project title. Unlike the project name,
    the project title can be changed in this **General** section of Gisquick web interface.
 
---screenshot cervene PUBLISH + staged/published + MAP
 
 The button ``MAP`` gets user to the published web map interface.
 
@@ -53,8 +54,6 @@ See section :ref:`Setting up the project <setting-up-project>` for further infor
 the possible settings of a project you are publishing. These settings can be changed before the
 hitting the button ``PUBLISH`` or after that.
 
-
-EDIT ↓
 
 .. important:: |imp| When using flat files or file-based databases as
    data stores it is highly recommended to save all the files (data and QGIS
