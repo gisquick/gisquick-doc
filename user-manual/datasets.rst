@@ -12,7 +12,6 @@ Subsequently,
 the second dataset :ref:`dataset-natural-earth` was originally created
 by the developers of GIS.lab and was later adopted by the Gisquick project. 
 
-
 .. _dataset-prague:
 
 
