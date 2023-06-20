@@ -116,7 +116,9 @@ Settings can be changed in the Identification combo box.
 
 .. thumbnail:: ../img/user_interface/ui-measurement.gif
 
-**Print** tool allows to print selected layers. User can set:
+**Print** tool allows to print selected layers. Note that to enable the print function,
+at least one print layout must be set in QGIS before the project is published on Gisquick server.
+User can set:
 
 *   Layout size
 *   Format

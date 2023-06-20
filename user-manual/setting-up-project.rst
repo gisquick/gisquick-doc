@@ -219,7 +219,7 @@ Last but not least, other general settings should be mentioned.
 Clicking on the |dots| button in top-right corner, next to ``SAVE`` button,
 offers these options:
 
-*   Download project
+*   Download project as a .zip file
 *   Get a link to WMS service that was created with the project
 *   Reset project settings
 *   Delete project from Gisquick server
