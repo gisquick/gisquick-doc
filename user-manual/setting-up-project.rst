@@ -13,7 +13,7 @@
 .. |layers-settings| image:: ../img/settings/layers-settings.png
    :width: 2em
 .. |dots| image:: ../img/settings/dots.png
-   :width: 2em
+   :width: 1.8em
 
 
 .. _setting-up-project:
@@ -225,3 +225,4 @@ offers these options:
 *   Delete project from Gisquick server
 
 .. thumbnail:: ../img/settings/delete-project.png
+   :width: 220px
