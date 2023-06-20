@@ -1,6 +1,6 @@
 .. |logo| image:: ../img/logo.png
    :width: 2em
-   |plugin-logo| image:: ../img/publish/plugin-logo.png
+.. |plugin-logo| image:: ../img/publish/plugin-logo.png
    :width: 2em
 
 .. _before-publishing:
