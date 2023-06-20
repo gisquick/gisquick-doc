@@ -4,11 +4,9 @@
 Sample datasets
 ===============
 
-Some basic information about our data aiming to be a part of examples
-introduced in this documentation. This section presents two sample
-datasets.
+This section presents information about two sample datasets used in this documentation.
 
-The first one :ref:`dataset-prague` was developed for specific
+The first dataset :ref:`dataset-prague` was developed for specific
 needs of this Gisquick publishing platform. 
 Subsequently,
 the second dataset :ref:`dataset-natural-earth` was originally created
@@ -364,7 +362,7 @@ Thematic layers
    "*number*", "number of building"
    "*code*", "zip code"
    
-   .. _dataset-natural-earth:
+.. _dataset-natural-earth:
 
 Natural earth
 -------------

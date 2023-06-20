@@ -42,6 +42,9 @@ their queryability, CRS, provider, source or information regarding WFS.
 
 .. thumbnail:: ../img/settings/general.png
 
+All changes made in these settings can be saved by using the ``SAVE`` button
+in the top-right corner. It is not necessary to save changes in each tab separately.
+
 ---------------------------------
 
 
@@ -98,7 +101,7 @@ Within the **Layers** section, users are granted the ability to manage layers. W
 users can tailor layers to their exact needs.
 
 **Base layers** on the left half of the screen can be defined by dragging and dropping an arbitrary layer from
-the right half. The behavior of these layers in the web map is described in :ref:`Content management <content-management>`.
+the right half (**Overlays**). The behavior of these layers in the web map is described in :ref:`Content management <content-management>`.
 
 **Flags**, accessed by |layers-1| or in settings |layers-settings|:
 
@@ -135,7 +138,6 @@ If Topics are created, it will affect the appearance of the :ref:`Content manage
 widget in the published web map. **Topics tab** is located next to the **Layers tab** in the user interface.
 A Topic can be easily added or removed using ``ADD`` or ``REMOVE`` buttons. After clicking on
 ``ADD`` button, the user can edit Topic's name and description and select the layers wanted in the Topic.
-Save all changes by using the ``SAVE`` button in the top-right corner.
 
 .. note:: The **Description** of a Topic is called **Abstract** in the Content management
    widget of the web map.
@@ -144,7 +146,6 @@ Save all changes by using the ``SAVE`` button in the top-right corner.
 
 
 ---------------------------------
-
 
 .. _permissions:
 
@@ -173,7 +174,7 @@ the **Multiple roles permissions** option.
    Advanced permissions to project.
 
 This option allows the user to create one or more Groups of users
-who have different access to layers in the project and can see the resulting web map differently.
+that have different access to layers in the project and can see the resulting web map differently.
 The group must be created by clicking on the plus icon |plus| and then
 the user can set different settings (**Role Settings, Layers & Attributes, Topics**) for the group.
 
@@ -190,4 +191,16 @@ Gisquick allows user to easily edit published projects using QGIS plugin; every 
 project in QGIS can be reflected in Gisquick by activating plugin which enables the user to compare local and cloud
 project's folders, layer by layer.
 
--copied from Introduction
+There are two operations, ``PUSH`` and ``PULL`` where **Push** updates
+the project on the Gisquick server and reflects changes made locally in QGIS into the project
+uploaded to Gisquick server,
+and **Pull** updates changes made on Gisquick server into local device.
+The user chooses which operation to perform by clicking on the ``PUSH/PULL`` button
+located in the top-right corner.
+
+In order to **Push*** the change, the user must check the **Update QGIS project** check-box.
+The Files tab gives an overview of which files are affected by the change, and the user
+can choose to update all or only some of them (files affected are distinguished by color).
+The operation is performed by the ``PUSH CHANGES`` button.
+
+Similarly, in the case of a **Pull** operation, the **Update files** check-box must be checked.

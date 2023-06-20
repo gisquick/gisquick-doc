@@ -13,6 +13,7 @@ This part of the documentation describes the steps that need to be done before p
 on Gisquick platform.
 It is also assumed that the user has a project with the required layers
 ready in QGIS and wants to publish it. 
+To learn more about creating projects in QGIS, see official QGIS documentation at https://www.qgis.org/en/docs/index.html.
 
 .. _creating-account:
 
@@ -28,7 +29,7 @@ This can be done by filling in the registration form available at https://demo.g
 
    Registration form for creating a new user account.
 
-After pressing ``CREATE ACCOUNT`` button a confirmation e-mail should
+After clicking on ``CREATE ACCOUNT`` button a confirmation e-mail should
 be sent to a given e-mail address.
  
 .. thumbnail:: ../img/publish/gisquick-new-account-1.png
@@ -83,13 +84,13 @@ In QGIS, open tab ``Plugins`` and choose ``Manage and Install Plugins``. Continu
 
 Paste the copied link for Gisquick plugin in here.
 Then go to the ``All`` tab, search for **Gisquick** and hit install (see GIF below).
-The plugin is now installed in QGIS, a new icon |logo| should also appear in QGIS plugins toolbar.
+The plugin is now installed in QGIS, a new icon |plugin-logo| should also appear in QGIS plugins toolbar.
 
 .. note:: The plugin link for the repository is available at https://gisquick.org/plugin.
 
 .. thumbnail:: ../img/publish/connect_gisq_to_qgis.gif
 
-    Connect QGIS to GISQUICK
+    Connect QGIS to GISQUICK.
 
 .. note:: The difference between GISQUICK and GISQUICK (with dbhash) is that the dbhash SQLite version is recommended when working with the Geopackage format.
 
@@ -102,10 +103,10 @@ To connect to the server, click the icon |plugin-logo| in QGIS toolbar or go to 
    Connect to publication server.
 
 Fill in the Gisquick server URL, username and password. You are now connected
-to the publication server and ready to publish projects from QGIS. If you fill in the
-server URL, username or password incorrectly, the message **Failed to connect!** is displayed
+to the publication server and ready to publish projects from QGIS. If the
+server URL, username or password is filled in incorrectly, the message **Failed to connect!** is displayed
 when you try to connect to Gisquick server (by clicking the icon |logo|).
-You can correct the information right here in the ``Configure`` tab.
+The information can be corrected right here in the ``Configure`` tab.
 
 .. thumbnail:: ../img/publish/publish.gif
 
