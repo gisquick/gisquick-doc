@@ -12,6 +12,8 @@
    :width: 6em
 .. |layers-settings| image:: ../img/settings/layers-settings.png
    :width: 2em
+.. |dots| image:: ../img/settings/dots.png
+   :width: 2em
 
 
 .. _setting-up-project:
@@ -198,9 +200,28 @@ and **Pull** updates changes made on Gisquick server into local device.
 The user chooses which operation to perform by clicking on the ``PUSH/PULL`` button
 located in the top-right corner.
 
-In order to **Push*** the change, the user must check the **Update QGIS project** check-box.
+In order to **Push** the change, the user must check the **Update QGIS project** check-box.
 The Files tab gives an overview of which files are affected by the change, and the user
 can choose to update all or only some of them (files affected are distinguished by color).
 The operation is performed by the ``PUSH CHANGES`` button.
 
 Similarly, in the case of a **Pull** operation, the **Update files** check-box must be checked.
+
+-------------------------------------
+
+
+.. _other-features:
+
+Other features
+==============
+
+Last but not least, other general settings should be mentioned.
+Clicking on the |dots| button in top-right corner, next to ``SAVE`` button,
+offers these options:
+
+*   Download project
+*   Get a link to WMS service that was created with the project
+*   Reset project settings
+*   Delete project from Gisquick server
+
+.. thumbnail:: ../img/settings/delete-project.png

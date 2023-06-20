@@ -162,7 +162,7 @@ published projects and uploading new ones.
 *   In Projects search tab user can browse published projects including basic metadata.
 *   A web map can be opened by clicking on its thumbnail.
 *   By clicking on its name, one can access project settings.
-*   New projects can be uploaded by clicking the New project button. Note that existing project will be automatically overwritten.
+*   New projects can be uploaded by clicking the **New project** button. Note that existing project will be automatically overwritten.
 *   The remaining number of possible projects and storage usage can be observed in the lower right corner.
 *   Logging out and changing the password is possible by clicking on the icon in the upper right corner.
 
