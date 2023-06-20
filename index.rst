@@ -15,11 +15,12 @@ sharing `QGIS <http://qgis.org>`__ projects. Explore more to see how easy yet po
 
 There are a few topics you might be interested in. Firstly, if you want to **publish** your **QGIS**
 **project online**, see sections :ref:`chapter-1` and :ref:`chapter-2`.
-Together with every published project, web map service (**WMS**) is created and can be subsequently modified.
 
-If you wonder **what does the output look like** or **which features are involved**, check sections :ref:`chapter-3` and :ref:`chapter-4`.
+
+If you wonder what are the features of a **published web map** and **how to set them**,
+check sections :ref:`chapter-3` and :ref:`chapter-4`.
 Browse section :ref:`chapter-5` for **metadata of example datasets** that were used for documentation. If you plan to
-**operate Gisquick publication server** on your own hardware, see section :ref:`chapter-6`.
+**operate Gisquick publication server** on your own device, see section :ref:`chapter-6`.
 
 .. note::
    
@@ -52,13 +53,13 @@ All possible settings that can be set to a published project.
 
 4. :doc:`User interface <user-manual/user-interface>`
 ----------------------------------------------------
-Each feature involved in Gisquick user interface.
+Each feature involved in Gisquick user interface - the appearance of final web map.
 
 .. _chapter-5:
 
 5. :doc:`Sample datasets <user-manual/datasets>`
 -------------------------------------------
-Basic information about datasets that were used for documentation.
+Basic information about datasets that were used for the documentation.
 
 .. _chapter-6:
 

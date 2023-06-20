@@ -1,3 +1,6 @@
+.. |map-button| image:: ../img/publish/button-map.png
+   :width: 2em
+
 .. _publishing:
 
 =======================
@@ -46,9 +49,10 @@ in the top-right corner of Gisquick web interface. Before publishing, project is
 
 .. note:: Project name may or may not be the same as project title. Unlike the project name,
    the project title can be changed in this :ref:`General <general>` section of Gisquick web interface.
+   Together with every published project, web map service (**WMS**)
+   is created and can be subsequently modified.
 
-
-The button ``MAP`` gets user to the published web map interface.
+The button |map-button| gets user to the published web map :ref:`interface <user-interface>`.
 
 See section :ref:`Setting up the project <setting-up-project>` for further information about all 
 the possible settings of a project you are publishing. These settings can be changed before the
@@ -64,4 +68,3 @@ hitting the button ``PUBLISH`` or after that.
    When using any kind of authentication (databases, web services) it
    must be ensured that the server used for publishing will have access
    rights to such data sources.
-

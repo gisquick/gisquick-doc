@@ -143,7 +143,6 @@ Save all changes by using the ``SAVE`` button in the top-right corner.
 .. thumbnail:: ../img/settings/topics.png
 
 
-
 ---------------------------------
 
 
@@ -190,4 +189,5 @@ Update
 Gisquick allows user to easily edit published projects using QGIS plugin; every change made in
 project in QGIS can be reflected in Gisquick by activating plugin which enables the user to compare local and cloud
 project's folders, layer by layer.
+
 -copied from Introduction

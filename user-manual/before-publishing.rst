@@ -1,5 +1,7 @@
 .. |logo| image:: ../img/logo.png
    :width: 2em
+   |plugin-logo| image:: ../img/publish/plugin-logo.png
+   :width: 2em
 
 .. _before-publishing:
 
@@ -79,8 +81,9 @@ In QGIS, open tab ``Plugins`` and choose ``Manage and Install Plugins``. Continu
 
    How to install Gisquick plugin in QGIS.
 
-Paste the copied link for Gisquick plugin in here. The plugin is now installed in QGIS, you can check it in the list of installed plugins.
-A new icon |logo| should also appear in QGIS plugins toolbar.
+Paste the copied link for Gisquick plugin in here.
+Then go to the ``All`` tab, search for **Gisquick** and hit install (see GIF below).
+The plugin is now installed in QGIS, a new icon |logo| should also appear in QGIS plugins toolbar.
 
 .. note:: The plugin link for the repository is available at https://gisquick.org/plugin.
 
@@ -90,8 +93,8 @@ A new icon |logo| should also appear in QGIS plugins toolbar.
 
 .. note:: The difference between GISQUICK and GISQUICK (with dbhash) is that the dbhash SQLite version is recommended when working with the Geopackage format.
 
-The plugin is now installed but not connected to the Gisquick publication server.
-To connect to server, click the icon |logo| in QGIS toolbar or go to tab ``Web`` - ``Gisquick`` - ``Configure``.
+The plugin is installed but not yet connected to the Gisquick publication server.
+To connect to the server, click the icon |plugin-logo| in QGIS toolbar or go to tab ``Web`` - ``Gisquick`` - ``Configure``.
 
 .. thumbnail:: ../img/publish/connect-to-server-02.png
    :width: 400px
