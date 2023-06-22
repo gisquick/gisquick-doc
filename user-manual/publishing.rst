@@ -13,6 +13,10 @@ This section describes the proccess of uploading and publishing QGIS project to 
 QGIS Gisquick plugin is installed, connected to Gisquick server (see :ref:`Before publishing <before-publishing>`) and 
 project is prepared and ready to be published.
 
+It is recommended to create a separate folder for each QGIS project and keep all
+files related to the project in it, because when uploading to Gisquick server, the whole
+folder where the QGIS project is stored is uploaded.
+
 Once the project in QGIS is ready, click on the Gisquick plugin logo.
 If the user is already connected to publication server (see :ref:`QGIS Gisquick plugin <before-publishing>`),
 green message pane will appear.
@@ -36,7 +40,7 @@ are listed in here. It is not possible to make any changes within this step.
 Click the button ``LOAD FILES`` and after that, type a project's name and hit ``CREATE``.
 Note that the project name cannot be changed later.
 
-.. note:: When uploading data to GISQUICK, the entire folder with all files is uploaded. You can specify which files you don't want to upload to the server. Use the .gisquickignore file.
+.. note:: When uploading data to GISQUICK, an entire folder with all files is uploaded. You can specify which files you don't want to upload to the server. Use the .gisquickignore file.
 
 .. thumbnail:: ../img/publish/gisquickignore.gif
 

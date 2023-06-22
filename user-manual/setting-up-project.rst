@@ -32,6 +32,10 @@ for more information check :ref:`Before publishing <before-publishing>` and :ref
 
 How to access project settings check :ref:`Profile page <profile-page>`.
 
+Keep in mind that Gisquick may ignore some settings made in the project in QGIS,
+so the user is advised to check these settings before publishing on Gisquick
+(e.g. layer visibility or attribute table formatting).
+
 ---------------------------------
 
 .. _general:
