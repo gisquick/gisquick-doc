@@ -26,7 +26,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Sample datasets" href="datasets.html" />
-    <link rel="prev" title="Releasing project" href="releasing-project.html" /> 
+    <link rel="prev" title="Setting up the project" href="setting-up-project.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -53,23 +53,17 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="creating-account.html">Creating account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="before-publishing.html">Before publishing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="publishing.html">Publishing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="releasing-project.html">Releasing project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setting-up-project.html">Setting up the project</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">User interface</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#content-management-tools">Content management tools</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#attribute-data">Attribute data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#web-map">Web map</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#content-management">Content management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tools">Tools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user-menu">User menu</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#zoom-tools">Zoom tools</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#tools">Tools</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#identify">Identify</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#measurement">Measurement</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#print-tool">Print tool</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#user-menu">User menu</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#user-profile-page">User profile page</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#profile-page">Profile page</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="datasets.html">Sample datasets</a></li>
@@ -106,464 +100,226 @@
 set of functions for useful generic responsive web and mobile-friendly
 mapping application.</p>
 <p>The major part of the client’s User Interface (UI) is occupied by <em>map
-canvas</em> (<code class="docutils literal notranslate"><span class="pre">1</span></code>). <a class="reference internal" href="#content-menu"><span class="std std-ref">Content management tools</span></a> (<code class="docutils literal notranslate"><span class="pre">2</span></code>) are located
-on the left side and can be hidden using the button on its right side (<code class="docutils literal notranslate"><span class="pre">3</span></code>).
+canvas</em> (1). <a class="reference internal" href="#content-management"><span class="std std-ref">Content management tools</span></a> (2) are located
+on the left side and can be hidden using the button on its right side (3).
 Corners of map canvas are filled up (clockwise from the
-bottom-left corner) with <em>map scale</em> (<code class="docutils literal notranslate"><span class="pre">4</span></code>), <a class="reference internal" href="#tool-menu"><span class="std std-ref">tools</span></a> (<code class="docutils literal notranslate"><span class="pre">5</span></code>), <a class="reference internal" href="#user-menu"><span class="std std-ref">user menu</span></a> (<code class="docutils literal notranslate"><span class="pre">6</span></code>) and
-<a class="reference internal" href="#zoom-menu"><span class="std std-ref">zoom tools</span></a> (<code class="docutils literal notranslate"><span class="pre">7</span></code>). The status bar is located in
+bottom-left corner) with <em>map scale</em> (4), <a class="reference internal" href="#tools"><span class="std std-ref">tools</span></a> (5), <a class="reference internal" href="#user-menu"><span class="std std-ref">user menu</span></a> (6) and
+<a class="reference internal" href="#tools"><span class="std std-ref">zoom tools</span></a> (7). The status bar is located in
 the bottom part and it shows current scale, projection and map coordinates
-of the cursor (<code class="docutils literal notranslate"><span class="pre">8</span></code>).</p>
+of the cursor (8).</p>
 <a class=""
-               data-lightbox="group-dc1f50e7-7f6b-4f11-977b-e07668fd0850"
+               data-lightbox="group-5df956ee-1d13-43a3-a7a6-7d29d7313985"
                href="../_images/gisquick-ui1.png"
-               title="Gisquick user interface description."
-               data-title="Gisquick user interface description."
+               title=""
+               data-title=""
                
                ><img src="../_images/gisquick-ui1.png"
                      class=""
                      width="100%"
                      height="auto"
                      alt=""/>
-                </a><section id="content-management-tools">
-<span id="content-menu"></span><h2>Content management tools<a class="headerlink" href="#content-management-tools" title="Permalink to this heading">¶</a></h2>
+                </a><p>Gisquick user interface description.</p>
+<hr class="docutils" />
+<section id="web-map">
+<span id="id2"></span><h2>Web map<a class="headerlink" href="#web-map" title="Permalink to this heading">¶</a></h2>
+<section id="content-management">
+<span id="id3"></span><h3>Content management<a class="headerlink" href="#content-management" title="Permalink to this heading">¶</a></h3>
 <p>Content management widget is split into three major tabs:</p>
 <ul class="simple">
-<li><p><strong>Base Layers</strong></p></li>
-<li><p><strong>Overlay Layers</strong></p></li>
-<li><p><strong>Legend</strong></p></li>
+<li><p><strong>Base Layers</strong> tab allows switching base layers in the map canvas. The list of base layers is defined by the publication process.</p></li>
+<li><p><strong>Overlay Layers</strong> tab allows switching among topics (layer groups), or controlling overlay layers one by one.</p></li>
+<li><p><strong>Legend</strong> tab depicts currently selected layers in Layers tab.</p></li>
 </ul>
 <a class=""
-               data-lightbox="group-d0fc7101-0970-400a-ad16-5ece44836473"
+               data-lightbox="group-39eb5721-3f4f-4e46-951f-12e0e9283f73"
                href="../_images/content-tabs1.png"
                title="Content tabs."
                data-title="Content tabs."
                
                ><img src="../_images/content-tabs1.png"
                      class=""
-                     width="250px"
-                     height="auto"
-                     alt=""/>
-                </a><p><code class="docutils literal notranslate"><span class="pre">Base</span> <span class="pre">Layers</span></code> tab allows switching base layers in the map canvas. The
-list of base layers is defined by the publication process.</p>
-<a class=""
-               data-lightbox="group-9a2c87ac-0bfe-41aa-9935-17c481e1e248"
-               href="../_images/ui-base-layers1.png"
-               title="Switching among base layers."
-               data-title="Switching among base layers."
-               
-               ><img src="../_images/ui-base-layers1.png"
-                     class=""
-                     width="250px"
-                     height="auto"
-                     alt=""/>
-                </a><p>In the tab, you can set the opacity of the base layer.</p>
-<a class=""
-               data-lightbox="group-12926903-e3c4-480d-a808-39442032592d"
-               href="../_images/ui-opacity1.png"
-               title="Setting opacity of the base layer."
-               data-title="Setting opacity of the base layer."
-               
-               ><img src="../_images/ui-opacity1.png"
-                     class=""
-                     width="250px"
-                     height="auto"
-                     alt=""/>
-                </a><p><code class="docutils literal notranslate"><span class="pre">Overlay</span> <span class="pre">Layers</span></code> tab allows switching among topics (layer groups), or
-controlling overlay layers one by one.</p>
-<a class=""
-               data-lightbox="group-234f43e6-3515-4e71-9d9e-07cd1c9cfbe2"
-               href="../_images/ui-topics1.png"
-               title="Switching among topics."
-               data-title="Switching among topics."
-               
-               ><img src="../_images/ui-topics1.png"
-                     class=""
-                     width="250px"
-                     height="auto"
-                     alt=""/>
-                </a><p>In the tab, you can set the opacity of the base layer.</p>
-<a class=""
-               data-lightbox="group-d989c9bd-f371-4ee4-9731-51a0624841ad"
-               href="../_images/ui-opacity1.png"
-               title="Setting opacity of the overlay layers."
-               data-title="Setting opacity of the overlay layers."
-               
-               ><img src="../_images/ui-opacity1.png"
-                     class=""
-                     width="250px"
-                     height="auto"
-                     alt=""/>
-                </a><p>To switch to <code class="docutils literal notranslate"><span class="pre">Layers</span></code> mode use Topics and Layers switcher.</p>
-<a class=""
-               data-lightbox="group-a2cebb3b-db1e-44f7-a2e1-a58bcaf2f06c"
-               href="../_images/ui-overlay-layers1.png"
-               title="Topics and Layers switcher."
-               data-title="Topics and Layers switcher."
-               
-               ><img src="../_images/ui-overlay-layers1.png"
-                     class=""
-                     width="250px"
-                     height="auto"
-                     alt=""/>
-                </a><p>In <code class="docutils literal notranslate"><span class="pre">Layers</span></code> mode the overlay layers can be switch on/off one by one.</p>
-<a class=""
-               data-lightbox="group-68a391b5-1baa-48a2-96b0-1f6e68fd82f1"
-               href="../_images/ui-map-layers1.png"
-               title="Switch on/off overlay layers."
-               data-title="Switch on/off overlay layers."
-               
-               ><img src="../_images/ui-map-layers1.png"
-                     class=""
-                     width="250px"
+                     width="100%"
                      height="auto"
                      alt=""/>
                 </a><div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p><a class="reference internal" href="../_images/tip.png"><img alt="tip" src="../_images/tip.png" style="width: 2.5em;" /></a> It is also possible to switch on/off group of layers
-<a class="reference internal" href="../_images/ui-layer-group-switcher.png"><img alt="group-switcher" src="../_images/ui-layer-group-switcher.png" style="width: 2.5em;" /></a>.</p>
+<p><a class="reference internal" href="../_images/tip.png"><img alt="tip" src="../_images/tip.png" style="width: 2.5em;" /></a> In the tab, you can set the opacity of the base layer or the overlay layer.</p>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">Legend</span></code> tab depicts currently selected layers in <code class="docutils literal notranslate"><span class="pre">Layers</span></code> tab.</p>
+<hr class="docutils" />
+<p>In the Layers mode, <strong>attribute data</strong> can be accessed by <img alt="layer-attributes" src="../_images/ui-layer-attributes.png" />.
+The attribute table is displayed in the bottom part.</p>
+<p>Possible operations with attribute table:</p>
+<ul class="simple">
+<li><p>Filter data - by clicking on <img alt="filter" src="../_images/ui-filter-attribute-table.png" /> icon next to attribute name</p></li>
+<li><p>Pan to feature - by clicking on <img alt="pan-to" src="../_images/ui-zoom-to.png" /> icon</p></li>
+<li><p>Open pop up window with feature info - by clicking on <img alt="pop-up-info" src="../_images/ui-info.png" /> icon</p></li>
+<li><p>Export attribute table - by clicking on Export button</p></li>
+</ul>
 <a class=""
-               data-lightbox="group-20669951-cef6-4557-bfba-a64a427d0f22"
-               href="../_images/ui-legend1.png"
-               title="Legend."
-               data-title="Legend."
-               
-               ><img src="../_images/ui-legend1.png"
-                     class=""
-                     width="250px"
-                     height="auto"
-                     alt=""/>
-                </a><section id="attribute-data">
-<h3>Attribute data<a class="headerlink" href="#attribute-data" title="Permalink to this heading">¶</a></h3>
-<p>In the <code class="docutils literal notranslate"><span class="pre">Layers</span></code> mode, attribute data can be accessed by <a class="reference internal" href="../_images/ui-layer-attributes.png"><img alt="layer-attributes" src="../_images/ui-layer-attributes.png" style="width: 2.5em;" /></a>.
-The attribute table is displayed in the bottom part, see figure below.</p>
-<a class=""
-               data-lightbox="group-d64c7002-8a11-45df-aae8-bff107b88492"
+               data-lightbox="group-dbfc77c1-1118-456d-8230-506fae9bc0e7"
                href="../_images/ui-attributes1.png"
-               title="Layer attribute table."
-               data-title="Layer attribute table."
+               title=""
+               data-title=""
                
                ><img src="../_images/ui-attributes1.png"
                      class=""
                      width="100%"
                      height="auto"
                      alt=""/>
-                </a><p>The attribute table allows data filtering based on simple queries, see
-figures below.</p>
-<a class=""
-               data-lightbox="group-9f8603ed-844b-49bd-bd97-70ad2099bb27"
-               href="../_images/ui-attribute-filter-01.png"
-               title="Choose operator for attribute filter."
-               data-title="Choose operator for attribute filter."
-               
-               ><img src="../_images/ui-attribute-filter-01.png"
-                     class=""
-                     width="200px"
-                     height="auto"
-                     alt=""/>
-                </a><a class=""
-               data-lightbox="group-b937d12d-4541-4cde-9892-16f41c1b9435"
-               href="../_images/ui-attribute-filter-11.png"
-               title="Define filter and refresh attribute table view."
-               data-title="Define filter and refresh attribute table view."
-               
-               ><img src="../_images/ui-attribute-filter-11.png"
-                     class=""
-                     width="100%"
-                     height="auto"
-                     alt=""/>
-                </a><div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p><a class="reference internal" href="../_images/tip.png"><img alt="tip" src="../_images/tip.png" style="width: 2.5em;" /></a> Attribute table shows only a few rows. Use the arrows <a class="reference internal" href="../_images/ui-scroll.png"><img alt="scroll" src="../_images/ui-scroll.png" style="width: 9.8em;" /></a>
-to scroll through the rows. Attributes can be also
-filtered by map canvas <code class="docutils literal notranslate"><span class="pre">Filter</span> <span class="pre">to</span> <span class="pre">visible</span> <span class="pre">area</span></code>.</p>
-</div>
-<p>Every row in the attribute table has a <em>Zoom to</em> button <a class="reference internal" href="../_images/ui-zoom-to.png"><img alt="zoom-to" src="../_images/ui-zoom-to.png" style="width: 2.5em;" /></a> which
-enables zooming and centering related features in map canvas, see
-figure below.</p>
-<a class=""
-               data-lightbox="group-6cd471cb-882d-436f-b269-212228d7982f"
-               href="../_images/ui-zoom-to-feature1.png"
-               title="Zoom into selected feature."
-               data-title="Zoom into selected feature."
-               
-               ><img src="../_images/ui-zoom-to-feature1.png"
-                     class=""
-                     width="100%"
-                     height="auto"
-                     alt=""/>
-                </a><div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Attribute filter can be disabled by <a class="reference internal" href="../_images/ui-clear-filter.png"><img alt="clear-filter" src="../_images/ui-clear-filter.png" style="width: 2.5em;" /></a>. Table
-view must be refreshed.</p>
-</div>
-<p>Also, every row has an <em>Information</em> button <a class="reference internal" href="../_images/ui-info.png"><img alt="info" src="../_images/ui-info.png" style="width: 2.5em;" /></a> which displays the
-information panel with relevant data.</p>
-<a class=""
-               data-lightbox="group-518df61e-6f7b-42d2-9ea8-94c90c1721b0"
-               href="../_images/ui-info-feature1.png"
-               title="Visualization selected data."
-               data-title="Visualization selected data."
-               
-               ><img src="../_images/ui-info-feature1.png"
-                     class=""
-                     width="100%"
-                     height="auto"
-                     alt=""/>
-                </a></section>
-</section>
-<section id="zoom-tools">
-<span id="zoom-menu"></span><h2>Zoom tools<a class="headerlink" href="#zoom-tools" title="Permalink to this heading">¶</a></h2>
-<p>Zoom tools enable controlling map view. Two basic zoom tools are available:</p>
-<ul class="simple">
-<li><p>Zoom in/out <a class="reference internal" href="../_images/ui-zoom-tools-in-out.png"><img alt="zoom-in-out" src="../_images/ui-zoom-tools-in-out.png" style="width: 2.5em;" /></a></p></li>
-<li><p>Zoom to extent <a class="reference internal" href="../_images/ui-zoom-tools-extent.png"><img alt="zoom-extent" src="../_images/ui-zoom-tools-extent.png" style="width: 2.5em;" /></a></p></li>
-</ul>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Zooming and panning are also possible by the middle mouse button.</p>
-</div>
+                </a><p>Layer attribute table.</p>
+<hr class="docutils" />
 </section>
 <section id="tools">
-<span id="tool-menu"></span><h2>Tools<a class="headerlink" href="#tools" title="Permalink to this heading">¶</a></h2>
-<p>Two basic tools are available:</p>
+<span id="id4"></span><h3>Tools<a class="headerlink" href="#tools" title="Permalink to this heading">¶</a></h3>
+<p>The tools located in the lower right corner of map canvas, can be used for:</p>
+<ul class="simple">
+<li><p>Zoom in/out <a class="reference internal" href="../_images/ui-zoom-tools-in-out.png"><img alt="zoom-in-out" src="../_images/ui-zoom-tools-in-out.png" style="width: 2.5em;" /></a></p></li>
+<li><p>Zoom to project extent <a class="reference internal" href="../_images/ui-zoom-tools-extent.png"><img alt="zoom-extent" src="../_images/ui-zoom-tools-extent.png" style="width: 2.5em;" /></a></p></li>
+</ul>
+<p>The tools situated at the top-left corner of the map canvas (accessed by <a class="reference internal" href="../_images/ui-tools.png"><img alt="measure-identify" src="../_images/ui-tools.png" style="width: 2.2em;" /></a>), can be used for:</p>
 <ul class="simple">
 <li><p>Identify <a class="reference internal" href="../_images/ui-identify.png"><img alt="identify" src="../_images/ui-identify.png" style="width: 2.2em;" /></a></p></li>
 <li><p>Measurement <a class="reference internal" href="../_images/ui-measure.png"><img alt="measure" src="../_images/ui-measure.png" style="width: 2.2em;" /></a></p></li>
+<li><p>Print <a class="reference internal" href="../_images/ui-print.png"><img alt="print" src="../_images/ui-print.png" style="width: 2.2em;" /></a></p></li>
 </ul>
-<section id="identify">
-<h3>Identify<a class="headerlink" href="#identify" title="Permalink to this heading">¶</a></h3>
-<p>By default, features are identified in all visible layers (in the
-example below in Schools and District layers).</p>
+<p><strong>Indentify</strong> tool allows to, by default, identify features in all visible layers.
+Settings can be changed in the Identification combo box.</p>
 <a class=""
-               data-lightbox="group-cc65c1e5-421e-464f-a072-cb30fd5914fb"
-               href="../_images/identify1.png"
-               title="Identify schools and district layer."
-               data-title="Identify schools and district layer."
+               data-lightbox="group-5ff9950b-6036-4459-b3f0-ad2e4573168e"
+               href="../_images/ui-identify-21.png"
+               title=""
+               data-title=""
                
-               ><img src="../_images/identify1.png"
+               ><img src="../_images/ui-identify-21.png"
                      class=""
                      width="100%"
                      height="auto"
                      alt=""/>
-                </a><p>These settings can be changed in the <code class="docutils literal notranslate"><span class="pre">Identification</span></code> combo box.</p>
-<a class=""
-               data-lightbox="group-9237e29e-ad63-4ab0-ab8b-296881032b9b"
-               href="../_images/identification-layers1.png"
-               title="Change layer priority for identification."
-               data-title="Change layer priority for identification."
-               
-               ><img src="../_images/identification-layers1.png"
-                     class=""
-                     width="250px"
-                     height="auto"
-                     alt=""/>
-                </a></section>
-<section id="measurement">
-<h3>Measurement<a class="headerlink" href="#measurement" title="Permalink to this heading">¶</a></h3>
-<p>Three measurement modes are available:</p>
+                </a><p><strong>Measurement</strong> tool allows to measure:</p>
 <ul class="simple">
-<li><p>Location (point coordinates)</p></li>
-<li><p>Distance</p></li>
-<li><p>Area</p></li>
+<li><p><strong>Coordinates</strong> (Location) in two different coordinate systems (the project one or WGS-84).</p></li>
+<li><p><strong>Distance</strong> between two or more points in international (m, km) or imperial units (yd, mi).</p></li>
+<li><p><strong>Area</strong> of marked polygon in international or imperial units.</p></li>
 </ul>
 <a class=""
-               data-lightbox="group-4877eb57-cda6-4148-b019-8065443c42ab"
-               href="../_images/ui-measure-tools1.png"
-               title="Measurement tools."
-               data-title="Measurement tools."
+               data-lightbox="group-eac5b62f-7b43-443a-83fa-3d1918e19451"
+               href="../_images/ui-measurement1.png"
+               title=""
+               data-title=""
                
-               ><img src="../_images/ui-measure-tools1.png"
-                     class=""
-                     width="250px"
-                     height="auto"
-                     alt=""/>
-                </a><a class=""
-               data-lightbox="group-192be9dc-ec28-4760-bff9-6330dde25069"
-               href="../_images/measure-location1.png"
-               title="Location measurement example. Menu highlighted in red ring."
-               data-title="Location measurement example. Menu highlighted in red ring."
-               
-               ><img src="../_images/measure-location1.png"
+               ><img src="../_images/ui-measurement1.png"
                      class=""
                      width="100%"
-                     height="auto"
-                     alt=""/>
-                </a><p>Location menu allows:</p>
-<ul class="simple">
-<li><p>Zoom to location</p></li>
-<li><p>Change the spatial reference system</p></li>
-</ul>
-<p>By default, two systems are supported: QGIS project system and WGS-84 (EPSG:4326)
-known as “GPS coordinates”.</p>
-<a class=""
-               data-lightbox="group-ce78732b-2637-4e7d-b9bf-5c50e0d4bfdb"
-               href="../_images/ui-location-menu1.png"
-               title="Location menu."
-               data-title="Location menu."
-               
-               ><img src="../_images/ui-location-menu1.png"
-                     class=""
-                     width="250px"
-                     height="auto"
-                     alt=""/>
-                </a><a class=""
-               data-lightbox="group-860d1d49-8465-4ed6-b763-ed5c71430777"
-               href="../_images/measure-distance1.png"
-               title="Distance measurement example. Menu highlighted in red ring."
-               data-title="Distance measurement example. Menu highlighted in red ring."
-               
-               ><img src="../_images/measure-distance1.png"
-                     class=""
-                     width="100%"
-                     height="auto"
-                     alt=""/>
-                </a><p>Distance menu allows:</p>
-<ul class="simple">
-<li><p>Zoom to distance</p></li>
-<li><p>Change units</p></li>
-</ul>
-<p>Currently, two systems are supported: international (EU) and
-imperial (UK, US).</p>
-<a class=""
-               data-lightbox="group-a31b725e-8aac-46de-b8ae-a5915e02c1c6"
-               href="../_images/ui-distance-menu1.png"
-               title="Distance menu."
-               data-title="Distance menu."
-               
-               ><img src="../_images/ui-distance-menu1.png"
-                     class=""
-                     width="250px"
-                     height="auto"
-                     alt=""/>
-                </a><a class=""
-               data-lightbox="group-c612c535-cab8-45bf-93eb-6c5d10a1f937"
-               href="../_images/measure-area1.png"
-               title="Area measurement example. Menu highlighted in red ring."
-               data-title="Area measurement example. Menu highlighted in red ring."
-               
-               ><img src="../_images/measure-area1.png"
-                     class=""
-                     width="100%"
-                     height="auto"
-                     alt=""/>
-                </a><p>Area menu allows:</p>
-<ul class="simple">
-<li><p>Zoom to area</p></li>
-<li><p>Change units</p></li>
-</ul>
-<p>Currently, two systems are supported: international (EU) and
-imperial (UK, US).</p>
-<a class=""
-               data-lightbox="group-b92c6943-c2cb-42a8-9893-5f83a72572c5"
-               href="../_images/ui-area-menu1.png"
-               title="Area menu."
-               data-title="Area menu."
-               
-               ><img src="../_images/ui-area-menu1.png"
-                     class=""
-                     width="250px"
                      height="auto"
                      alt=""/>
                 </a><div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Currently, <strong>no snapping</strong> to features is supported by
-measurement tools.</p>
+<p>Measurement tool completed by double click.</p>
 </div>
-</section>
-<section id="print-tool">
-<span id="id2"></span><h3>Print tool<a class="headerlink" href="#print-tool" title="Permalink to this heading">¶</a></h3>
-<p>Before <a class="reference internal" href="publishing.html"><span class="doc">project publication</span></a>, the
-print tool <a class="reference internal" href="../_images/ui-print.png"><img alt="print" src="../_images/ui-print.png" style="width: 2.2em;" /></a> can be activated in Gisquick, which enables one to
-download raw output from QGIS server GetPrint request and allows
-interactive visualization of map content directly in this template.
-One can zoom, pan and rotate the map and see exactly how the result will
-look like. To get a better idea, see the video below.</p>
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/1g0YduhPwpk" frameborder="0" allowfullscreen></iframe></center>
-<p><div class="admonition important">
-<p class="admonition-title">Important</p>
-<p><a class="reference internal" href="../_images/important.png"><img alt="imp" src="../_images/important.png" style="width: 1.5em;" /></a> Print tool in Gisquick is not accessible in
-<span class="xref std std-ref">Guest session</span>, only log in users can use
-this tool.</p>
-</div>
-</section>
-</section>
-<section id="user-menu">
-<span id="id3"></span><h2>User menu<a class="headerlink" href="#user-menu" title="Permalink to this heading">¶</a></h2>
-<p>User menu allows to:</p>
+<a class=""
+               data-lightbox="group-841951cf-7fd6-4dcd-b124-72f903d2442e"
+               href="../_images/ui-measurement1.gif"
+               title=""
+               data-title=""
+               
+               ><img src="../_images/ui-measurement1.gif"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a><p><strong>Print</strong> tool allows to print selected layers. Note that to enable the print function,
+at least one print layout must be set in QGIS before the project is published on Gisquick server.
+User can set:</p>
 <ul class="simple">
-<li><p>Logout current user</p></li>
-<li><p>Open user profile page</p></li>
-<li><p>Enter/Leave Full Screen mode</p></li>
-<li><p>Display attributions</p></li>
-<li><p>Show Help (this document)</p></li>
+<li><p>Layout size</p></li>
+<li><p>Format</p></li>
+<li><p>Quality</p></li>
+<li><p>Title</p></li>
 </ul>
 <a class=""
-               data-lightbox="group-0a9a9973-4aa2-457a-b83d-692490c50fb8"
-               href="../_images/map-attribution1.png"
-               title="Map attributions displayed."
-               data-title="Map attributions displayed."
+               data-lightbox="group-5e4ac488-7f9f-444d-a4ea-a0c93a151827"
+               href="../_images/ui-print-21.png"
+               title=""
+               data-title=""
                
-               ><img src="../_images/map-attribution1.png"
+               ><img src="../_images/ui-print-21.png"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Layers can be rotated in print function using ALT + SHIFT + dragging.</p>
+</div>
+<a class=""
+               data-lightbox="group-46289222-8e64-44ba-9df1-3561680560d8"
+               href="../_images/ui-print-21.gif"
+               title=""
+               data-title=""
+               
+               ><img src="../_images/ui-print-21.gif"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a><hr class="docutils" />
+</section>
+<section id="user-menu">
+<span id="id5"></span><h3>User menu<a class="headerlink" href="#user-menu" title="Permalink to this heading">¶</a></h3>
+<p>User menu, accessed by <a class="reference internal" href="../_images/ui-user-menu-icon.png"><img alt="user-menu-icon" src="../_images/ui-user-menu-icon.png" style="width: 2.2em;" /></a> in top right corner, allows to:</p>
+<ul class="simple">
+<li><p><strong>Logout</strong> current user</p></li>
+<li><p>Open user <strong>profile page</strong></p></li>
+<li><p>Enter/Leave <strong>full screen</strong> mode</p></li>
+<li><p>Display <strong>attributions</strong></p></li>
+<li><p>Copy <strong>permalink</strong></p></li>
+<li><p>Show <strong>help</strong></p></li>
+</ul>
+<a class=""
+               data-lightbox="group-301665f4-f423-4e2a-9211-4b944d93a6b6"
+               href="../_images/ui-user-menu1.png"
+               title=""
+               data-title=""
+               
+               ><img src="../_images/ui-user-menu1.png"
+                     class=""
+                     width="250px"
+                     height="auto"
+                     alt=""/>
+                </a><hr class="docutils" />
+</section>
+</section>
+<section id="profile-page">
+<span id="id6"></span><h2>Profile page<a class="headerlink" href="#profile-page" title="Permalink to this heading">¶</a></h2>
+<p>User page (<span class="menuselection">My profile</span> in the User menu) allows managing
+published projects and uploading new ones.</p>
+<ul class="simple">
+<li><p>In Projects search tab user can browse published projects including basic metadata.</p></li>
+<li><p>A web map can be opened by clicking on its thumbnail.</p></li>
+<li><p>By clicking on its name, one can access project settings.</p></li>
+<li><p>New projects can be uploaded by clicking the <strong>New project</strong> button. Note that existing project will be automatically overwritten.</p></li>
+<li><p>The remaining number of possible projects and storage usage can be observed in the lower right corner.</p></li>
+<li><p>Logging out and changing the password is possible by clicking on the icon in the upper right corner.</p></li>
+</ul>
+<a class=""
+               data-lightbox="group-fc5f6c1f-ba15-4aa0-919f-e0085ac634bd"
+               href="../_images/ui-user-page1.png"
+               title=""
+               data-title=""
+               
+               ><img src="../_images/ui-user-page1.png"
                      class=""
                      width="100%"
                      height="auto"
                      alt=""/>
                 </a></section>
-<section id="user-profile-page">
-<span id="id4"></span><h2>User profile page<a class="headerlink" href="#user-profile-page" title="Permalink to this heading">¶</a></h2>
-<p>User page (<span class="menuselection">My profile</span> in the User menu) allows managing
-published projects and uploading new ones. In <code class="docutils literal notranslate"><span class="pre">Projects</span></code> tab user
-can browse published projects including basic metadata. A project can
-be opened by clicking on its name.</p>
-<a class=""
-               data-lightbox="group-97f65627-b350-40b5-bc27-b33fbd12a520"
-               href="../_images/ui-user-menu1.png"
-               title="User page contains list of published projects.
-(Projects button is highlighted in red square)"
-               data-title="User page contains list of published projects.
-(Projects button is highlighted in red square)"
-               
-               ><img src="../_images/ui-user-menu1.png"
-                     class=""
-                     width="100%"
-                     height="auto"
-                     alt=""/>
-                </a><div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Project data is available also via WMS service, click WMS link button <a class="reference internal" href="../_images/ui-wms.png"><img alt="wms" src="../_images/ui-wms.png" style="width: 2.5em;" /></a>. To open the project in the map canvas, click <a class="reference internal" href="../_images/ui-map.png"><img alt="map" src="../_images/ui-map.png" style="width: 2.5em;" /></a>.</p>
-</div>
-<p>New projects can be uploaded by clicking the upload button. Note that
-existing project will be automatically overwritten. Projects can be
-uploaded in <code class="docutils literal notranslate"><span class="pre">zip</span></code> or <code class="docutils literal notranslate"><span class="pre">tag.gz</span></code> formats.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><a class="reference internal" href="../_images/note.png"><img alt="note" src="../_images/note.png" style="width: 1.5em;" /></a> See project size limits in <span class="xref std std-ref">Configuration</span> section.</p>
-</div>
-<a class=""
-               data-lightbox="group-4d8257a4-69c0-4242-879d-3daa8f132c78"
-               href="../_images/ui-user-page-upload1.png"
-               title="Upload project button is highlighted in red square.
-Project publishing button is highlighted in green square."
-               data-title="Upload project button is highlighted in red square.
-Project publishing button is highlighted in green square."
-               
-               ><img src="../_images/ui-user-page-upload1.png"
-                     class=""
-                     width="100%"
-                     height="auto"
-                     alt=""/>
-                </a><p>Project settings are opened by clicking the project name. See chapter
-<a class="reference internal" href="releasing-project.html"><span class="doc">Releasing project</span></a> for more information.</p>
-</section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="releasing-project.html" class="btn btn-neutral float-left" title="Releasing project" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="setting-up-project.html" class="btn btn-neutral float-left" title="Setting up the project" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="datasets.html" class="btn btn-neutral float-right" title="Sample datasets" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
