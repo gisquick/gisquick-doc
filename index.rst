@@ -24,7 +24,7 @@ Browse section :ref:`chapter-5` for **metadata of example datasets** that were u
 
 .. note::
    
-   This documentation is dedicated to Gisquick version 2. For older documentation visit https://gisquick.rtfd.io/en/release-1_x/.
+   This documentation is dedicated to Gisquick version 3. For older documentation visit https://gisquick.rtfd.io/en/release-1_x/ and https://gisquick.rtfd.io/en/release-2_x/.
 
 .. thumbnail:: ./img/example.svg
 
@@ -33,38 +33,44 @@ Browse section :ref:`chapter-5` for **metadata of example datasets** that were u
 .. _chapter-1:
 
 1. :doc:`Before publishing <user-manual/before-publishing>`
---------------------------------------------------------
+-----------------------------------------------------------
+
 To successfuly use Gisquick platform, a Gisquick user account must be created and
 QGIS Gisquick plugin must be installed.
 
 .. _chapter-2:
 
 2. :doc:`Publishing <user-manual/publishing>`
-----------------------------------------------------------------------
+---------------------------------------------
+
 Proccess of publishing a project from QGIS to Gisquick.
 
 .. _chapter-3:
 
 3. :doc:`Setting up the project <user-manual/setting-up-project>`
-----------------------------------------------------------
+-----------------------------------------------------------------
+
 All possible settings that can be set to a published project.
 
 .. _chapter-4:
 
 4. :doc:`User interface <user-manual/user-interface>`
-----------------------------------------------------
+-----------------------------------------------------
+
 Each feature involved in Gisquick user interface - the appearance of final web map.
 
 .. _chapter-5:
 
 5. :doc:`Sample datasets <user-manual/datasets>`
--------------------------------------------
+------------------------------------------------
+
 Basic information about datasets that were used for the documentation.
 
 .. _chapter-6:
 
 6. :doc:`Other <user-manual/other>`
-----------------------------------
+-----------------------------------
+
 Links to video tutorials, used technologies and source code.
 
 .. note:: Gisquick has been originally developed for `GIS.lab
