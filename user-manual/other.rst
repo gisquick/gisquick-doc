@@ -73,7 +73,12 @@ Authors (documentation)
 * Jáchym Čepický
 
 Major Gisquick 2 update (spring 2020). Documentation was updated
-within the subject **Free software GIS** at **Czech Technical
-University** in Prague by Josef Münzberger, Svetlana Usik and Zuzana
-Vaňková in 2020 and Jakub Snopl, Tatana Blahova and Dennis Dvorak in 2023. Language corrections done by Ondřej Pešek. Additional updates
-were made by František Mužík in 2021.
+within the subject Free software GIS at Czech Technical
+University in Prague by Josef Münzberger, Svetlana Usik and Zuzana
+Vaňková in 2020. Language corrections done by Ondřej Pešek. Additional
+updates were made by František Mužík in 2021.
+
+Major Gisquick 3 update (spring 2023). Documentation was updated
+within the subject Free software GIS at Czech Technical
+University in Prague by Jakub Snopl, Tatana Blahova and Dennis
+Dvorak in 2023.
