@@ -89,9 +89,15 @@ pygments_style = 'sphinx'
 # If true, keep warnings as "system message" paragraphs in the built documents.
 #keep_warnings = False
 
+# rst_epilog = """
+# .. include:: /{}/.substitutions1
+# """.format(os.path.dirname(__file__))
+
 rst_epilog = """
-.. include:: /{}/.substitutions1
-""".format(os.path.dirname(__file__))
+.. include:: .substitutions1
+.. include:: ../.substitutions2
+.. include:: ../../.substitutions3
+"""
 
 # -- Options for HTML output ----------------------------------------------
 
