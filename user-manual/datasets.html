@@ -53,16 +53,16 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="before-publishing.html">Before publishing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creating-account.html">Creating account</a></li>
 <li class="toctree-l1"><a class="reference internal" href="publishing.html">Publishing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="setting-up-project.html">Setting up the project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="releasing-project.html">Releasing project</a></li>
 <li class="toctree-l1"><a class="reference internal" href="user-interface.html">User interface</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Sample datasets</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#prague">Prague</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#natural-earth">Natural earth</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#thematic-layers">Thematic layers</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#natural-earth">Natural earth</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#prague">Prague</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id1">Thematic layers</a></li>
 </ul>
 </li>
@@ -97,599 +97,13 @@
              
   <section id="sample-datasets">
 <span id="data"></span><h1>Sample datasets<a class="headerlink" href="#sample-datasets" title="Permalink to this heading">¶</a></h1>
-<p>This section presents information about two sample datasets used in this documentation.</p>
-<p>The first dataset <a class="reference internal" href="#dataset-prague"><span class="std std-ref">Prague</span></a> was developed for specific
-needs of this Gisquick publishing platform.
-Subsequently,
-the second dataset <a class="reference internal" href="#dataset-natural-earth"><span class="std std-ref">Natural earth</span></a> was originally created
-by the developers of GIS.lab and was later adopted by the Gisquick project.</p>
-<section id="prague">
-<span id="dataset-prague"></span><h2>Prague<a class="headerlink" href="#prague" title="Permalink to this heading">¶</a></h2>
-<p>Database <code class="docutils literal notranslate"><span class="pre">prague.sqlite</span></code>. Downloadable as a <a class="reference external" href="http://training.gismentors.eu/geodata/gisquick/prague.tar.gz">zip file</a>.</p>
-<p class="rubric">Data source</p>
-<p>The data are sourced from
-open data <a class="reference external" href="http://www.geoportalpraha.cz/en/opendata">IPR</a> provided by
-<em>Prague Institute of Planning and Development</em>, open data
-<a class="reference external" href="http://vdp.cuzk.cz/vdp/ruian/stat/">RÚIAN</a> supplied by the
-<em>Registry of Territorial Identification, Addresses and Real Estate</em>, data
-<a class="reference external" href="http://www.dibavod.cz/index.php?id=27&amp;PHPSESSID=vcbxqccbl">DIBAVOD</a> provided
-by <em>T. G. Masaryk water research institute, public research institution</em> and
-from a great resource for free and openly licensed data,
-<a class="reference external" href="http://www.openstreetmap.org/">OpenStreetMap (OSM)</a>. Some statistics data
-are from <a class="reference external" href="https://www.czso.cz/csu/czso/home">Czech statistical office</a>.</p>
-<p class="rubric">Coordinate systems (Reference system)</p>
-<p>All data in Prague dataset use reference system S-JTSK Krovak East North (EPSG:5514).</p>
-<p class="rubric">Format and other key features</p>
-<p>Vector data come in Esri Shapefile format. Character encoding is
-Windows-1252. Raster data come in TIFF format.</p>
-<ul class="simple">
-<li><p><em>Extent:</em> <code class="docutils literal notranslate"><span class="pre">50.3</span> <span class="pre">(N),</span> <span class="pre">49.9</span> <span class="pre">(S),</span> <span class="pre">14.8</span> <span class="pre">(E),</span> <span class="pre">14.2</span> <span class="pre">(W)</span></code></p></li>
-</ul>
-<a class=""
-               data-lightbox="group-feafb5d1-27d7-454a-ae46-7d00ac0db11a"
-               href="../_images/qgis-prague1.png"
-               title="Prague sample project loaded in QGIS."
-               data-title="Prague sample project loaded in QGIS."
-               
-               ><img src="../_images/qgis-prague1.png"
-                     class=""
-                     width="100%"
-                     height="auto"
-                     alt=""/>
-                </a><section id="thematic-layers">
-<h3>Thematic layers<a class="headerlink" href="#thematic-layers" title="Permalink to this heading">¶</a></h3>
-<p><strong>Administrative districts</strong> - administrative boundaries in Prague.</p>
-<ul class="simple">
-<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">districts</span></code></p></li>
-<li><p><em>Storage type:</em> SQLite database</p></li>
-<li><p><em>Geometry type</em>: Polygon</p></li>
-<li><p><em>Attributes</em>:</p></li>
-</ul>
-<table class="docutils align-default" id="id2">
-<caption><span class="caption-text">Attributes of the administrative districts layer.</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><em>code</em></p></td>
-<td><p>code of district</p></td>
-</tr>
-<tr class="row-odd"><td><p><em>name</em></p></td>
-<td><p>name of district</p></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Air pollution</strong> - bonita of climate in terms of air pollution (I - the best, V - the worse).</p>
-<ul class="simple">
-<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">air_pollution</span></code></p></li>
-<li><p><em>Storage type:</em> SQLite database</p></li>
-<li><p><em>Last update:</em> 01.01.2008</p></li>
-<li><p><em>Geometry type</em>: Polygon</p></li>
-<li><p><a class="reference external" href="http://www.geoportalpraha.cz/cs/opendata/5BB4E2C5-9D4B-4B2B-BF0A-E0B98EE6013A">Source</a></p></li>
-<li><p><em>Attributes</em>:</p></li>
-</ul>
-<table class="docutils align-default" id="id3">
-<caption><span class="caption-text">Attributes of the air pollution layer.</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><em>value</em></p></td>
-<td><p>bonita of climate in terms of air pollution</p></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Basins</strong> - hydrological structure, basins of IV. code.</p>
-<ul class="simple">
-<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">basins</span></code></p></li>
-<li><p><em>Storage type:</em> SQLite database</p></li>
-<li><p><em>Last update:</em> 06.04.2006</p></li>
-<li><p><em>Geometry type</em>: Polygon</p></li>
-<li><p><a class="reference external" href="http://www.dibavod.cz/download.php?id_souboru=1418&amp;PHPSESSID=vcbxqccbl">Source</a></p></li>
-<li><p><em>Attributes</em>:</p></li>
-</ul>
-<table class="docutils align-default" id="id4">
-<caption><span class="caption-text">Attributes of the basins layer.</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><em>number</em></p></td>
-<td><p>number of basin</p></td>
-</tr>
-<tr class="row-odd"><td><p><em>area</em></p></td>
-<td><p>area in square kilometer</p></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Bike routes</strong> - cycling routes marked, registered and others.</p>
-<ul class="simple">
-<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">bike_routes</span></code></p></li>
-<li><p><em>Storage type:</em> SQLite database</p></li>
-<li><p><em>Last update:</em> 14.03.2016</p></li>
-<li><p><em>Geometry type</em>: Polyline</p></li>
-<li><p><em>Spatial resolution:</em> <cite>1:10000</cite></p></li>
-<li><p><a class="reference external" href="http://www.geoportalpraha.cz/en/opendata/0AF6DE97-68B3-4CD6-AE5D-76ACEEE50636">Source</a>,
-<a class="reference external" href="http://www.geoportalpraha.cz/cs/fulltext_geoportal?id=0AF6DE97-68B3-4CD6-AE5D-76ACEEE50636">metadata</a></p></li>
-<li><p><em>Attributes</em>:</p></li>
-</ul>
-<table class="docutils align-default" id="id5">
-<caption><span class="caption-text">Attributes of the bike routes layer.</span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><em>number</em></p></td>
-<td><p>number of route</p></td>
-</tr>
-<tr class="row-odd"><td><p><em>state</em></p></td>
-<td><p>traffic state</p></td>
-</tr>
-<tr class="row-even"><td><p><em>one_way</em></p></td>
-<td><p>D means one-way route</p></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Bike signs</strong> - bicycle transport signs for Prague 1 district.</p>
-<ul class="simple">
-<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">bike_signs</span></code></p></li>
-<li><p><em>Storage type:</em> SQLite database</p></li>
-<li><p><em>Last update:</em> 14.03.2016</p></li>
-<li><p><em>Geometry type</em>: Point</p></li>
-<li><p><em>Spatial resolution:</em> <cite>1:10000</cite></p></li>
-<li><p><a class="reference external" href="http://www.geoportalpraha.cz/cs/opendata/7ED6D2D8-A68C-44F1-8EC3-0F75A5AEF781">Source</a>,
-<a class="reference external" href="http://www.geoportalpraha.cz/cs/fulltext_geoportal?id=7ED6D2D8-A68C-44F1-8EC3-0F75A5AEF781">metadata</a></p></li>
-<li><p><em>Attributes</em>:</p></li>
-</ul>
-<table class="docutils align-default" id="id6">
-<caption><span class="caption-text">Attributes of the bike signs layer.</span><a class="headerlink" href="#id6" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><em>type</em></p></td>
-<td><p>type of sign</p></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Boundary region</strong> - boundary of Prague region.</p>
-<ul class="simple">
-<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">boundary_region</span></code></p></li>
-<li><p><em>Storage type:</em> SQLite database</p></li>
-<li><p><em>Last update:</em> 04.05.2014</p></li>
-<li><p><em>Geometry type</em>: Polygon</p></li>
-<li><p><a class="reference external" href="http://www.geoportalpraha.cz/cs/opendata/669607B8-EA0A-44FB-8771-C509C2384E59">Source</a></p></li>
-<li><p><em>Attributes</em>:</p></li>
-</ul>
-<table class="docutils align-default" id="id7">
-<caption><span class="caption-text">Attributes of the boundary region.</span><a class="headerlink" href="#id7" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><em>name</em></p></td>
-<td><p>name of region</p></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Buildings</strong> - classified 3D raster with absolute altitude of buildings.</p>
-<ul class="simple">
-<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">buildings</span></code></p></li>
-<li><p><em>Storage type:</em> SQLite database</p></li>
-<li><p><em>Spatial representation:</em> 3D grid</p></li>
-<li><p><a class="reference external" href="http://www.geoportalpraha.cz/en/opendata/DDBD51D9-CDF6-4288-8FAB-F049BB5ADFD9">Source</a></p></li>
-</ul>
-<p><strong>Elevation</strong> - digital terrain model (DTM) within the meaning of the bare surface.</p>
-<ul class="simple">
-<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">elevation</span></code></p></li>
-<li><p><em>Storage type:</em> SQLite database</p></li>
-<li><p><em>Last update:</em> 10.04.2015</p></li>
-<li><p><em>Spatial representation:</em> 3D grid</p></li>
-<li><p><em>Spatial resolution:</em> 1:5000</p></li>
-<li><p><a class="reference external" href="http://www.geoportalpraha.cz/en/opendata/6E9A6D83-5F66-4B06-ABB5-CE8E773A811C">Source</a></p></li>
-</ul>
-<p><strong>Landuse</strong> - landuse in 2016.</p>
-<ul class="simple">
-<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">landuse</span></code></p></li>
-<li><p><em>Storage type:</em> SQLite database</p></li>
-<li><p><em>Last update:</em> 24.02.2016</p></li>
-<li><p><em>Spatial resolution:</em> 1:5000</p></li>
-<li><p><em>Geometry type</em>: Polygon</p></li>
-<li><p><a class="reference external" href="http://www.geoportalpraha.cz/en/opendata/A0198E36-FCAD-42E7-BE4A-3B7755A48DAC">Source</a></p></li>
-<li><p><em>Attributes</em>:</p></li>
-</ul>
-<table class="docutils align-default" id="id8">
-<caption><span class="caption-text">Attributes of the landuse layer.</span><a class="headerlink" href="#id8" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><em>code</em></p></td>
-<td><p>code of usage</p></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Orthophoto</strong> - colored orthophoto of Prague 1 district.</p>
-<ul class="simple">
-<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">orthophoto</span></code></p></li>
-<li><p><em>Pixel resolution:</em> <code class="docutils literal notranslate"><span class="pre">50</span> <span class="pre">cm</span></code></p></li>
-<li><p><em>Storage type:</em> SQLite database</p></li>
-<li><p><em>Last update:</em> 10.12.2015</p></li>
-<li><p><em>Spatial representation:</em> grid</p></li>
-<li><p><a class="reference external" href="http://www.geoportalpraha.cz/cs/opendata/A0198E36-FCAD-42E7-BE4A-3B7755A48DAC">Source</a>,
-<a class="reference external" href="http://www.geoportalpraha.cz/en/fulltext_geoportal?id=A0198E36-FCAD-42E7-BE4A-3B7755A48DAC">metadata</a></p></li>
-</ul>
-<p><strong>Parcels</strong> - polygons of the parcels for Prague 1 district.</p>
-<ul class="simple">
-<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">parcels</span></code></p></li>
-<li><p><em>Storage type:</em> SQLite database</p></li>
-<li><p><em>Last update:</em> 01.03.2016</p></li>
-<li><p><em>Geometry type</em>: Polygon</p></li>
-<li><p><em>Spatial resolution:</em> <cite>1:500</cite></p></li>
-<li><p><a class="reference external" href="http://www.geoportalpraha.cz/en/opendata/31363CF6-2A9F-41D1-B000-23587084BC7A">Source</a></p></li>
-<li><p><em>Attributes</em>:</p></li>
-</ul>
-<table class="docutils align-default" id="id9">
-<caption><span class="caption-text">Attributes of the parcels layer.</span><a class="headerlink" href="#id9" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><em>p_number</em></p></td>
-<td><p>permanent parcel number</p></td>
-</tr>
-<tr class="row-odd"><td><p><em>f_number</em></p></td>
-<td><p>fractional parcel number</p></td>
-</tr>
-<tr class="row-even"><td><p><em>area</em></p></td>
-<td><p>area in square meters</p></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Pharmacy</strong> - pharmacies.</p>
-<ul class="simple">
-<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">pharmacy</span></code></p></li>
-<li><p><em>Geometry type</em>: Point</p></li>
-<li><p><em>Attributes</em>:</p></li>
-</ul>
-<table class="docutils align-default" id="id10">
-<caption><span class="caption-text">Attributes of the pharmacy layer.</span><a class="headerlink" href="#id10" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><em>name</em></p></td>
-<td><p>name of pharmacy</p></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Population statistics</strong> - marriages, divorces, live births and deaths statistics for Prague districts in 2014.</p>
-<ul class="simple">
-<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">pop_statistics</span></code></p></li>
-<li><p><em>Data representation:</em> comma separated values file</p></li>
-<li><p><em>Last update</em>: 31.12.2014</p></li>
-<li><p><a class="reference external" href="https://www.czso.cz/documents/10180/26823476/3301231505.xlsx/1e37f0cd-ef06-4872-b108-31778585b635?version=1.0">Source</a></p></li>
-<li><p><em>Attributes</em>:</p></li>
-</ul>
-<table class="docutils align-default" id="id11">
-<caption><span class="caption-text">Selected population statistics.</span><a class="headerlink" href="#id11" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><em>district</em></p></td>
-<td><p>name of district</p></td>
-</tr>
-<tr class="row-odd"><td><p><em>marriages</em></p></td>
-<td><p>marriages in 2014</p></td>
-</tr>
-<tr class="row-even"><td><p><em>divorces</em></p></td>
-<td><p>divorces in 2014</p></td>
-</tr>
-<tr class="row-odd"><td><p><em>live births</em></p></td>
-<td><p>live births</p></td>
-</tr>
-<tr class="row-even"><td><p><em>deaths</em></p></td>
-<td><p>deaths</p></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Prague 1</strong> - boundary of Prague 1 district.</p>
-<ul class="simple">
-<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">prague_1</span></code></p></li>
-<li><p><em>Storage type:</em> SQLite database</p></li>
-<li><p><em>Geometry type</em>: Polygon</p></li>
-<li><p><em>Attributes</em>:</p></li>
-</ul>
-<table class="docutils align-default" id="id12">
-<caption><span class="caption-text">Attributes of Prague 1 district layer.</span><a class="headerlink" href="#id12" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><em>code</em></p></td>
-<td><p>code of district</p></td>
-</tr>
-<tr class="row-odd"><td><p><em>name</em></p></td>
-<td><p>name of district</p></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Public toilets</strong> - public toilets.</p>
-<ul class="simple">
-<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">public_toilets</span></code></p></li>
-<li><p><em>Storage type:</em> SQLite database</p></li>
-<li><p><em>Last update:</em> 20.07.2015</p></li>
-<li><p><em>Geometry type</em>: Point</p></li>
-<li><p><a class="reference external" href="http://www.geoportalpraha.cz/en/opendata/27028B3A-9442-44BC-9EA2-4DF8A2DF9940">Source</a></p></li>
-<li><p><em>Attributes</em>:</p></li>
-</ul>
-<table class="docutils align-default" id="id13">
-<caption><span class="caption-text">Attributes of public toilets layer.</span><a class="headerlink" href="#id13" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><em>locality</em></p></td>
-<td><p>the position or site of public toilet</p></td>
-</tr>
-<tr class="row-odd"><td><p><em>address</em></p></td>
-<td><p>address of public toilet</p></td>
-</tr>
-<tr class="row-even"><td><p><em>open</em></p></td>
-<td><p>open hours</p></td>
-</tr>
-<tr class="row-odd"><td><p><em>price</em></p></td>
-<td><p>price for usage</p></td>
-</tr>
-<tr class="row-even"><td><p><em>invalid</em></p></td>
-<td><p>1 for invalid toilet</p></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Public wifi</strong> - WiFi facilities allowing to connect to the Internet within a particular area.</p>
-<ul class="simple">
-<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">public_wifi</span></code></p></li>
-<li><p><em>Geometry type</em>: Point</p></li>
-<li><p><em>Attributes</em>:</p></li>
-</ul>
-<table class="docutils align-default" id="id14">
-<caption><span class="caption-text">Attributes of public WiFi layer.</span><a class="headerlink" href="#id14" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><em>wifi</em></p></td>
-<td><p>more details about WiFi</p></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Railways</strong> - railway lines.</p>
-<ul class="simple">
-<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">railways</span></code></p></li>
-<li><p><em>Geometry type</em>: Polyline</p></li>
-<li><p><em>Attributes</em>:</p></li>
-</ul>
-<table class="docutils align-default" id="id15">
-<caption><span class="caption-text">Attributes of railways layer.</span><a class="headerlink" href="#id15" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><em>osm_id</em></p></td>
-<td><p>OSM id</p></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Schools</strong> - school buildings.</p>
-<ul class="simple">
-<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">schools</span></code></p></li>
-<li><p><em>Geometry type</em>: Point</p></li>
-<li><p><em>Attributes</em>:</p></li>
-</ul>
-<table class="docutils align-default" id="id16">
-<caption><span class="caption-text">Attributes of schools layer.</span><a class="headerlink" href="#id16" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><em>name</em></p></td>
-<td><p>name and type of school</p></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Streams</strong> - water flow, flow model.</p>
-<ul class="simple">
-<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">streams</span></code></p></li>
-<li><p><em>Storage type:</em> SQLite database</p></li>
-<li><p><em>Last update:</em> 06.04.2006</p></li>
-<li><p><em>Geometry type</em>: Polyline</p></li>
-<li><p><a class="reference external" href="http://www.dibavod.cz/download.php?id_souboru=1412&amp;PHPSESSID=vcbxqccbl">Source</a></p></li>
-<li><p><em>Attributes</em>:</p></li>
-</ul>
-<table class="docutils align-default" id="id17">
-<caption><span class="caption-text">Attributes of streams layer.</span><a class="headerlink" href="#id17" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><em>name</em></p></td>
-<td><p>name of stream</p></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Streets</strong> - roads and streets in Prague 1 district.</p>
-<ul class="simple">
-<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">streets</span></code></p></li>
-<li><p><em>Geometry type</em> : Polyline</p></li>
-<li><p><em>Storage type:</em> SQLite database</p></li>
-<li><p><em>Attributes</em>:</p></li>
-</ul>
-<table class="docutils align-default" id="id18">
-<caption><span class="caption-text">Attributes of streets layer.</span><a class="headerlink" href="#id18" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><em>name</em></p></td>
-<td><p>name of street</p></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Universities</strong> - university buildings.</p>
-<ul class="simple">
-<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">universities</span></code></p></li>
-<li><p><em>Spatial representation:</em> vector</p></li>
-<li><p><em>Geometry type</em>: Point</p></li>
-<li><p><em>Attributes</em>:</p></li>
-</ul>
-<table class="docutils align-default" id="id19">
-<caption><span class="caption-text">Attributes of universities layer.</span><a class="headerlink" href="#id19" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><em>name</em></p></td>
-<td><p>name of university</p></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Zip codes</strong> - address points from RUIAN.</p>
-<ul class="simple">
-<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">zipcodes</span></code></p></li>
-<li><p><em>Storage type:</em> SQLite database</p></li>
-<li><p><em>Attributes</em>:</p></li>
-</ul>
-<table class="docutils align-default" id="id20">
-<caption><span class="caption-text">Attributes of zip code layer.</span><a class="headerlink" href="#id20" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><em>number</em></p></td>
-<td><p>number of building</p></td>
-</tr>
-<tr class="row-odd"><td><p><em>code</em></p></td>
-<td><p>zip code</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-</section>
+<p>Some basic information about our data aiming to be a part of examples
+introduced in this documentation. This section presents two sample
+datasets.</p>
+<p>The first one <a class="reference internal" href="#dataset-natural-earth"><span class="std std-ref">Natural earth</span></a> has been originally created
+by GIS.lab developers and later adopted by Gisquick project. Subsequently,
+the second dataset <a class="reference internal" href="#dataset-prague"><span class="std std-ref">Prague</span></a> was developed for specific
+needs of Gisquick publishing platform.</p>
 <section id="natural-earth">
 <span id="dataset-natural-earth"></span><h2>Natural earth<a class="headerlink" href="#natural-earth" title="Permalink to this heading">¶</a></h2>
 <p>Database <code class="docutils literal notranslate"><span class="pre">natural-earth.sqlite</span></code>. Available online from <a class="reference external" href="https://github.com/gislab-npo/gisquick/tree/master/qgis/project/natural-earth">GitHub
@@ -718,7 +132,7 @@ feature names, which are ranked by relative importance. Other
 attributes facilitate faster map production, such as width attributes
 assigned to river segments for creating tapers, etc.</p>
 <a class=""
-               data-lightbox="group-e7b7bb5d-db02-4567-9001-080570ddd09c"
+               data-lightbox="group-513598ae-57b6-4c0e-8867-8b0f60827910"
                href="../_images/qgis-natural-earth1.png"
                title="Natural Earth sample project loaded in QGIS."
                data-title="Natural Earth sample project loaded in QGIS."
@@ -728,8 +142,8 @@ assigned to river segments for creating tapers, etc.</p>
                      width="100%"
                      height="auto"
                      alt=""/>
-                </a><section id="id1">
-<h3>Thematic layers<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h3>
+                </a><section id="thematic-layers">
+<h3>Thematic layers<a class="headerlink" href="#thematic-layers" title="Permalink to this heading">¶</a></h3>
 <p><strong>Area</strong> - matched boundary polygon for the area of interest (administrative areas).</p>
 <ul class="simple">
 <li><p><em>Layer name</em>: <code class="docutils literal notranslate"><span class="pre">area</span></code></p></li>
@@ -744,8 +158,8 @@ countries.</p>
 <li><p><em>Geometry type</em>: Polygon</p></li>
 <li><p><em>Attributes</em>:</p></li>
 </ul>
-<table class="docutils align-default" id="id21">
-<caption><span class="caption-text">Attributes of the country layer.</span><a class="headerlink" href="#id21" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id2">
+<caption><span class="caption-text">Attributes of the country layer.</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -778,8 +192,8 @@ data and other information (urban landscape).</p>
 <li><p><em>Geometry type</em>: Point</p></li>
 <li><p><em>Attributes</em>:</p></li>
 </ul>
-<table class="docutils align-default" id="id22">
-<caption><span class="caption-text">Attributes of the places layer.</span><a class="headerlink" href="#id22" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id3">
+<caption><span class="caption-text">Attributes of the places layer.</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -829,8 +243,8 @@ data and other information (urban landscape).</p>
 <li><p><em>Geometry type</em>: Polyline</p></li>
 <li><p><em>Attributes</em>:</p></li>
 </ul>
-<table class="docutils align-default" id="id23">
-<caption><span class="caption-text">Attributes of the places layer.</span><a class="headerlink" href="#id23" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id4">
+<caption><span class="caption-text">Attributes of the places layer.</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -855,6 +269,593 @@ data and other information (urban landscape).</p>
 </tr>
 <tr class="row-even"><td><p><em>expressway</em></p></td>
 <td><p>1 for expressway, 0 for other</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="prague">
+<span id="dataset-prague"></span><h2>Prague<a class="headerlink" href="#prague" title="Permalink to this heading">¶</a></h2>
+<p>Database <code class="docutils literal notranslate"><span class="pre">prague.sqlite</span></code>. Downloadable as a <a class="reference external" href="http://training.gismentors.eu/geodata/gisquick/prague.tar.gz">zip file</a>.</p>
+<p class="rubric">Data source</p>
+<p>The data are sourced from
+open data <a class="reference external" href="http://www.geoportalpraha.cz/en/opendata">IPR</a> provided by
+<em>Prague Institute of Planning and Development</em>, open data
+<a class="reference external" href="http://vdp.cuzk.cz/vdp/ruian/stat/">RÚIAN</a> supplied by the
+<em>Registry of Territorial Identification, Addresses and Real Estate</em>, data
+<a class="reference external" href="http://www.dibavod.cz/index.php?id=27&amp;PHPSESSID=vcbxqccbl">DIBAVOD</a> provided
+by <em>T. G. Masaryk water research institute, public research institution</em> and
+from a great resource for free and openly licensed data,
+<a class="reference external" href="http://www.openstreetmap.org/">OpenStreetMap (OSM)</a>. Some statistics data
+are from <a class="reference external" href="https://www.czso.cz/csu/czso/home">Czech statistical office</a>.</p>
+<p class="rubric">Coordinate systems (Reference system)</p>
+<p>All data in Prague dataset use reference system S-JTSK Krovak East North (EPSG:5514).</p>
+<p class="rubric">Format and other key features</p>
+<p>Vector data come in Esri Shapefile format. Character encoding is
+Windows-1252. Raster data come in TIFF format.</p>
+<ul class="simple">
+<li><p><em>Extent:</em> <code class="docutils literal notranslate"><span class="pre">50.3</span> <span class="pre">(N),</span> <span class="pre">49.9</span> <span class="pre">(S),</span> <span class="pre">14.8</span> <span class="pre">(E),</span> <span class="pre">14.2</span> <span class="pre">(W)</span></code></p></li>
+</ul>
+<a class=""
+               data-lightbox="group-b89743ad-10ad-4156-9582-ceef7fe979da"
+               href="../_images/qgis-prague1.png"
+               title="Prague sample project loaded in QGIS."
+               data-title="Prague sample project loaded in QGIS."
+               
+               ><img src="../_images/qgis-prague1.png"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a><section id="id1">
+<h3>Thematic layers<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h3>
+<p><strong>Administrative districts</strong> - administrative boundaries in Prague.</p>
+<ul class="simple">
+<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">districts</span></code></p></li>
+<li><p><em>Storage type:</em> SQLite database</p></li>
+<li><p><em>Geometry type</em>: Polygon</p></li>
+<li><p><em>Attributes</em>:</p></li>
+</ul>
+<table class="docutils align-default" id="id5">
+<caption><span class="caption-text">Attributes of the administrative districts layer.</span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><em>code</em></p></td>
+<td><p>code of district</p></td>
+</tr>
+<tr class="row-odd"><td><p><em>name</em></p></td>
+<td><p>name of district</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Air pollution</strong> - bonita of climate in terms of air pollution (I - the best, V - the worse).</p>
+<ul class="simple">
+<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">air_pollution</span></code></p></li>
+<li><p><em>Storage type:</em> SQLite database</p></li>
+<li><p><em>Last update:</em> 01.01.2008</p></li>
+<li><p><em>Geometry type</em>: Polygon</p></li>
+<li><p><a class="reference external" href="http://www.geoportalpraha.cz/cs/opendata/5BB4E2C5-9D4B-4B2B-BF0A-E0B98EE6013A">Source</a></p></li>
+<li><p><em>Attributes</em>:</p></li>
+</ul>
+<table class="docutils align-default" id="id6">
+<caption><span class="caption-text">Attributes of the air pollution layer.</span><a class="headerlink" href="#id6" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><em>value</em></p></td>
+<td><p>bonita of climate in terms of air pollution</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Basins</strong> - hydrological structure, basins of IV. code.</p>
+<ul class="simple">
+<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">basins</span></code></p></li>
+<li><p><em>Storage type:</em> SQLite database</p></li>
+<li><p><em>Last update:</em> 06.04.2006</p></li>
+<li><p><em>Geometry type</em>: Polygon</p></li>
+<li><p><a class="reference external" href="http://www.dibavod.cz/download.php?id_souboru=1418&amp;PHPSESSID=vcbxqccbl">Source</a></p></li>
+<li><p><em>Attributes</em>:</p></li>
+</ul>
+<table class="docutils align-default" id="id7">
+<caption><span class="caption-text">Attributes of the basins layer.</span><a class="headerlink" href="#id7" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><em>number</em></p></td>
+<td><p>number of basin</p></td>
+</tr>
+<tr class="row-odd"><td><p><em>area</em></p></td>
+<td><p>area in square kilometer</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Bike routes</strong> - cycling routes marked, registered and others.</p>
+<ul class="simple">
+<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">bike_routes</span></code></p></li>
+<li><p><em>Storage type:</em> SQLite database</p></li>
+<li><p><em>Last update:</em> 14.03.2016</p></li>
+<li><p><em>Geometry type</em>: Polyline</p></li>
+<li><p><em>Spatial resolution:</em> <cite>1:10000</cite></p></li>
+<li><p><a class="reference external" href="http://www.geoportalpraha.cz/en/opendata/0AF6DE97-68B3-4CD6-AE5D-76ACEEE50636">Source</a>,
+<a class="reference external" href="http://www.geoportalpraha.cz/cs/fulltext_geoportal?id=0AF6DE97-68B3-4CD6-AE5D-76ACEEE50636">metadata</a></p></li>
+<li><p><em>Attributes</em>:</p></li>
+</ul>
+<table class="docutils align-default" id="id8">
+<caption><span class="caption-text">Attributes of the bike routes layer.</span><a class="headerlink" href="#id8" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><em>number</em></p></td>
+<td><p>number of route</p></td>
+</tr>
+<tr class="row-odd"><td><p><em>state</em></p></td>
+<td><p>traffic state</p></td>
+</tr>
+<tr class="row-even"><td><p><em>one_way</em></p></td>
+<td><p>D means one-way route</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Bike signs</strong> - bicycle transport signs for Prague 1 district.</p>
+<ul class="simple">
+<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">bike_signs</span></code></p></li>
+<li><p><em>Storage type:</em> SQLite database</p></li>
+<li><p><em>Last update:</em> 14.03.2016</p></li>
+<li><p><em>Geometry type</em>: Point</p></li>
+<li><p><em>Spatial resolution:</em> <cite>1:10000</cite></p></li>
+<li><p><a class="reference external" href="http://www.geoportalpraha.cz/cs/opendata/7ED6D2D8-A68C-44F1-8EC3-0F75A5AEF781">Source</a>,
+<a class="reference external" href="http://www.geoportalpraha.cz/cs/fulltext_geoportal?id=7ED6D2D8-A68C-44F1-8EC3-0F75A5AEF781">metadata</a></p></li>
+<li><p><em>Attributes</em>:</p></li>
+</ul>
+<table class="docutils align-default" id="id9">
+<caption><span class="caption-text">Attributes of the bike signs layer.</span><a class="headerlink" href="#id9" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><em>type</em></p></td>
+<td><p>type of sign</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Boundary region</strong> - boundary of Prague region.</p>
+<ul class="simple">
+<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">boundary_region</span></code></p></li>
+<li><p><em>Storage type:</em> SQLite database</p></li>
+<li><p><em>Last update:</em> 04.05.2014</p></li>
+<li><p><em>Geometry type</em>: Polygon</p></li>
+<li><p><a class="reference external" href="http://www.geoportalpraha.cz/cs/opendata/669607B8-EA0A-44FB-8771-C509C2384E59">Source</a></p></li>
+<li><p><em>Attributes</em>:</p></li>
+</ul>
+<table class="docutils align-default" id="id10">
+<caption><span class="caption-text">Attributes of the boundary region.</span><a class="headerlink" href="#id10" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><em>name</em></p></td>
+<td><p>name of region</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Buildings</strong> - classified 3D raster with absolute altitude of buildings.</p>
+<ul class="simple">
+<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">buildings</span></code></p></li>
+<li><p><em>Storage type:</em> SQLite database</p></li>
+<li><p><em>Spatial representation:</em> 3D grid</p></li>
+<li><p><a class="reference external" href="http://www.geoportalpraha.cz/en/opendata/DDBD51D9-CDF6-4288-8FAB-F049BB5ADFD9">Source</a></p></li>
+</ul>
+<p><strong>Elevation</strong> - digital terrain model (DTM) within the meaning of the bare surface.</p>
+<ul class="simple">
+<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">elevation</span></code></p></li>
+<li><p><em>Storage type:</em> SQLite database</p></li>
+<li><p><em>Last update:</em> 10.04.2015</p></li>
+<li><p><em>Spatial representation:</em> 3D grid</p></li>
+<li><p><em>Spatial resolution:</em> 1:5000</p></li>
+<li><p><a class="reference external" href="http://www.geoportalpraha.cz/en/opendata/6E9A6D83-5F66-4B06-ABB5-CE8E773A811C">Source</a></p></li>
+</ul>
+<p><strong>Landuse</strong> - landuse in 2016.</p>
+<ul class="simple">
+<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">landuse</span></code></p></li>
+<li><p><em>Storage type:</em> SQLite database</p></li>
+<li><p><em>Last update:</em> 24.02.2016</p></li>
+<li><p><em>Spatial resolution:</em> 1:5000</p></li>
+<li><p><em>Geometry type</em>: Polygon</p></li>
+<li><p><a class="reference external" href="http://www.geoportalpraha.cz/en/opendata/A0198E36-FCAD-42E7-BE4A-3B7755A48DAC">Source</a></p></li>
+<li><p><em>Attributes</em>:</p></li>
+</ul>
+<table class="docutils align-default" id="id11">
+<caption><span class="caption-text">Attributes of the landuse layer.</span><a class="headerlink" href="#id11" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><em>code</em></p></td>
+<td><p>code of usage</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Orthophoto</strong> - colored orthophoto of Prague 1 district.</p>
+<ul class="simple">
+<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">orthophoto</span></code></p></li>
+<li><p><em>Pixel resolution:</em> <code class="docutils literal notranslate"><span class="pre">50</span> <span class="pre">cm</span></code></p></li>
+<li><p><em>Storage type:</em> SQLite database</p></li>
+<li><p><em>Last update:</em> 10.12.2015</p></li>
+<li><p><em>Spatial representation:</em> grid</p></li>
+<li><p><a class="reference external" href="http://www.geoportalpraha.cz/cs/opendata/A0198E36-FCAD-42E7-BE4A-3B7755A48DAC">Source</a>,
+<a class="reference external" href="http://www.geoportalpraha.cz/en/fulltext_geoportal?id=A0198E36-FCAD-42E7-BE4A-3B7755A48DAC">metadata</a></p></li>
+</ul>
+<p><strong>Parcels</strong> - polygons of the parcels for Prague 1 district.</p>
+<ul class="simple">
+<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">parcels</span></code></p></li>
+<li><p><em>Storage type:</em> SQLite database</p></li>
+<li><p><em>Last update:</em> 01.03.2016</p></li>
+<li><p><em>Geometry type</em>: Polygon</p></li>
+<li><p><em>Spatial resolution:</em> <cite>1:500</cite></p></li>
+<li><p><a class="reference external" href="http://www.geoportalpraha.cz/en/opendata/31363CF6-2A9F-41D1-B000-23587084BC7A">Source</a></p></li>
+<li><p><em>Attributes</em>:</p></li>
+</ul>
+<table class="docutils align-default" id="id12">
+<caption><span class="caption-text">Attributes of the parcels layer.</span><a class="headerlink" href="#id12" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><em>p_number</em></p></td>
+<td><p>permanent parcel number</p></td>
+</tr>
+<tr class="row-odd"><td><p><em>f_number</em></p></td>
+<td><p>fractional parcel number</p></td>
+</tr>
+<tr class="row-even"><td><p><em>area</em></p></td>
+<td><p>area in square meters</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Pharmacy</strong> - pharmacies.</p>
+<ul class="simple">
+<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">pharmacy</span></code></p></li>
+<li><p><em>Geometry type</em>: Point</p></li>
+<li><p><em>Attributes</em>:</p></li>
+</ul>
+<table class="docutils align-default" id="id13">
+<caption><span class="caption-text">Attributes of the pharmacy layer.</span><a class="headerlink" href="#id13" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><em>name</em></p></td>
+<td><p>name of pharmacy</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Population statistics</strong> - marriages, divorces, live births and deaths statistics for Prague districts in 2014.</p>
+<ul class="simple">
+<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">pop_statistics</span></code></p></li>
+<li><p><em>Data representation:</em> comma separated values file</p></li>
+<li><p><em>Last update</em>: 31.12.2014</p></li>
+<li><p><a class="reference external" href="https://www.czso.cz/documents/10180/26823476/3301231505.xlsx/1e37f0cd-ef06-4872-b108-31778585b635?version=1.0">Source</a></p></li>
+<li><p><em>Attributes</em>:</p></li>
+</ul>
+<table class="docutils align-default" id="id14">
+<caption><span class="caption-text">Selected population statistics.</span><a class="headerlink" href="#id14" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><em>district</em></p></td>
+<td><p>name of district</p></td>
+</tr>
+<tr class="row-odd"><td><p><em>marriages</em></p></td>
+<td><p>marriages in 2014</p></td>
+</tr>
+<tr class="row-even"><td><p><em>divorces</em></p></td>
+<td><p>divorces in 2014</p></td>
+</tr>
+<tr class="row-odd"><td><p><em>live births</em></p></td>
+<td><p>live births</p></td>
+</tr>
+<tr class="row-even"><td><p><em>deaths</em></p></td>
+<td><p>deaths</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Prague 1</strong> - boundary of Prague 1 district.</p>
+<ul class="simple">
+<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">prague_1</span></code></p></li>
+<li><p><em>Storage type:</em> SQLite database</p></li>
+<li><p><em>Geometry type</em>: Polygon</p></li>
+<li><p><em>Attributes</em>:</p></li>
+</ul>
+<table class="docutils align-default" id="id15">
+<caption><span class="caption-text">Attributes of Prague 1 district layer.</span><a class="headerlink" href="#id15" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><em>code</em></p></td>
+<td><p>code of district</p></td>
+</tr>
+<tr class="row-odd"><td><p><em>name</em></p></td>
+<td><p>name of district</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Public toilets</strong> - public toilets.</p>
+<ul class="simple">
+<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">public_toilets</span></code></p></li>
+<li><p><em>Storage type:</em> SQLite database</p></li>
+<li><p><em>Last update:</em> 20.07.2015</p></li>
+<li><p><em>Geometry type</em>: Point</p></li>
+<li><p><a class="reference external" href="http://www.geoportalpraha.cz/en/opendata/27028B3A-9442-44BC-9EA2-4DF8A2DF9940">Source</a></p></li>
+<li><p><em>Attributes</em>:</p></li>
+</ul>
+<table class="docutils align-default" id="id16">
+<caption><span class="caption-text">Attributes of public toilets layer.</span><a class="headerlink" href="#id16" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><em>locality</em></p></td>
+<td><p>the position or site of public toilet</p></td>
+</tr>
+<tr class="row-odd"><td><p><em>address</em></p></td>
+<td><p>address of public toilet</p></td>
+</tr>
+<tr class="row-even"><td><p><em>open</em></p></td>
+<td><p>open hours</p></td>
+</tr>
+<tr class="row-odd"><td><p><em>price</em></p></td>
+<td><p>price for usage</p></td>
+</tr>
+<tr class="row-even"><td><p><em>invalid</em></p></td>
+<td><p>1 for invalid toilet</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Public wifi</strong> - WiFi facilities allowing to connect to the Internet within a particular area.</p>
+<ul class="simple">
+<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">public_wifi</span></code></p></li>
+<li><p><em>Geometry type</em>: Point</p></li>
+<li><p><em>Attributes</em>:</p></li>
+</ul>
+<table class="docutils align-default" id="id17">
+<caption><span class="caption-text">Attributes of public WiFi layer.</span><a class="headerlink" href="#id17" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><em>wifi</em></p></td>
+<td><p>more details about WiFi</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Railways</strong> - railway lines.</p>
+<ul class="simple">
+<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">railways</span></code></p></li>
+<li><p><em>Geometry type</em>: Polyline</p></li>
+<li><p><em>Attributes</em>:</p></li>
+</ul>
+<table class="docutils align-default" id="id18">
+<caption><span class="caption-text">Attributes of railways layer.</span><a class="headerlink" href="#id18" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><em>osm_id</em></p></td>
+<td><p>OSM id</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Schools</strong> - school buildings.</p>
+<ul class="simple">
+<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">schools</span></code></p></li>
+<li><p><em>Geometry type</em>: Point</p></li>
+<li><p><em>Attributes</em>:</p></li>
+</ul>
+<table class="docutils align-default" id="id19">
+<caption><span class="caption-text">Attributes of schools layer.</span><a class="headerlink" href="#id19" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><em>name</em></p></td>
+<td><p>name and type of school</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Streams</strong> - water flow, flow model.</p>
+<ul class="simple">
+<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">streams</span></code></p></li>
+<li><p><em>Storage type:</em> SQLite database</p></li>
+<li><p><em>Last update:</em> 06.04.2006</p></li>
+<li><p><em>Geometry type</em>: Polyline</p></li>
+<li><p><a class="reference external" href="http://www.dibavod.cz/download.php?id_souboru=1412&amp;PHPSESSID=vcbxqccbl">Source</a></p></li>
+<li><p><em>Attributes</em>:</p></li>
+</ul>
+<table class="docutils align-default" id="id20">
+<caption><span class="caption-text">Attributes of streams layer.</span><a class="headerlink" href="#id20" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><em>name</em></p></td>
+<td><p>name of stream</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Streets</strong> - roads and streets in Prague 1 district.</p>
+<ul class="simple">
+<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">streets</span></code></p></li>
+<li><p><em>Geometry type</em> : Polyline</p></li>
+<li><p><em>Storage type:</em> SQLite database</p></li>
+<li><p><em>Attributes</em>:</p></li>
+</ul>
+<table class="docutils align-default" id="id21">
+<caption><span class="caption-text">Attributes of streets layer.</span><a class="headerlink" href="#id21" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><em>name</em></p></td>
+<td><p>name of street</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Universities</strong> - university buildings.</p>
+<ul class="simple">
+<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">universities</span></code></p></li>
+<li><p><em>Spatial representation:</em> vector</p></li>
+<li><p><em>Geometry type</em>: Point</p></li>
+<li><p><em>Attributes</em>:</p></li>
+</ul>
+<table class="docutils align-default" id="id22">
+<caption><span class="caption-text">Attributes of universities layer.</span><a class="headerlink" href="#id22" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><em>name</em></p></td>
+<td><p>name of university</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Zip codes</strong> - address points from RUIAN.</p>
+<ul class="simple">
+<li><p><em>Layer name:</em> <code class="docutils literal notranslate"><span class="pre">zipcodes</span></code></p></li>
+<li><p><em>Storage type:</em> SQLite database</p></li>
+<li><p><em>Attributes</em>:</p></li>
+</ul>
+<table class="docutils align-default" id="id23">
+<caption><span class="caption-text">Attributes of zip code layer.</span><a class="headerlink" href="#id23" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><em>number</em></p></td>
+<td><p>number of building</p></td>
+</tr>
+<tr class="row-odd"><td><p><em>code</em></p></td>
+<td><p>zip code</p></td>
 </tr>
 </tbody>
 </table>
