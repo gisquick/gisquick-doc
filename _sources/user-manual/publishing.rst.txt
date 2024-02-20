@@ -1,3 +1,6 @@
+.. |map-button| image:: ../img/publish/button-map.png
+   :width: 2em
+
 .. _publishing:
 
 =======================
@@ -6,40 +9,59 @@ Publishing
 
 .. _preparing-project:
 
-Preparing project
------------------
-Firstly, click on ``Publish`` button which is situated next to the
-``Upload`` button in the user's project page. It allows publishing a project
-directly from QGIS. In order to publish a project, the QGIS plugin needs to be
-installed and connected. The required plugin is available to download for 64-bit OS
-(Windows, Linux, Darwin).
+This section describes the proccess of uploading and publishing QGIS project to Gisquick. It is assumed that
+QGIS Gisquick plugin is installed, connected to Gisquick server (see :ref:`Before publishing <before-publishing>`) and 
+project is prepared and ready to be published.
 
-.. thumbnail:: ../img/publish-button/publish-button-1.png
-   :width: 300px
+It is recommended to create a separate folder for each QGIS project and keep all
+files related to the project in it, because when uploading to Gisquick server, the whole
+folder where the QGIS project is stored is uploaded.
+
+Once the project in QGIS is ready, click on the Gisquick plugin logo.
+If the user is already connected to publication server (see :ref:`QGIS Gisquick plugin <before-publishing>`),
+green message pane will appear.
+Otherwise, fill in the connection and Gisquick login details. Then click on ``Open browser``. 
+
+.. thumbnail:: ../img/publish/open-browser.png
+   :width: 1000px
    
-   Placement of publish button.
+   Successfull connection to Gisquick server in QGIS.
 
-.. thumbnail:: ../img/publish-button/publish-button-2.png
+The user's profile page opens in browser. If you have not published any projects yet, the profile page looks like this,
+if you have, you will see a list of your published projects. For publishing a new project, click on ``NEW PROJECT``.
 
-   Where to download plugin for direct publishing from QGIS.
+.. thumbnail:: ../img/publish/create-account.png
 
-Once the download is complete, open QGIS and find tab ``Plugins`` and
-choose ``Manage and install plugins``. Continue to the ``Install from
-zip`` tab, set path to the downloaded zip file and hit the install button.
+   User's profile page.
 
-.. thumbnail:: ../img/publish-button/publish-button-3.png
+After that, an overview of the project appears. Basic information, such as QGIS project location, 
+map projection, units and print templates, and all layers that are about to be published
+are listed in here. It is not possible to make any changes within this step.
+Click the button ``LOAD FILES`` and after that, type a project's name and hit ``CREATE``.
+Note that the project name cannot be changed later.
 
-   How to proceed in QGIS to install the experimental plugin.
+.. note:: When uploading data to GISQUICK, an entire folder with all files is uploaded. You can specify which files you don't want to upload to the server. Use the .gisquickignore file.
 
-When the installation is finished, it is possible to check new acquisition
-in the list of installed plugins. Also, a new icon appears in QGIS toolbar.
-Next step is to prepare the project in QGIS.
+.. thumbnail:: ../img/publish/gisquickignore.gif
 
-.. thumbnail:: ../img/publish-button/publish-button-4.png
+    How to use gisquickignore file.
 
-   List of installed plugins.
+The last obligatory step before publishing is setting the project's title. 
+After setting the title, the project is ready to be published by clicking the button ``PUBLISH``
+in the top-right corner of Gisquick web interface. Before publishing, project is marked as 
+**STAGED**, after publishing it is marked as **PUBLISHED**.
 
-Save the project before the next step.
+.. note:: Project name may or may not be the same as project title. Unlike the project name,
+   the project title can be changed in this :ref:`General <general>` section of Gisquick web interface.
+   Together with every published project, web map service (**WMS**)
+   is created and can be subsequently modified.
+
+The button |map-button| gets user to the published web map :ref:`interface <user-interface>`.
+
+See section :ref:`Setting up the project <setting-up-project>` for further information about all 
+the possible settings of a project you are publishing. These settings can be changed before the
+hitting the button ``PUBLISH`` or after that.
+
 
 .. important:: |imp| When using flat files or file-based databases as
    data stores it is highly recommended to save all the files (data and QGIS
@@ -50,47 +72,3 @@ Save the project before the next step.
    When using any kind of authentication (databases, web services) it
    must be ensured that the server used for publishing will have access
    rights to such data sources.
-
-.. thumbnail:: ../img/different-folders-error.png
-
-   Error warning when different source paths are used.
-
-.. _uploading-project:
-
-Uploading project
------------------
-
-Once the project is ready, click on Gisquick plugin logo.
-For the very first time, Gisquick asks the user to fill in the connection
-and Gisquick login details.
-
-.. thumbnail:: ../img/publish-button/publish-button-5.png
-   :width: 300px
-   
-   Example of filled connection and login details.
-
-After succesful check-in to the Gisquick server, the project is screened
-in user's experimental publish window. Notice, that the Gisquick 2
-icon stays active in QGIS until the user clicks on it again and interrupts the
-connection with the server.
-
-.. thumbnail:: ../img/publish-button/publish-button-6.png
-
-   Successful check-in to the Gisquick server and loaded sample project.
-
-The first section called ``CHECK-IN`` consists of two tabs and represents
-an overview which is designed to easily check on loaded layers. It is not
-possible to make any changes within these tabs. Eventual corrections
-could be made back in QGIS.
-
-First tab ``General`` includes some fundamental information about user's
-project, e.g. map projection, units, predefined scales or print templates.
-Second tab ``Layers`` contains a list of layers with additional information.
-
-When the project is checked and ready, proceed to the ``Upload`` section.
-Two windows will split the screen: local project files are listed in the left,
-intended server folder appears in the right one. Click on ``UPLOAD FILES`` button.
-
-.. thumbnail:: ../img/publish-button/publish-button-7.png
-
-   Upload section displays local files and intended server folder.

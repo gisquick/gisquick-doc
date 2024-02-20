@@ -10,7 +10,7 @@ Other
 Video tutorials
 ---------------
 
-Gisquick video tutorials are available from `YouTube channel
+Gisquick video tutorials are available on `YouTube channel
 <https://www.youtube.com/channel/UCHXyhq_wrEBnGYTRJovxrCg/videos>`__.
 
 .. note:: Gisquick is already minimally bound to GIS.lab. Gisquick is running in
@@ -35,8 +35,6 @@ Technologies
 * `Cordova <https://cordova.apache.org/>`__
 * `Django <https://www.djangoproject.com/>`__
 * `Python <https://www.python.org/>`__
-
-.. todo:: Update technologies
 
 .. _source-code-layout:
  
@@ -75,7 +73,12 @@ Authors (documentation)
 * Jáchym Čepický
 
 Major Gisquick 2 update (spring 2020). Documentation was updated
-within the subject **Free software GIS** at **Czech Technical
-University** in Prague by Josef Münzberger, Svetlana Usik and Zuzana
-Vaňková. Language corrections done by Ondřej Pešek. Additional updates
-were made by František Mužík in 2021.
+within the subject Free software GIS at Czech Technical
+University in Prague by Josef Münzberger, Svetlana Usik and Zuzana
+Vaňková in 2020. Language corrections done by Ondřej Pešek. Additional
+updates were made by František Mužík in 2021.
+
+Major Gisquick 3 update (spring 2023). Documentation was updated
+within the subject Free software GIS at Czech Technical
+University in Prague by Jakub Snopl, Tatana Blahova and Dennis
+Dvorak in 2023.
