@@ -22,10 +22,6 @@ check sections :ref:`chapter-3` and :ref:`chapter-4`.
 Browse section :ref:`chapter-5` for **metadata of example datasets** that were used for documentation. If you plan to
 **operate Gisquick publication server** on your own device, see section :ref:`chapter-6`.
 
-.. note::
-   
-   This documentation is dedicated to Gisquick version 3. For older documentation visit https://gisquick.rtfd.io/en/release-1_x/ and https://gisquick.rtfd.io/en/release-2_x/.
-
 .. thumbnail:: ./img/example.svg
 
    Gisquick in action.
